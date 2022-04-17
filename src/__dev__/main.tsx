@@ -1,0 +1,17 @@
+import React from 'react'
+import ReactDOM from 'react-dom/client'
+
+import { AppContext } from '~/context'
+import View from '~/view'
+
+import './main.css'
+
+import resume from './sample.resume.json'
+
+ReactDOM.createRoot(document.getElementById('root')!).render(
+    <React.StrictMode>
+        <AppContext.Provider value={{ resume }}>
+            <View />
+        </AppContext.Provider>
+    </React.StrictMode>
+)
