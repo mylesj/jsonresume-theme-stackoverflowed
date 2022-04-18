@@ -1,5 +1,6 @@
 import { RollupOptions } from 'rollup'
 import typescript from '@rollup/plugin-typescript'
+import json from '@rollup/plugin-json'
 
 import pkg from './package.json'
 
@@ -9,12 +10,14 @@ const config: RollupOptions = {
         { file: pkg.main, format: 'cjs' },
         { file: pkg.module, format: 'es' },
     ],
-    plugins: [typescript()],
+    plugins: [typescript(), json()],
     external: [
         'react',
         'react/jsx-runtime',
         'react-dom/server',
         '@emotion/react',
+        '@emotion/react/jsx-runtime',
+        'i18n-iso-countries',
     ],
 }
 

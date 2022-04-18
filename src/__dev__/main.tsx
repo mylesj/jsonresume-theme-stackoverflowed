@@ -4,8 +4,6 @@ import ReactDOM from 'react-dom/client'
 import { AppContext } from '~/context'
 import View from '~/view'
 
-import './main.css'
-
 import resume from './sample.resume.json'
 
 ReactDOM.createRoot(document.getElementById('root')!).render(

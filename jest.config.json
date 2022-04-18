@@ -3,7 +3,8 @@
     "testEnvironment": "jsdom",
     "restoreMocks": true,
     "moduleNameMapper": {
-        "~/(.*)": "<rootDir>/src/$1"
+        "~/(.*)": "<rootDir>/src/$1",
+        "@/test-utils": "<rootDir>/src/__dev__/util/testing"
     },
     "verbose": true
 }

@@ -1,4 +1,3 @@
-import { createElement, FunctionComponentElement } from 'react'
 import { renderToString } from 'react-dom/server'
 
 import { Resume } from '~/types'
@@ -16,4 +15,8 @@ export const render = (resume: Resume): string => {
             </AppContext.Provider>
         ),
     })
+}
+
+export const pdfRenderOptions = {
+    mediaType: 'print',
 }

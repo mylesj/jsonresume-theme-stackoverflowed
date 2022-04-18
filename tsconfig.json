@@ -10,7 +10,8 @@
         "allowSyntheticDefaultImports": true,
         "baseUrl": "./src",
         "paths": {
-            "~/*": ["./*"]
+            "~/*": ["./*"],
+            "@/test-utils": ["./__dev__/util/testing"]
         },
         "jsx": "react-jsx",
         "jsxImportSource": "@emotion/react"
