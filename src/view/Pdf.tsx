@@ -1,5 +1,5 @@
 import { FlexColumn } from '~/components/layout'
-import { Basics, Skills } from '~/components/schema'
+import { Basics, Skills, Work } from '~/components/schema'
 
 export const Pdf = () => {
     return (
@@ -7,7 +7,7 @@ export const Pdf = () => {
             css={(theme) => ({
                 fontFamily: theme.text.font.primary,
                 color: theme.text.color.primary,
-                lineHeight: '1.2',
+                lineHeight: '1.5',
                 ...theme.whenPageNormal({
                     padding: '4rem 4rem 4rem 6rem',
                 }),
@@ -16,9 +16,13 @@ export const Pdf = () => {
                 }),
             })}
         >
-            <Basics />
-            <Skills />
-            <main></main>
+            <header>
+                <Basics />
+            </header>
+            <main>
+                <Skills />
+                <Work />
+            </main>
         </FlexColumn>
     )
 }

@@ -2,9 +2,9 @@
     "preset": "ts-jest",
     "testEnvironment": "jsdom",
     "restoreMocks": true,
+    "timers": "modern",
     "moduleNameMapper": {
         "~/(.*)": "<rootDir>/src/$1",
         "@/test-utils": "<rootDir>/src/__dev__/util/testing"
-    },
-    "verbose": true
+    }
 }

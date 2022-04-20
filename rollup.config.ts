@@ -18,7 +18,12 @@ const config: RollupOptions = {
         '@emotion/react',
         '@emotion/react/jsx-runtime',
         'i18n-iso-countries',
+        'date-fns',
+        'date-fns/locale',
     ],
+    onwarn: (err) => {
+        throw new Error(err.message)
+    },
 }
 
 export default config

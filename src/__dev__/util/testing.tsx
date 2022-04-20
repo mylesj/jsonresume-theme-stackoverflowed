@@ -27,3 +27,11 @@ export const render = (
         </AppContext.Provider>
     )
 }
+
+export const pickResumeFields =
+    (...keys: (keyof Resume)[]) =>
+    (resume: Resume): Resume =>
+        keys.reduce(
+            (acc, key) => Object.assign(acc, { [key]: resume[key] }),
+            {}
+        )

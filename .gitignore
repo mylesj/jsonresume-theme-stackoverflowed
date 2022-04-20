@@ -15,9 +15,8 @@ Thumbs.db
 package-lock.json
 pnpm-lock.yaml
 
-test/coverage/
-node_modules/
-
 dev/
 dist/
 build/
+coverage/
+node_modules/

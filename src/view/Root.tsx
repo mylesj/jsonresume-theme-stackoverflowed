@@ -9,10 +9,10 @@ const cssReset = {
         fontSize: '16px',
         boxSizing: 'border-box',
     },
-    '*, *:before, *:after': {
+    '*, *::before, *::after': {
         boxSizing: 'inherit',
     },
-    'body, h1, h2, h3, h4, h5, h6, p, ol, ul, dl, dt, dd': {
+    'body, h1, h2, h3, h4, h5, h6, p, ol, ul, dl, dt, dd, pre': {
         margin: 0,
         padding: 0,
         fontWeight: 'normal',
@@ -37,7 +37,7 @@ const cssPageContext = {
                 padding: '1rem',
             }),
             ...theme.whenPageNarrow({
-                padding: '0.5rem',
+                padding: '.5rem',
             }),
         },
         '#root': {

@@ -20,3 +20,41 @@ it.each`
     expect(el.textContent).toBe(expectedText)
     expect(el.getAttribute('href')).toBe(expectedHref)
 })
+
+describe('the "rel" attribute', () => {
+    it.each`
+        case                                          | type      | to                       | external     | nofollow     | expected
+        ${'set "external" & "nofollow" by default'}   | ${'url'}  | ${'https://www.foo.com'} | ${undefined} | ${undefined} | ${'external nofollow'}
+        ${'allow "external" opt-out'}                 | ${'url'}  | ${'https://www.foo.com'} | ${false}     | ${undefined} | ${'nofollow'}
+        ${'allow "nofollow" opt-out'}                 | ${'url'}  | ${'https://www.foo.com'} | ${undefined} | ${false}     | ${'external'}
+        ${'allow "external" and "nofollow" opt-out'}  | ${'url'}  | ${'https://www.foo.com'} | ${false}     | ${false}     | ${null}
+        ${'ignore the attribute for mail links'}      | ${'mail'} | ${'foo@bar.com'}         | ${true}      | ${true}      | ${null}
+        ${'ignore the attribute for telephone links'} | ${'tel'}  | ${'123456'}              | ${true}      | ${true}      | ${null}
+    `('should $case', ({ type, to, external, nofollow, expected }) => {
+        const { getByRole } = render(
+            <Link type={type} to={to} external={external} nofollow={nofollow} />
+        )
+        const el = getByRole('link')
+        expect(el.getAttribute('rel')).toBe(expected)
+    })
+})
+
+describe('when children are', () => {
+    it.each`
+        type      | to                      | children    | expected
+        ${'url'}  | ${'http://www.foo.com'} | ${'custom'} | ${'custom'}
+        ${'mail'} | ${'foo@bar.com'}        | ${'custom'} | ${'custom'}
+        ${'tel'}  | ${'123456'}             | ${'custom'} | ${'custom'}
+    `(
+        'should override text for the "$type" type',
+        ({ type, to, children, expected }) => {
+            const { getByRole } = render(
+                <Link type={type} to={to}>
+                    {children}
+                </Link>
+            )
+            const el = getByRole('link')
+            expect(el.textContent).toBe(expected)
+        }
+    )
+})

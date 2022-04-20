@@ -11,6 +11,7 @@ export type WithEmotionCss<T> = T & {
     css?: Interpolation<Theme>
 }
 
+// todo: look at usages - this is a bit fugly
 export type MaybeInternalProps = {
     className?: string
 }

@@ -1,17 +1,15 @@
-import { render } from '@/test-utils'
+import { render, pickResumeFields } from '@/test-utils'
 
 import { Pdf } from './Pdf'
 
-it('should render schema basics', () => {
+it.each`
+    type        | text
+    ${'basics'} | ${'Richard Hendriks'}
+    ${'skills'} | ${'Technical Skills'}
+    ${'work'}   | ${'Experience'}
+`('should render schema $type', ({ type, text }) => {
     const { getByText } = render(<Pdf />, {
-        resume: ({ basics }) => ({ basics }),
+        resume: pickResumeFields(type),
     })
-    expect(getByText('Richard Hendriks')).toBeInTheDocument()
-})
-
-it('should render schema skills', () => {
-    const { getByText } = render(<Pdf />, {
-        resume: ({ skills }) => ({ skills }),
-    })
-    expect(getByText('Technical Skills')).toBeInTheDocument()
+    expect(getByText(text)).toBeInTheDocument()
 })

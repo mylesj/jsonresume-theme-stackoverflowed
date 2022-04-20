@@ -16,6 +16,7 @@ export const Section = ({ label, children }: Props) => {
                 borderTopStyle: 'solid',
                 borderTopColor: theme.spacing.color.divider,
                 paddingTop: '1rem',
+                paddingBottom: '1rem',
             })}
         >
             <h2

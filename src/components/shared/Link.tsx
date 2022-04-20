@@ -1,17 +1,38 @@
+import { ReactNode } from 'react'
 import { WithEmotionCss, MaybeInternalProps } from '~/types'
 
 type Props = {
     to: string
     type?: 'url' | 'tel' | 'mail'
+    external?: boolean
+    nofollow?: boolean
+    children?: ReactNode
 }
 
-export const Link = ({ to, type = 'url', ...rest }: WithEmotionCss<Props>) => {
+export const Link = ({
+    to,
+    type = 'url',
+    external = true,
+    nofollow = true,
+    children,
+    ...rest
+}: WithEmotionCss<Props>) => {
+    const { className } = rest as MaybeInternalProps
+
     let link
     let text
+    let rel: string[] = []
     switch (type) {
         case 'url':
             link = /^http/i.test(to) ? to : `https://${to.replace(/^\/\//, '')}`
             text = to.replace(/^(?:https?:)?\/\/(?:www\.)?/, '')
+
+            if (external) {
+                rel.push('external')
+            }
+            if (nofollow) {
+                rel.push('nofollow')
+            }
             break
 
         case 'tel':
@@ -27,11 +48,10 @@ export const Link = ({ to, type = 'url', ...rest }: WithEmotionCss<Props>) => {
             break
     }
 
-    const { className } = rest as MaybeInternalProps
-
     return (
         <a
             href={link}
+            {...(rel.length && { rel: rel.join(' ') })}
             className={className}
             css={(theme) => ({
                 textDecoration: 'none',
@@ -41,7 +61,7 @@ export const Link = ({ to, type = 'url', ...rest }: WithEmotionCss<Props>) => {
                 },
             })}
         >
-            {text}
+            {children || text}
         </a>
     )
 }

@@ -1,5 +1,5 @@
 import { useResume } from '~/context'
-import { Contact } from '~/components/shared'
+import { Paragraph, Contact } from '~/components/shared'
 import { FlexRow, FlexColumn } from '~/components/layout'
 
 const Title = () => {
@@ -10,6 +10,7 @@ const Title = () => {
                 <h1
                     css={(theme) => ({
                         fontSize: '2.8rem',
+                        lineHeight: '1.2',
                         fontWeight: 'bold',
                         color: theme.text.color.title,
                         ...theme.whenPageNormal({
@@ -29,6 +30,7 @@ const Title = () => {
                 <h2
                     css={(theme) => ({
                         fontSize: '2rem',
+                        lineHeight: '1.1',
                         color: theme.text.color.tertiary,
                         ...theme.whenPageNormal({
                             marginTop: !name ? '4rem' : 0,
@@ -51,25 +53,24 @@ const Summary = () => {
     const { summary } = useResume().basics!
     return (
         <>
-            {summary && (
-                <p
-                    css={(theme) => ({
-                        fontFamily: theme.text.font.secondary,
-                        fontStyle: 'italic',
-                        fontSize: '1.2rem',
-                        letterSpacing: '0.03125rem',
-                        color: theme.text.color.secondary,
-                        ...theme.whenPageNormal({
-                            padding: '2rem 6rem 2rem 7rem',
-                        }),
-                        ...theme.whenPageNarrow({
-                            padding: '1rem 3rem 2rem 3.5rem',
-                        }),
-                    })}
-                >
-                    {summary}
-                </p>
-            )}
+            <Paragraph
+                css={(theme) => ({
+                    fontFamily: theme.text.font.secondary,
+                    textAlign: 'justify',
+                    fontStyle: 'italic',
+                    fontSize: '1.2rem',
+                    letterSpacing: '0.03125rem',
+                    color: theme.text.color.secondary,
+                    ...theme.whenPageNormal({
+                        padding: '2rem 6rem 2rem 7rem',
+                    }),
+                    ...theme.whenPageNarrow({
+                        padding: '1rem 3rem 2rem 3.5rem',
+                    }),
+                })}
+            >
+                {summary}
+            </Paragraph>
         </>
     )
 }
@@ -80,7 +81,7 @@ export const Basics = () => {
         return null
     }
     return (
-        <header>
+        <>
             <FlexRow>
                 <Title />
                 <Contact
@@ -91,6 +92,6 @@ export const Basics = () => {
                 />
             </FlexRow>
             <Summary />
-        </header>
+        </>
     )
 }

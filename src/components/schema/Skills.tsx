@@ -1,5 +1,6 @@
 import { ReactNode } from 'react'
 
+import { isPopulated } from '~/util'
 import { Resume } from '~/types'
 import { useResume } from '~/context'
 import { Section } from '~/components/shared'
@@ -11,7 +12,7 @@ const skillRenderer = ({ name, keywords }: Skill, i: number): ReactNode => {
     return (
         <FlexRow
             key={i}
-            css={(theme) => ({
+            css={{
                 justifyContent: 'start',
                 flexWrap: 'wrap',
                 whiteSpace: 'nowrap',
@@ -21,16 +22,16 @@ const skillRenderer = ({ name, keywords }: Skill, i: number): ReactNode => {
                 '& > *': {
                     flexGrow: 0,
                 },
-            })}
+            }}
         >
             {keywords!.map((keyword, i) => (
                 <dt
                     key={i}
                     css={(theme) => ({
-                        marginLeft: '0.5rem',
-                        '&:before': {
+                        marginLeft: '.5rem',
+                        '&::before': {
                             content: '"-"',
-                            marginRight: '0.5rem',
+                            marginRight: '.5rem',
                             color: theme.text.color.tertiary,
                         },
                     })}
@@ -46,7 +47,7 @@ const skillRenderer = ({ name, keywords }: Skill, i: number): ReactNode => {
 export const Skills = () => {
     const { skills } = useResume()
     const useableSkills = skills?.filter((skill) =>
-        ['name', 'keywords'].every((key) => skill[key])
+        isPopulated(skill, 'name', 'keywords')
     )
     if (!useableSkills) {
         return null

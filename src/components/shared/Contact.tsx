@@ -13,6 +13,8 @@ export const Contact = ({
     email,
     ...rest
 }: WithEmotionCss<Props>) => {
+    const { className } = rest as MaybeInternalProps
+
     // todo: configurable location format
     let locationText
     if (location?.city && (location?.countryCode || location?.region)) {
@@ -23,8 +25,6 @@ export const Contact = ({
                 : location.region,
         ].join(', ')
     }
-
-    const { className } = rest as MaybeInternalProps
 
     return (
         <address className={className} css={{ textAlign: 'right' }}>
