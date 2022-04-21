@@ -23,7 +23,10 @@
         "build": "cross-env NODE_ENV=production rollup --config rollup.config.ts --configPlugin typescript",
         "dev": "cross-env NODE_ENV=development vite",
         "test": "cross-env TZ=UTC jest --config jest.config.json",
-        "lint": "eslint src --max-warnings=0"
+        "format": "prettier . --write",
+        "ci:format": "prettier . --check --color",
+        "ci:lint": "eslint . --max-warnings=0 --color",
+        "ci:test": "yarn test --color"
     },
     "dependencies": {
         "@emotion/react": "^11.9.0",
