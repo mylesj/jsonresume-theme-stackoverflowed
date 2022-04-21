@@ -9,7 +9,7 @@ it.each`
 `('should define "$definition" as terms: $terms', ({ definition, terms }) => {
     const { getByText } = render(<Skills />)
     const dd = getByText(definition)
-    const dt = Array.from(dd.parentElement!.childNodes)
+    const dt = Array.from(dd.parentElement?.childNodes || [])
         .filter((el) => el !== dd)
         .map((el) => el.textContent)
 

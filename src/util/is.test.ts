@@ -1,7 +1,7 @@
 import { isPopulated } from './is'
 
 describe(isPopulated.name, () => {
-    let input: any
+    let input: Record<string, unknown>
     beforeEach(() => {
         input = {
             b: undefined,

@@ -24,7 +24,7 @@ const skillRenderer = ({ name, keywords }: Skill, i: number): ReactNode => {
                 },
             }}
         >
-            {keywords!.map((keyword, i) => (
+            {keywords?.map((keyword, i) => (
                 <dt
                     key={i}
                     css={(theme) => ({

@@ -25,9 +25,9 @@ export const Work = () => {
                     startDate={item.startDate}
                     endDate={item.endDate}
                     label={[
-                        item.position!,
+                        item.position,
                         !item.url ? (
-                            item.name!
+                            item.name
                         ) : (
                             <Link to={item.url}>{item.name}</Link>
                         ),

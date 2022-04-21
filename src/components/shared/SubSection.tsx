@@ -6,7 +6,7 @@ import { Link } from './Link'
 import { DateRange } from './DateRange'
 import { ZeroWidthSpace } from './ZeroWidthSpace'
 
-type Label = string | ReactElement // Link
+type Label = null | undefined | string | ReactElement // Link
 
 type Props = {
     label: Label | [Label] | [Label, Label]
@@ -45,7 +45,7 @@ const renderLabel = (label: ReactNode, style: 'primary' | 'secondary') => {
             )
 
         case 'object':
-            if ((label as any).type !== Link) {
+            if ('type' in label && label.type !== Link) {
                 return null
             }
             return style === 'primary' ? (
@@ -67,7 +67,8 @@ const renderLabel = (label: ReactNode, style: 'primary' | 'secondary') => {
 }
 
 export const SubSection = ({ label, startDate, endDate, children }: Props) => {
-    const [primaryLabel, secondaryLabel] = Children.toArray(label)
+    const [primaryLabel, secondaryLabel] =
+        Children.toArray(label).filter(Boolean)
     return (
         <section
             css={(theme) => ({

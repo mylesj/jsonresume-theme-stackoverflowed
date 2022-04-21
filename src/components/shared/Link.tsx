@@ -21,7 +21,7 @@ export const Link = ({
 
     let link
     let text
-    let rel: string[] = []
+    const rel: string[] = []
     switch (type) {
         case 'url':
             link = /^http/i.test(to) ? to : `https://${to.replace(/^\/\//, '')}`

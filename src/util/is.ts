@@ -1,4 +1,4 @@
-export const isPopulated = <T extends {}>(
+export const isPopulated = <T extends Record<string, unknown>>(
     obj: T,
     ...keys: (keyof T)[]
 ): boolean =>

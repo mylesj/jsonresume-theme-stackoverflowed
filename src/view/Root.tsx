@@ -65,7 +65,7 @@ const cssPageContext = {
     },
 } as const
 
-export default () => {
+const Root = () => {
     // todo: "Developer Story" view
     const View = Pdf
     return (
@@ -76,3 +76,5 @@ export default () => {
         </ThemeProvider>
     )
 }
+
+export default Root

@@ -2,8 +2,12 @@ import { useResume } from '~/context'
 import { Paragraph, Contact } from '~/components/shared'
 import { FlexRow, FlexColumn } from '~/components/layout'
 
-const Title = () => {
-    const { name, label } = useResume().basics!
+type TitleProps = {
+    name?: string
+    label?: string
+}
+
+const Title = ({ name, label }: TitleProps) => {
     return (
         <FlexColumn>
             {name && (
@@ -49,29 +53,30 @@ const Title = () => {
     )
 }
 
-const Summary = () => {
-    const { summary } = useResume().basics!
+type SummaryProps = {
+    summary?: string
+}
+
+const Summary = ({ summary }: SummaryProps) => {
     return (
-        <>
-            <Paragraph
-                css={(theme) => ({
-                    fontFamily: theme.text.font.secondary,
-                    textAlign: 'justify',
-                    fontStyle: 'italic',
-                    fontSize: '1.2rem',
-                    letterSpacing: '0.03125rem',
-                    color: theme.text.color.secondary,
-                    ...theme.whenPageNormal({
-                        padding: '2rem 6rem 2rem 7rem',
-                    }),
-                    ...theme.whenPageNarrow({
-                        padding: '1rem 3rem 2rem 3.5rem',
-                    }),
-                })}
-            >
-                {summary}
-            </Paragraph>
-        </>
+        <Paragraph
+            css={(theme) => ({
+                fontFamily: theme.text.font.secondary,
+                textAlign: 'justify',
+                fontStyle: 'italic',
+                fontSize: '1.2rem',
+                letterSpacing: '0.03125rem',
+                color: theme.text.color.secondary,
+                ...theme.whenPageNormal({
+                    padding: '2rem 6rem 2rem 7rem',
+                }),
+                ...theme.whenPageNarrow({
+                    padding: '1rem 3rem 2rem 3.5rem',
+                }),
+            })}
+        >
+            {summary || ''}
+        </Paragraph>
     )
 }
 
@@ -83,7 +88,7 @@ export const Basics = () => {
     return (
         <>
             <FlexRow>
-                <Title />
+                <Title name={basics.name} label={basics.label} />
                 <Contact
                     phone={basics.phone}
                     email={basics.email}
@@ -91,7 +96,7 @@ export const Basics = () => {
                     css={{ alignSelf: 'start' }}
                 />
             </FlexRow>
-            <Summary />
+            <Summary summary={basics.summary} />
         </>
     )
 }
