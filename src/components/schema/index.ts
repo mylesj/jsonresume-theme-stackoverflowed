@@ -1,3 +1,5 @@
 export * from './Basics'
 export * from './Skills'
 export * from './Work'
+export * from './Education'
+export * from './Projects'

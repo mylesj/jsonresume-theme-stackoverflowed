@@ -1,5 +1,5 @@
 import { FlexColumn } from '~/components/layout'
-import { Basics, Skills, Work } from '~/components/schema'
+import { Basics, Skills, Work, Education, Projects } from '~/components/schema'
 
 export const Pdf = () => {
     return (
@@ -22,6 +22,8 @@ export const Pdf = () => {
             <main>
                 <Skills />
                 <Work />
+                <Education />
+                <Projects />
             </main>
         </FlexColumn>
     )

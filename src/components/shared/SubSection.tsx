@@ -84,11 +84,14 @@ export const SubSection = ({ label, startDate, endDate, children }: Props) => {
                 },
             })}
         >
-            <FlexRow>
+            <FlexRow
+                css={{
+                    marginBottom: '1rem',
+                }}
+            >
                 <h3
                     css={{
                         fontSize: '1rem',
-                        marginBottom: '1rem',
                         alignSelf: 'start',
                     }}
                 >

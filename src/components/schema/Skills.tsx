@@ -16,9 +16,7 @@ const skillRenderer = ({ name, keywords }: Skill, i: number): ReactNode => {
                 justifyContent: 'start',
                 flexWrap: 'wrap',
                 whiteSpace: 'nowrap',
-                '&:not(:first-of-type)': {
-                    marginTop: '1rem',
-                },
+                marginBottom: '1rem',
                 '& > *': {
                     flexGrow: 0,
                 },
