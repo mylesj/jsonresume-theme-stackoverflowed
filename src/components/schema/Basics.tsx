@@ -17,11 +17,15 @@ const Title = ({ name, label }: TitleProps) => {
                         lineHeight: '1.2',
                         fontWeight: 'bold',
                         color: theme.text.color.title,
-                        ...theme.whenPageNormal({
+                        ...theme.when('print', {
                             marginTop: !label ? '4rem' : '2rem',
                             marginBottom: !label ? '4rem' : 0,
                         }),
-                        ...theme.whenPageNarrow({
+                        ...theme.when(['screen', 'normal'], {
+                            marginTop: !label ? '4rem' : '2rem',
+                            marginBottom: !label ? '4rem' : 0,
+                        }),
+                        ...theme.when(['screen', 'narrow'], {
                             marginTop: !label ? '2rem' : '1rem',
                             marginBottom: !label ? '2rem' : 0,
                         }),
@@ -36,11 +40,15 @@ const Title = ({ name, label }: TitleProps) => {
                         fontSize: '2rem',
                         lineHeight: '1.1',
                         color: theme.text.color.tertiary,
-                        ...theme.whenPageNormal({
+                        ...theme.when('print', {
                             marginTop: !name ? '4rem' : 0,
                             marginBottom: !name ? '4rem' : '2rem',
                         }),
-                        ...theme.whenPageNarrow({
+                        ...theme.when(['screen', 'normal'], {
+                            marginTop: !name ? '4rem' : 0,
+                            marginBottom: !name ? '4rem' : '2rem',
+                        }),
+                        ...theme.when(['screen', 'narrow'], {
                             marginTop: !name ? '2rem' : 0,
                             marginBottom: !name ? '2rem' : '1rem',
                         }),
@@ -67,10 +75,13 @@ const Summary = ({ summary }: SummaryProps) => {
                 fontSize: '1.2rem',
                 letterSpacing: '0.03125rem',
                 color: theme.text.color.secondary,
-                ...theme.whenPageNormal({
+                ...theme.when('print', {
                     padding: '2rem 6rem 2rem 7rem',
                 }),
-                ...theme.whenPageNarrow({
+                ...theme.when(['screen', 'normal'], {
+                    padding: '2rem 6rem 2rem 7rem',
+                }),
+                ...theme.when(['screen', 'narrow'], {
                     padding: '1rem 3rem 2rem 3.5rem',
                 }),
             })}

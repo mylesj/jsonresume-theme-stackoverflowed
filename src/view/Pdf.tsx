@@ -8,10 +8,10 @@ export const Pdf = () => {
                 fontFamily: theme.text.font.primary,
                 color: theme.text.color.primary,
                 lineHeight: '1.5',
-                ...theme.whenPageNormal({
+                ...theme.when(['screen', 'normal'], {
                     padding: '4rem 4rem 4rem 6rem',
                 }),
-                ...theme.whenPageNarrow({
+                ...theme.when(['screen', 'narrow'], {
                     padding: '2rem 2rem 2rem 3rem',
                 }),
             })}

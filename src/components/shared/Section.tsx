@@ -26,6 +26,7 @@ export const Section = ({ label, children }: Props) => {
                     fontWeight: 'bold',
                     letterSpacing: '-0.03125rem',
                     paddingTop: '1rem',
+                    paddingBottom: '1.2rem',
                     margin: 0,
                     alignSelf: 'start',
                 })}

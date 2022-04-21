@@ -5,7 +5,7 @@
 export const ZeroWidthSpace = () => {
     return (
         <span
-            css={{
+            css={(theme) => ({
                 flex: 0,
                 width: '1px',
                 height: '1px',
@@ -14,10 +14,10 @@ export const ZeroWidthSpace = () => {
                 overflow: 'hidden',
                 display: 'inline-block',
                 verticalAlign: 'baseline',
-                '@media only print': {
+                ...theme.when('print', {
                     display: 'none',
-                },
-            }}
+                }),
+            })}
             dangerouslySetInnerHTML={{ __html: '&nbsp;' }}
         />
     )

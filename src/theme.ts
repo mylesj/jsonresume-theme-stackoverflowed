@@ -32,15 +32,38 @@ export const theme = {
         },
     },
 
-    whenPageNormal: (css: ArbitraryCss): ArbitraryCss => ({
-        '@media only screen and (min-width: 1280px)': css,
-        '@media only print': css,
-    }),
-
-    whenPageNarrow: (css: ArbitraryCss): ArbitraryCss => ({
-        '@media only screen and (max-width: 1279px)': css,
-    }),
+    when: (context: MediaContext, css: ArbitraryCss): ArbitraryCss => {
+        const [media, width] = Array.isArray(context)
+            ? context
+            : [context, undefined]
+        return {
+            ...(media === 'print' &&
+                !width && {
+                    '@media only print': css,
+                }),
+            ...(media === 'screen' &&
+                !width && {
+                    '@media only screen': css,
+                }),
+            ...(media === 'screen' &&
+                width === 'normal' && {
+                    '@media only screen and (min-width: 1280px)': css,
+                }),
+            ...(media === 'screen' &&
+                width === 'narrow' && {
+                    '@media only screen and (max-width: 1279px)': css,
+                }),
+        }
+    },
 } as const
+
+type MediaContext =
+    | 'print'
+    | 'screen'
+    | ['print']
+    | ['screen']
+    | ['screen', 'normal']
+    | ['screen', 'narrow']
 
 type ArbitraryCss = {
     [key in string]: ArbitraryCss | string | number
