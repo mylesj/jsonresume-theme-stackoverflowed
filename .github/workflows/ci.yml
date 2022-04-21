@@ -1,0 +1,36 @@
+name: CI
+
+on:
+  push:
+    branches: [main]
+
+  pull_request:
+    branches: [main]
+
+  workflow_dispatch:
+
+jobs:
+  ci:
+    name: Lint » Format » Test » Build
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - uses: actions/setup-node@v3
+        with:
+          node-version: '16'
+          cache: 'yarn'
+
+      - name: Install
+        run: yarn install
+
+      - name: Linting
+        run: yarn ci:lint
+
+      - name: Formatting
+        run: yarn ci:format
+
+      - name: Testing
+        run: yarn ci:test
+
+      - name: Build
+        run: yarn build
