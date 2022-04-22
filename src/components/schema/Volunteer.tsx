@@ -8,27 +8,34 @@ import {
     Highlights,
 } from '~/components/shared'
 
-export const Projects = () => {
-    const { projects } = useResume()
-    const useableProjects = projects?.filter((item) =>
-        isPopulated(item, 'name', 'description', 'startDate')
+export const Volunteer = () => {
+    const { volunteer } = useResume()
+    const useableVolunteer = volunteer?.filter((item) =>
+        isPopulated(item, 'organization', 'position', 'startDate')
     )
 
-    if (!useableProjects) {
+    if (!useableVolunteer) {
         return null
     }
 
     return (
-        <Section label="Projects">
-            {useableProjects.map((item, i) => (
+        <Section label="Volunteering">
+            {useableVolunteer.map((item, i) => (
                 <SubSection
                     key={i}
                     startDate={item.startDate}
                     endDate={item.endDate}
-                    label={[item.name, item.url && <Link to={item.url} />]}
+                    label={[
+                        item.position,
+                        !item.url ? (
+                            item.organization
+                        ) : (
+                            <Link to={item.url}>{item.organization}</Link>
+                        ),
+                    ]}
                 >
                     <Paragraph css={{ marginBottom: '1rem' }}>
-                        {item.description}
+                        {item.summary}
                     </Paragraph>
                     <Highlights css={{ marginBottom: '1rem ' }}>
                         {item.highlights}

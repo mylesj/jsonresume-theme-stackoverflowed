@@ -4,13 +4,13 @@ import { Section, SubSection } from '~/components/shared'
 
 export const Awards = () => {
     const { awards } = useResume()
-    if (!awards) {
-        return null
-    }
-
-    const useableAwards = awards.filter((item) =>
+    const useableAwards = awards?.filter((item) =>
         isPopulated(item, 'title', 'date')
     )
+
+    if (!useableAwards) {
+        return null
+    }
 
     return (
         <Section label="Awards">

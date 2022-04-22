@@ -10,12 +10,13 @@ import {
 
 export const Work = () => {
     const { work } = useResume()
-    if (!work) {
-        return null
-    }
-    const useableWork = work.filter((item) =>
+    const useableWork = work?.filter((item) =>
         isPopulated(item, 'name', 'position', 'startDate')
     )
+
+    if (!useableWork) {
+        return null
+    }
 
     return (
         <Section label="Experience">

@@ -3,9 +3,11 @@ import {
     Basics,
     Skills,
     Work,
+    Volunteer,
     Education,
     Projects,
     Awards,
+    Publications,
 } from '~/components/schema'
 
 export const Pdf = () => {
@@ -29,9 +31,11 @@ export const Pdf = () => {
             <main>
                 <Skills />
                 <Work />
+                <Volunteer />
                 <Projects />
                 <Education />
                 <Awards />
+                <Publications />
             </main>
         </FlexColumn>
     )

@@ -4,12 +4,13 @@ import { Link, Section, SubSection, Highlights } from '~/components/shared'
 
 export const Education = () => {
     const { education } = useResume()
-    if (!education) {
-        return null
-    }
-    const useableEducation = education.filter((item) =>
+    const useableEducation = education?.filter((item) =>
         isPopulated(item, 'area', 'institution', 'startDate')
     )
+
+    if (!useableEducation) {
+        return null
+    }
 
     return (
         <Section label="Education">

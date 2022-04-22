@@ -47,9 +47,11 @@ export const Skills = () => {
     const useableSkills = skills?.filter((skill) =>
         isPopulated(skill, 'name', 'keywords')
     )
+
     if (!useableSkills) {
         return null
     }
+
     return (
         <Section label="Technical Skills">
             <dl>{useableSkills.map(skillRenderer)}</dl>
