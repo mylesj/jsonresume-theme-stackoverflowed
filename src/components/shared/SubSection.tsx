@@ -3,6 +3,7 @@ import { Children, ReactNode, ReactElement } from 'react'
 import { FlexRow, FLEX } from '~/components/layout'
 
 import { Link } from './Link'
+import { Date } from './Date'
 import { DateRange } from './DateRange'
 import { ZeroWidthSpace } from './ZeroWidthSpace'
 
@@ -10,9 +11,10 @@ type Label = null | undefined | string | ReactElement // Link
 
 type Props = {
     label: Label | [Label] | [Label, Label]
+    children: ReactNode
     startDate?: string
     endDate?: string
-    children: ReactNode
+    date?: string
 }
 
 const renderLabel = (label: ReactNode, style: 'primary' | 'secondary') => {
@@ -66,9 +68,16 @@ const renderLabel = (label: ReactNode, style: 'primary' | 'secondary') => {
     }
 }
 
-export const SubSection = ({ label, startDate, endDate, children }: Props) => {
+export const SubSection = ({
+    label,
+    children,
+    date,
+    startDate,
+    endDate,
+}: Props) => {
     const [primaryLabel, secondaryLabel] =
         Children.toArray(label).filter(Boolean)
+
     return (
         <section
             css={(theme) => ({
@@ -104,6 +113,9 @@ export const SubSection = ({ label, startDate, endDate, children }: Props) => {
                         startDate={startDate}
                         endDate={endDate}
                     />
+                )}
+                {date && !startDate && (
+                    <Date css={{ flex: 0, alignSelf: 'start' }} date={date} />
                 )}
             </FlexRow>
             {children}

@@ -27,3 +27,36 @@ describe('labels', () => {
             : expect(el).not.toBeInTheDocument()
     })
 })
+
+describe('dates', () => {
+    it('should render a single date', () => {
+        const { getByText } = render(
+            <SubSection label="" date="2000">
+                foo
+            </SubSection>
+        )
+        const el = getByText('Jan 2000')
+        expect(el).toBeInTheDocument()
+        expect(el.parentElement?.tagName).not.toBe('TIME')
+    })
+
+    it('should render a date range', () => {
+        const { getByText } = render(
+            <SubSection label="" startDate="2000" endDate="2001">
+                foo
+            </SubSection>
+        )
+        expect(getByText('Jan 2000')).toBeInTheDocument()
+        expect(getByText('Jan 2001')).toBeInTheDocument()
+    })
+
+    it('should prioritize a date range if ambiguous input is recieved', () => {
+        const { getByText } = render(
+            <SubSection label="" date="2000" startDate="2001">
+                foo
+            </SubSection>
+        )
+        expect(getByText('Jan 2001')).toBeInTheDocument()
+        expect(getByText('Current')).toBeInTheDocument()
+    })
+})

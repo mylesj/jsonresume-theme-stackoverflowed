@@ -17,3 +17,13 @@ it('should substitute the current date when there is no end date', () => {
     const { getByText } = render(<DateRange startDate="2000" />)
     expect(getByText('Current')).toBeInTheDocument()
 })
+
+it('should render dates as "time" elements', () => {
+    const { getByText } = render(<DateRange startDate="2000" endDate="2001" />)
+    const startEl = getByText('Jan 2000')
+    const endEl = getByText('Jan 2001')
+    expect(startEl.tagName).toBe('TIME')
+    expect(endEl.tagName).toBe('TIME')
+    expect(startEl.parentElement?.tagName).toBe('TIME')
+    expect(startEl.parentElement).toBe(endEl.parentElement)
+})
