@@ -1,6 +1,6 @@
 import { isPopulated } from '~/util'
 import { useResume } from '~/context'
-import { Link, Section, SubSection } from '~/components/shared'
+import { Link, Paragraph, Section, SubSection } from '~/components/shared'
 
 export const Publications = () => {
     const { publications } = useResume()
@@ -27,7 +27,9 @@ export const Publications = () => {
                         ),
                     ]}
                 >
-                    <p css={{ marginBottom: '1rem' }}>{item.summary}</p>
+                    <Paragraph css={{ marginBottom: '1rem' }}>
+                        {item.summary}
+                    </Paragraph>
                 </SubSection>
             ))}
         </Section>

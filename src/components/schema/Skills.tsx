@@ -44,8 +44,8 @@ const skillRenderer = ({ name, keywords }: Skill, i: number): ReactNode => {
 
 export const Skills = () => {
     const { skills } = useResume()
-    const useableSkills = skills?.filter((skill) =>
-        isPopulated(skill, 'name', 'keywords')
+    const useableSkills = skills?.filter((item) =>
+        isPopulated(item, 'name', 'keywords')
     )
 
     if (!useableSkills) {

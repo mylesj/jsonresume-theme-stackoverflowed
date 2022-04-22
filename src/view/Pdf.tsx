@@ -8,6 +8,8 @@ import {
     Projects,
     Awards,
     Publications,
+    Languages,
+    References,
 } from '~/components/schema'
 
 export const Pdf = () => {
@@ -36,6 +38,8 @@ export const Pdf = () => {
                 <Education />
                 <Awards />
                 <Publications />
+                <Languages />
+                <References />
             </main>
         </FlexColumn>
     )

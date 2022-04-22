@@ -1,6 +1,6 @@
 import { isPopulated } from '~/util'
 import { useResume } from '~/context'
-import { Section, SubSection } from '~/components/shared'
+import { Paragraph, Section, SubSection } from '~/components/shared'
 
 export const Awards = () => {
     const { awards } = useResume()
@@ -20,7 +20,9 @@ export const Awards = () => {
                     date={item.date}
                     label={[item.title, item.awarder]}
                 >
-                    <p css={{ marginBottom: '1rem' }}>{item.summary}</p>
+                    <Paragraph css={{ marginBottom: '1rem' }}>
+                        {item.summary}
+                    </Paragraph>
                 </SubSection>
             ))}
         </Section>
