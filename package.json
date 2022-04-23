@@ -1,11 +1,11 @@
 {
-    "name": "jsonresume-theme-stackoverflow-jobs",
+    "name": "jsonresume-theme-stackoverflowed",
     "version": "0.0.1",
-    "description": "A json-resume theme inspired by the Stack Overflow Jobs resume format.",
+    "description": "A JSON Resume Theme inspired by the Stack Overflow Developer Story resume format.",
     "author": "mylesj <hi@mylesj.dev>",
     "license": "MIT",
-    "repository": "github:mylesj/jsonresume-theme-stackoverflow-jobs",
-    "bugs": "https://github.com/mylesj/jsonresume-theme-stackoverflow-jobs/issues",
+    "repository": "github:mylesj/jsonresume-theme-stackoverflowed",
+    "bugs": "https://github.com/mylesj/jsonresume-theme-stackoverflowed/issues",
     "keywords": [
         "json",
         "resume",
@@ -13,7 +13,11 @@
         "theme",
         "stack",
         "overflow",
-        "stackoverflow"
+        "stackoverflow",
+        "jobs",
+        "developer",
+        "story",
+        "careers"
     ],
     "main": "dist/render.js",
     "module": "dist/render.mjs",
