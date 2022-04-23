@@ -1,11 +1,11 @@
-import { isPopulated } from '~/util'
+import { filterPopulated } from '~/util'
 import { useResume } from '~/context'
 import { Paragraph, Section, SubSection } from '~/components/shared'
 
 export const References = () => {
     const { references } = useResume()
-    const useableReferences = references?.filter((item) =>
-        isPopulated(item, 'name', 'reference')
+    const useableReferences = references?.filter(
+        filterPopulated('name', 'reference')
     )
 
     if (!useableReferences) {

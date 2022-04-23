@@ -1,4 +1,4 @@
-import { isPopulated } from '~/util'
+import { filterPopulated } from '~/util'
 import { useResume } from '~/context'
 import {
     Paragraph,
@@ -10,8 +10,8 @@ import {
 
 export const Volunteer = () => {
     const { volunteer } = useResume()
-    const useableVolunteer = volunteer?.filter((item) =>
-        isPopulated(item, 'organization', 'position', 'startDate')
+    const useableVolunteer = volunteer?.filter(
+        filterPopulated('organization', 'position', 'startDate')
     )
 
     if (!useableVolunteer) {

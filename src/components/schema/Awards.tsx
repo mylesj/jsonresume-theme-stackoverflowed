@@ -1,12 +1,10 @@
-import { isPopulated } from '~/util'
+import { filterPopulated } from '~/util'
 import { useResume } from '~/context'
 import { Paragraph, Section, SubSection } from '~/components/shared'
 
 export const Awards = () => {
     const { awards } = useResume()
-    const useableAwards = awards?.filter((item) =>
-        isPopulated(item, 'title', 'date')
-    )
+    const useableAwards = awards?.filter(filterPopulated('title', 'date'))
 
     if (!useableAwards) {
         return null

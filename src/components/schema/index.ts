@@ -1,4 +1,5 @@
 export * from './Basics'
+export * from './BasicsProfiles'
 export * from './Skills'
 export * from './Work'
 export * from './Volunteer'

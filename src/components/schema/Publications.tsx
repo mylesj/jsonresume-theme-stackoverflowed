@@ -1,11 +1,11 @@
-import { isPopulated } from '~/util'
+import { filterPopulated } from '~/util'
 import { useResume } from '~/context'
 import { Link, Paragraph, Section, SubSection } from '~/components/shared'
 
 export const Publications = () => {
     const { publications } = useResume()
-    const useablePublications = publications?.filter((item) =>
-        isPopulated(item, 'name', 'releaseDate')
+    const useablePublications = publications?.filter(
+        filterPopulated('name', 'releaseDate')
     )
 
     if (!useablePublications) {

@@ -1,11 +1,11 @@
-import { isPopulated } from '~/util'
+import { filterPopulated } from '~/util'
 import { useResume } from '~/context'
 import { Section, SimpleEntries } from '~/components/shared'
 
 export const Languages = () => {
     const { languages } = useResume()
-    const useableLanguages = languages?.filter((item) =>
-        isPopulated(item, 'language', 'fluency')
+    const useableLanguages = languages?.filter(
+        filterPopulated('language', 'fluency')
     )
 
     if (!useableLanguages) {

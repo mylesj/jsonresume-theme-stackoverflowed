@@ -1,11 +1,11 @@
-import { isPopulated } from '~/util'
+import { filterPopulated } from '~/util'
 import { useResume } from '~/context'
 import { Link, Section, SubSection, Highlights } from '~/components/shared'
 
 export const Education = () => {
     const { education } = useResume()
-    const useableEducation = education?.filter((item) =>
-        isPopulated(item, 'area', 'institution', 'startDate')
+    const useableEducation = education?.filter(
+        filterPopulated('area', 'institution', 'startDate')
     )
 
     if (!useableEducation) {

@@ -1,11 +1,11 @@
-import { isPopulated } from '~/util'
+import { filterPopulated } from '~/util'
 import { useResume } from '~/context'
 import { Section, KeywordEntries } from '~/components/shared'
 
 export const Interests = () => {
     const { interests } = useResume()
-    const useableInterest = interests?.filter((item) =>
-        isPopulated(item, 'name', 'keywords')
+    const useableInterest = interests?.filter(
+        filterPopulated('name', 'keywords')
     )
 
     if (!useableInterest) {
