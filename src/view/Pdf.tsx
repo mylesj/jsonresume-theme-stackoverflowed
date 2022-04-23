@@ -1,6 +1,7 @@
 import { FlexColumn } from '~/components/layout'
 import {
     Basics,
+    BasicsProfiles,
     Skills,
     Work,
     Volunteer,
@@ -41,6 +42,7 @@ export const Pdf = () => {
                 <Publications />
                 <Languages />
                 <Interests />
+                <BasicsProfiles />
                 <References />
             </main>
         </FlexColumn>
