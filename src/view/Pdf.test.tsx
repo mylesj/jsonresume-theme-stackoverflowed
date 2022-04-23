@@ -12,8 +12,8 @@ it.each`
     ${'education'}    | ${'Education'}
     ${'awards'}       | ${'Awards'}
     ${'publications'} | ${'Publications'}
-    ${'interests'}    | ${'Interests'}
     ${'languages'}    | ${'Languages'}
+    ${'interests'}    | ${'Interests'}
     ${'references'}   | ${'References'}
 `('should render schema $type', ({ type, text }) => {
     const { getByText } = render(<Pdf />, {
