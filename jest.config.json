@@ -6,5 +6,10 @@
     "moduleNameMapper": {
         "~/(.*)": "<rootDir>/src/$1",
         "@/test-utils": "<rootDir>/src/__dev__/util/testing"
+    },
+    "globals": {
+        "ts-jest": {
+            "isolatedModules": true
+        }
     }
 }
