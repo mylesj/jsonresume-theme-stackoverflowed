@@ -1,15 +1,14 @@
-import { WithEmotionCss, MaybeInternalProps } from '~/types'
 import { dateFormat } from '~/util'
 
 type Props = {
     date: string
+    className?: string
 }
 
 // todo: restructure dateFormat() into a singular dateFormat()
 //       and dateRangeFormat() utilities (this was a quick fudge)
-export const Date = (props: WithEmotionCss<Props>) => {
-    const { className } = props as MaybeInternalProps
-    const fmt = dateFormat({ startDate: props.date })
+export const Date = ({ date: startDate, className }: Props) => {
+    const fmt = dateFormat({ startDate })
 
     if (!fmt) {
         return null

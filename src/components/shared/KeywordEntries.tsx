@@ -1,7 +1,5 @@
 import { ReactNode } from 'react'
 
-import { WithEmotionCss, MaybeInternalProps } from '~/types'
-
 import { FlexRow } from '~/components/layout'
 
 type Entry = {
@@ -11,6 +9,7 @@ type Entry = {
 
 type Props = {
     entries: Entry[]
+    className?: string
 }
 
 const renderer = ({ name, keywords }: Entry, i: number): ReactNode => {
@@ -49,7 +48,6 @@ const renderer = ({ name, keywords }: Entry, i: number): ReactNode => {
     )
 }
 
-export const KeywordEntries = ({ entries, ...rest }: WithEmotionCss<Props>) => {
-    const { className } = rest as MaybeInternalProps
+export const KeywordEntries = ({ entries, className }: Props) => {
     return <dl className={className}>{entries.map(renderer)}</dl>
 }

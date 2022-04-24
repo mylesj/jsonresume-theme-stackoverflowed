@@ -1,13 +1,11 @@
 import { ReactNode } from 'react'
 
-import { WithEmotionCss, MaybeInternalProps } from '~/types'
-
 type Props = {
     children: ReactNode
+    className?: string
 }
 
-const Box = ({ children, ...rest }: WithEmotionCss<Props>) => {
-    const { className } = rest as MaybeInternalProps
+const Box = ({ children, className }: Props) => {
     return <div className={className}>{children}</div>
 }
 

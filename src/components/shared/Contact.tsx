@@ -1,20 +1,13 @@
-import { Resume, WithEmotionCss, MaybeInternalProps } from '~/types'
+import { Resume } from '~/types'
 import { getCountryName } from '~/util'
 
 import { Link } from './Link'
 
-type Props = Pick<NonNullable<Resume['basics']>, 'phone' | 'email'> & {
-    location?: NonNullable<Resume['basics']>['location']
-}
+type Props = {
+    className?: string
+} & Pick<NonNullable<Resume['basics']>, 'phone' | 'email' | 'location'>
 
-export const Contact = ({
-    location,
-    phone,
-    email,
-    ...rest
-}: WithEmotionCss<Props>) => {
-    const { className } = rest as MaybeInternalProps
-
+export const Contact = ({ location, phone, email, className }: Props) => {
     // todo: configurable location format
     let locationText
     if (location?.city && (location?.countryCode || location?.region)) {

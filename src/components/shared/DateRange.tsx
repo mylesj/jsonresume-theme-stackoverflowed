@@ -1,4 +1,3 @@
-import { WithEmotionCss, MaybeInternalProps } from '~/types'
 import { dateFormat } from '~/util'
 
 import { ZeroWidthSpace } from './ZeroWidthSpace'
@@ -6,11 +5,11 @@ import { ZeroWidthSpace } from './ZeroWidthSpace'
 type Props = {
     startDate: string
     endDate?: string
+    className?: string
 }
 
-export const DateRange = (props: WithEmotionCss<Props>) => {
-    const { className } = props as MaybeInternalProps
-    const fmt = dateFormat(props)
+export const DateRange = ({ startDate, endDate, className }: Props) => {
+    const fmt = dateFormat({ startDate, endDate })
 
     if (!fmt) {
         return null
@@ -33,7 +32,7 @@ export const DateRange = (props: WithEmotionCss<Props>) => {
                 <time dateTime={fmt.startDateISO}>{fmt.startDate}</time>
                 <ZeroWidthSpace />
                 <time dateTime={fmt.endDateISO}>
-                    {props.endDate ? fmt.endDate : 'Current'}
+                    {endDate ? fmt.endDate : 'Current'}
                 </time>
             </time>
         </div>

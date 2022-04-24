@@ -1,5 +1,4 @@
 import { ReactNode } from 'react'
-import { WithEmotionCss, MaybeInternalProps } from '~/types'
 
 type Props = {
     to: string
@@ -7,6 +6,7 @@ type Props = {
     external?: boolean
     nofollow?: boolean
     children?: ReactNode
+    className?: string
 }
 
 export const Link = ({
@@ -15,10 +15,8 @@ export const Link = ({
     external = true,
     nofollow = true,
     children,
-    ...rest
-}: WithEmotionCss<Props>) => {
-    const { className } = rest as MaybeInternalProps
-
+    className,
+}: Props) => {
     let link
     let text
     const rel: string[] = []

@@ -1,22 +1,17 @@
-import { WithEmotionCss, MaybeInternalProps } from '~/types'
 import { ZeroWidthSpace } from './ZeroWidthSpace'
 import { Link } from './Link'
 
 type Props = {
-    showUrl?: boolean
     entries: {
         title?: string
         label?: string
         url?: string
     }[]
+    showUrl?: boolean
+    className?: string
 }
 
-export const SimpleEntries = ({
-    showUrl,
-    entries,
-    ...rest
-}: WithEmotionCss<Props>) => {
-    const { className } = rest as MaybeInternalProps
+export const SimpleEntries = ({ showUrl, entries, className }: Props) => {
     return (
         <ul className={className}>
             {entries.map(({ title, label, url }, i) => (

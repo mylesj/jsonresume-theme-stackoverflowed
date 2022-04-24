@@ -1,12 +1,9 @@
-import { WithEmotionCss, MaybeInternalProps } from '~/types'
-
 type Props = {
     children?: string[]
+    className?: string
 }
 
-export const Highlights = ({ children, ...rest }: WithEmotionCss<Props>) => {
-    const { className } = rest as MaybeInternalProps
-
+export const Highlights = ({ children, className }: Props) => {
     if (!children) {
         return null
     }
