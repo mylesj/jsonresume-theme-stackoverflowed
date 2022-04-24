@@ -38,7 +38,7 @@ is compatible with the [Resume CLI][resume-cli] tool.
 <!-- images -->
 
 [img-sample]: https://repository-images.githubusercontent.com/482519223/ddfa650d-29ce-4672-9523-ac3737b9f950
-[shield-github]: https://img.shields.io/badge/%20-GitHub-555555?logo=github&style=for-the-badge
+[shield-github]: https://img.shields.io/badge/%20-Source-555555?logo=github&style=for-the-badge
 [shield-changelog]: https://img.shields.io/badge/%20-Changelog-555555?logo=github&style=for-the-badge
 [shield-ci-main]: https://img.shields.io/github/workflow/status/mylesj/jsonresume-theme-stackoverflowed/CI/main?label=CI&logo=github&style=for-the-badge
 [shield-npm-version]: https://img.shields.io/npm/v/jsonresume-theme-stackoverflowed?&label=%20&logo=npm&style=for-the-badge
