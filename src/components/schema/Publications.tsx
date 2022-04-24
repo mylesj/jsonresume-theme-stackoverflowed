@@ -20,11 +20,9 @@ export const Publications = () => {
                     date={item.releaseDate}
                     label={[
                         item.name,
-                        !item.url ? (
-                            item.publisher
-                        ) : (
-                            <Link to={item.url}>{item.publisher}</Link>
-                        ),
+                        !item.url
+                            ? item.publisher
+                            : { to: item.url, children: item.publisher },
                     ]}
                 >
                     <Paragraph css={{ marginBottom: '1rem' }}>

@@ -1,4 +1,4 @@
-import { Children, ReactNode, ReactElement } from 'react'
+import { ReactNode } from 'react'
 
 import { FlexRow, FLEX } from '~/components/layout'
 
@@ -7,7 +7,7 @@ import { Date } from './Date'
 import { DateRange } from './DateRange'
 import { ZeroWidthSpace } from './ZeroWidthSpace'
 
-type Label = null | undefined | string | ReactElement // Link
+type Label = Parameters<typeof Link>[0] | string | null | undefined
 
 type Props = {
     label: Label | [Label] | [Label, Label]
@@ -17,7 +17,7 @@ type Props = {
     date?: string
 }
 
-const renderLabel = (label: ReactNode, style: 'primary' | 'secondary') => {
+const renderLabel = (label: Label, style: 'primary' | 'secondary') => {
     if (!label) {
         return null
     }
@@ -34,7 +34,6 @@ const renderLabel = (label: ReactNode, style: 'primary' | 'secondary') => {
         },
     }[style]
 
-    // todo: figure out proper type checking
     switch (typeof label) {
         case 'string':
             return style === 'primary' ? (
@@ -46,24 +45,20 @@ const renderLabel = (label: ReactNode, style: 'primary' | 'secondary') => {
                 </span>
             )
 
+        // Link Props
         case 'object':
-            if ('type' in label && label.type !== Link) {
-                return null
-            }
             return style === 'primary' ? (
-                <strong css={styles}>{label}</strong>
+                <strong css={styles}>
+                    <Link {...label} />
+                </strong>
             ) : (
                 <span css={styles}>
                     <ZeroWidthSpace />
-                    {label}
+                    <Link {...label} />
                 </span>
             )
 
         default:
-            console.warn(
-                '[err] SubSection - Invalid label component',
-                '\n - accepts: string | Link'
-            )
             return null
     }
 }
@@ -75,8 +70,9 @@ export const SubSection = ({
     startDate,
     endDate,
 }: Props) => {
-    const [primaryLabel, secondaryLabel] =
-        Children.toArray(label).filter(Boolean)
+    const [primaryLabel, secondaryLabel] = Array.isArray(label)
+        ? label
+        : [label]
 
     return (
         <section

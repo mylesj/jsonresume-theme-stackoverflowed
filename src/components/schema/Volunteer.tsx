@@ -27,11 +27,9 @@ export const Volunteer = () => {
                     endDate={item.endDate}
                     label={[
                         item.position,
-                        !item.url ? (
-                            item.organization
-                        ) : (
-                            <Link to={item.url}>{item.organization}</Link>
-                        ),
+                        !item.url
+                            ? item.organization
+                            : { to: item.url, children: item.organization },
                     ]}
                 >
                     <Paragraph css={{ marginBottom: '1rem' }}>

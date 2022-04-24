@@ -27,11 +27,9 @@ export const Work = () => {
                     endDate={item.endDate}
                     label={[
                         item.position,
-                        !item.url ? (
-                            item.name
-                        ) : (
-                            <Link to={item.url}>{item.name}</Link>
-                        ),
+                        !item.url
+                            ? item.name
+                            : { to: item.url, children: item.name },
                     ]}
                 >
                     <Paragraph css={{ marginBottom: '1rem' }}>

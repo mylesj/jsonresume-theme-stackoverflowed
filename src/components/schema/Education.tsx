@@ -1,6 +1,6 @@
 import { filterPopulated } from '~/util'
 import { useResume } from '~/context'
-import { Link, Section, SubSection, Highlights } from '~/components/shared'
+import { Section, SubSection, Highlights } from '~/components/shared'
 
 export const Education = () => {
     const { education } = useResume()
@@ -23,11 +23,9 @@ export const Education = () => {
                         item.studyType
                             ? `${item.studyType} ${item.area}`
                             : item.area,
-                        !item.url ? (
-                            item.institution
-                        ) : (
-                            <Link to={item.url}>{item.institution}</Link>
-                        ),
+                        !item.url
+                            ? item.institution
+                            : { to: item.url, children: item.institution },
                     ]}
                 >
                     <Highlights css={{ marginBottom: '1rem' }}>

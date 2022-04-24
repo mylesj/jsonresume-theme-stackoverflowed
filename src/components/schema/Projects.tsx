@@ -25,7 +25,7 @@ export const Projects = () => {
                     key={i}
                     startDate={item.startDate}
                     endDate={item.endDate}
-                    label={[item.name, item.url && <Link to={item.url} />]}
+                    label={[item.name, item.url && { to: item.url }]}
                 >
                     <Paragraph css={{ marginBottom: '1rem' }}>
                         {item.description}
