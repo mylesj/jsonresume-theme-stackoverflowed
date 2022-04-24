@@ -51,8 +51,9 @@ const cssPageContext = {
 
     '#root': {
         ...theme.when('print', {
-            // 8.5in "Letter" format multiplied by DPI (assumed constant)
-            // todo: verify this cross-platform - only tested on MacOS
+            // 8.5in "Letter" format (minus margins) then multiplied by DPI
+            // - apparently constant cross platform? - not sure where it is
+            //   derived from - found by trial and error...  :-/
             width: 'calc((8.5 - .444444444 - .666666667) * 144px)',
         }),
         ...theme.when('screen', {
@@ -70,7 +71,6 @@ const cssPageContext = {
 } as const
 
 const Root = () => {
-    // todo: "Developer Story" view
     const View = Pdf
     return (
         <ThemeProvider theme={theme}>
