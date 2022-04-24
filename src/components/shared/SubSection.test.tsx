@@ -1,6 +1,5 @@
 import { render } from '@/test-utils'
 
-import { Link } from './Link'
 import { SubSection } from './SubSection'
 
 describe('labels', () => {

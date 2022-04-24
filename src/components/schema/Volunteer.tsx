@@ -1,12 +1,6 @@
 import { filterPopulated } from '~/util'
 import { useResume } from '~/context'
-import {
-    Paragraph,
-    Link,
-    Section,
-    SubSection,
-    Highlights,
-} from '~/components/shared'
+import { Paragraph, Section, SubSection, Highlights } from '~/components/shared'
 
 export const Volunteer = () => {
     const { volunteer } = useResume()

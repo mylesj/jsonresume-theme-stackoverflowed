@@ -1,6 +1,6 @@
 import { filterPopulated } from '~/util'
 import { useResume } from '~/context'
-import { Link, Paragraph, Section, SubSection } from '~/components/shared'
+import { Paragraph, Section, SubSection } from '~/components/shared'
 
 export const Publications = () => {
     const { publications } = useResume()
