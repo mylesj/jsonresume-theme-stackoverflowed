@@ -2,6 +2,8 @@
 [![GitHub Repository][shield-github]][repo]
 [![Changelog][shield-changelog]][releases]
 [![GitHub Workflow Status (main)][shield-ci-main]][status-ci-main]
+[![Test Coverage][shield-coverage]][codacy-dashboard]
+[![Code Quality][shield-quality]][codacy-dashboard]
 
 # jsonresume-theme-stackoverflowed
 
@@ -25,6 +27,7 @@ is compatible with the [Resume CLI][resume-cli] tool.
 [repo]: https://github.com/mylesj/jsonresume-theme-stackoverflowed
 [releases]: https://github.com/mylesj/jsonresume-theme-stackoverflowed/releases
 [status-ci-main]: https://github.com/mylesj/jsonresume-theme-stackoverflowed/actions/workflows/integration.yml?query=branch%3Amain
+[codacy-dashboard]: https://app.codacy.com/gh/mylesj/jsonresume-theme-stackoverflowed/dashboard?branch=main
 
 <!-- external links -->
 
@@ -39,3 +42,5 @@ is compatible with the [Resume CLI][resume-cli] tool.
 [shield-changelog]: https://img.shields.io/badge/%20-Changelog-555555?logo=github&style=for-the-badge
 [shield-ci-main]: https://img.shields.io/github/workflow/status/mylesj/jsonresume-theme-stackoverflowed/CI/main?label=CI&logo=github&style=for-the-badge
 [shield-npm-version]: https://img.shields.io/npm/v/jsonresume-theme-stackoverflowed?&label=%20&logo=npm&style=for-the-badge
+[shield-coverage]: https://img.shields.io/codacy/coverage/ec2d137d62154c418920da787f08b79f/main?logo=codacy&style=for-the-badge
+[shield-quality]: https://img.shields.io/codacy/grade/ec2d137d62154c418920da787f08b79f/main?label=quality&logo=codacy&style=for-the-badge

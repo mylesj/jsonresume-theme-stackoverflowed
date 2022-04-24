@@ -30,7 +30,7 @@
         "format": "prettier . --write",
         "ci:format": "prettier . --check --color",
         "ci:lint": "eslint . --max-warnings=0 --color",
-        "ci:test": "yarn test --color"
+        "ci:test": "yarn test --color --coverage"
     },
     "dependencies": {
         "@emotion/react": "^11.9.0",
