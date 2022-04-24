@@ -1,4 +1,7 @@
-![GitHub Workflow Status (main)][ci-status-main]
+[![NPM Package Version][shield-npm-version]][npm]
+[![GitHub Repository][shield-github]][repo]
+[![Changelog][shield-changelog]][releases]
+[![GitHub Workflow Status (main)][shield-ci-main]][status-ci-main]
 
 # jsonresume-theme-stackoverflowed
 
@@ -14,19 +17,25 @@ is compatible with the [Resume CLI][resume-cli] tool.
 
 ## Sample
 
-![demo][img-demo]
+![Screenshot: Resume Sample][img-sample]
 
-<!-- -->
+<!-- project links -->
 
+[npm]: https://www.npmjs.com/package/jsonresume-theme-stackoverflowed
+[repo]: https://github.com/mylesj/jsonresume-theme-stackoverflowed
 [releases]: https://github.com/mylesj/jsonresume-theme-stackoverflowed/releases
+[status-ci-main]: https://github.com/mylesj/jsonresume-theme-stackoverflowed/actions/workflows/integration.yml?query=branch%3Amain
+
+<!-- external links -->
+
 [json-resume]: https://jsonresume.org
 [resume-cli]: https://github.com/jsonresume/resume-cli
 [so-meta]: https://meta.stackoverflow.com/questions/415293/sunsetting-jobs-developer-story
 
-<!-- shields -->
-
-[ci-status-main]: https://img.shields.io/github/workflow/status/mylesj/jsonresume-theme-stackoverflowed/CI/main?style=for-the-badge
-
 <!-- images -->
 
-[img-demo]: https://repository-images.githubusercontent.com/482519223/ddfa650d-29ce-4672-9523-ac3737b9f950
+[img-sample]: https://repository-images.githubusercontent.com/482519223/ddfa650d-29ce-4672-9523-ac3737b9f950
+[shield-github]: https://img.shields.io/badge/%20-GitHub-555555?logo=github&style=for-the-badge
+[shield-changelog]: https://img.shields.io/badge/%20-Changelog-555555?logo=github&style=for-the-badge
+[shield-ci-main]: https://img.shields.io/github/workflow/status/mylesj/jsonresume-theme-stackoverflowed/CI/main?label=CI&logo=github&style=for-the-badge
+[shield-npm-version]: https://img.shields.io/npm/v/jsonresume-theme-stackoverflowed?&label=%20&logo=npm&style=for-the-badge
