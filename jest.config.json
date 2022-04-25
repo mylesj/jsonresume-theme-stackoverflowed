@@ -5,7 +5,7 @@
     "timers": "modern",
     "moduleNameMapper": {
         "~/(.*)": "<rootDir>/src/$1",
-        "@/test-utils": "<rootDir>/src/__dev__/util/testing"
+        "@/test-utils": "<rootDir>/src/__dev__/test-utils"
     },
     "collectCoverageFrom": [
         "<rootDir>/src/**/*.{ts,tsx}",
