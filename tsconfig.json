@@ -15,5 +15,6 @@
         },
         "jsx": "react-jsx",
         "jsxImportSource": "@emotion/react"
-    }
+    },
+    "exclude": ["./dist/**"]
 }

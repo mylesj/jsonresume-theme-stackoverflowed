@@ -1,7 +1,7 @@
-import { ResumeSchema } from '@kurone-kito/jsonresume-types'
+import { ResumeSchema } from './types.public'
 
-export type Resume = ResumeSchema
+export * from './types.public'
 
 export type Dependencies = {
-    resume: Resume
+    resume: ResumeSchema
 }
