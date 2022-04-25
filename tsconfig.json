@@ -11,7 +11,7 @@
         "baseUrl": "./src",
         "paths": {
             "~/*": ["./*"],
-            "@/test-utils": ["./__dev__/util/testing"]
+            "@/test-utils": ["./__dev__/test-utils"]
         },
         "jsx": "react-jsx",
         "jsxImportSource": "@emotion/react"

@@ -7,7 +7,7 @@ import { AppContext } from '~/context'
 import { theme } from '~/theme'
 import { Resume } from '~/types'
 
-import sampleResume from '../sample.resume.json'
+import sampleResume from './sample.resume.json'
 
 type Options = {
     resume?: (sample: Resume) => Resume
