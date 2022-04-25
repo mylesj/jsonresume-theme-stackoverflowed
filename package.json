@@ -21,10 +21,12 @@
     ],
     "main": "dist/render.js",
     "module": "dist/render.mjs",
+    "types": "dist/types.public.d.ts",
     "scripts": {
         "prepare": "husky install",
         "prebuild": "rimraf dist",
         "build": "cross-env NODE_ENV=production rollup --config rollup.config.ts --configPlugin typescript",
+        "postbuild": "tsc --declaration --emitDeclarationOnly --removeComments ./src/types.public.ts --outDir ./dist",
         "dev": "cross-env NODE_ENV=development vite",
         "test": "cross-env TZ=UTC jest --config jest.config.json",
         "format": "prettier . --write",
@@ -65,5 +67,8 @@
         "tslib": "^2.3.1",
         "typescript": "^4.6.3",
         "vite": "^2.9.5"
+    },
+    "peerDependencies": {
+        "@kurone-kito/jsonresume-types": "*"
     }
 }

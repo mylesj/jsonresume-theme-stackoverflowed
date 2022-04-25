@@ -1,12 +1,12 @@
 import { renderToString } from 'react-dom/server'
 
-import { Resume } from '~/types'
+import { Renderer, RenderOptions } from '~/types'
 import { AppContext } from '~/context'
 
 import html from './html'
 import View from './view'
 
-export const render = (resume: Resume): string => {
+export const render: Renderer = (resume) => {
     return html({
         meta: resume.basics,
         body: renderToString(
@@ -17,6 +17,6 @@ export const render = (resume: Resume): string => {
     })
 }
 
-export const pdfRenderOptions = {
+export const pdfRenderOptions: RenderOptions = {
     mediaType: 'print',
 }

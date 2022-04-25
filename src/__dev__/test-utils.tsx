@@ -5,12 +5,12 @@ import { ThemeProvider } from '@emotion/react'
 
 import { AppContext } from '~/context'
 import { theme } from '~/theme'
-import { Resume } from '~/types'
+import { ResumeSchema } from '~/types'
 
 import sampleResume from './sample.resume.json'
 
 type Options = {
-    resume?: (sample: Resume) => Resume
+    resume?: (sample: ResumeSchema) => ResumeSchema
 }
 
 export const render = (
@@ -29,8 +29,8 @@ export const render = (
 }
 
 export const pickResumeFields =
-    (...keys: (keyof Resume)[]) =>
-    (resume: Resume): Resume =>
+    (...keys: (keyof ResumeSchema)[]) =>
+    (resume: ResumeSchema): ResumeSchema =>
         keys.reduce(
             (acc, key) => Object.assign(acc, { [key]: resume[key] }),
             {}

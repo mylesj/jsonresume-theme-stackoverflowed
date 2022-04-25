@@ -1,11 +1,11 @@
-import { Resume } from '~/types'
+import { ResumeSchema } from '~/types'
 import { getCountryName } from '~/util'
 
 import { Link } from './Link'
 
 type Props = {
     className?: string
-} & Pick<NonNullable<Resume['basics']>, 'phone' | 'email' | 'location'>
+} & Pick<NonNullable<ResumeSchema['basics']>, 'phone' | 'email' | 'location'>
 
 export const Contact = ({ location, phone, email, className }: Props) => {
     // todo: configurable location format
