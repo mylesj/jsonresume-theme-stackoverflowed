@@ -2,7 +2,7 @@ import {
     fromUnixTime,
     parseISO,
     isValid,
-    format,
+    format as formatDate,
     formatISO,
     intervalToDuration,
     formatISODuration,
@@ -12,6 +12,7 @@ import { enUS as locale } from 'date-fns/locale'
 type FormatParameters = {
     startDate: string
     endDate?: string
+    format?: string
 }
 
 type FormatReturnValue = {
@@ -22,11 +23,14 @@ type FormatReturnValue = {
     endDate: string
 }
 
+// todo: format related error handling
 export const dateFormat = ({
     startDate,
     endDate,
+    format,
 }: FormatParameters): FormatReturnValue | null => {
     const start = parseISO(startDate)
+    const _format = format ? format : 'MMM yyyy'
     let end: Date
 
     if (!isValid(start)) {
@@ -46,7 +50,7 @@ export const dateFormat = ({
         durationISO: formatISODuration(intervalToDuration({ start, end })),
         startDateISO: formatISO(start),
         endDateISO: formatISO(end),
-        startDate: format(start, 'MMM yyyy', { locale }),
-        endDate: format(end, 'MMM yyyy', { locale }),
+        startDate: formatDate(start, _format, { locale }),
+        endDate: formatDate(end, _format, { locale }),
     }
 }

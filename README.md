@@ -21,6 +21,52 @@ is compatible with the [Resume CLI][resume-cli] tool.
 
 ![Screenshot: Resume Sample][img-sample]
 
+## Configuration
+
+The JSON Resume schema allows space for arbitrary meta data. This theme will consume a custom
+configuration from JSON defined under the following namespace, all further parameters listed on
+this page will assume that they are configured at this level. For the avoidance of doubt a
+[sample configuration][sample-config] is available, which matches the default values if
+otherwise unspecified.
+
+```json
+{
+    "meta": {
+        "theme-stackoverflowed": {
+            /* configuration */
+        }
+    }
+}
+```
+
+---
+
+### Format
+
+```typescript
+{
+    "format": {
+        "date": string,
+        "location": string | string[]
+    }
+}
+```
+
+**`format.date`** &mdash; `string`
+
+A [`date-fns`][date-fns-format] format for rendering dates.
+
+**`format.location`** &mdash; `string` &vert; `string[]`
+
+A template or list of templates (fallbacks) that will be passed the values of `basics.location`
+from the resume - interpolated keys use the syntax `{{var}}`. In addition to the schema properties,
+the following keys are also available.
+
+| Key                   | Description                                           |
+| --------------------- | ----------------------------------------------------- |
+| `countryNameAlias`    | A colloquial name resolved from the `countryCode`.    |
+| `countryNameOfficial` | A full country title resolved from the `countryCode`. |
+
 <!-- project links -->
 
 [npm]: https://www.npmjs.com/package/jsonresume-theme-stackoverflowed
@@ -28,12 +74,14 @@ is compatible with the [Resume CLI][resume-cli] tool.
 [releases]: https://github.com/mylesj/jsonresume-theme-stackoverflowed/releases
 [status-ci-main]: https://github.com/mylesj/jsonresume-theme-stackoverflowed/actions/workflows/integration.yml?query=branch%3Amain
 [codacy-dashboard]: https://app.codacy.com/gh/mylesj/jsonresume-theme-stackoverflowed/dashboard?branch=main
+[sample-config]: https://github.com/mylesj/jsonresume-theme-stackoverflowed/blob/main/src/__dev__/sample.config.json
 
 <!-- external links -->
 
 [json-resume]: https://jsonresume.org
 [resume-cli]: https://github.com/jsonresume/resume-cli
 [so-meta]: https://meta.stackoverflow.com/questions/415293/sunsetting-jobs-developer-story
+[date-fns-format]: https://date-fns.org/v2.28.0/docs/format
 
 <!-- images -->
 

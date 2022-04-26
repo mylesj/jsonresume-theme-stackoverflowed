@@ -1,4 +1,4 @@
-import { render } from '@/test-utils'
+import { render, withConfig } from '@/test-utils'
 
 import { DateRange } from './DateRange'
 
@@ -26,4 +26,19 @@ it('should render dates as "time" elements', () => {
     expect(endEl.tagName).toBe('TIME')
     expect(startEl.parentElement?.tagName).toBe('TIME')
     expect(startEl.parentElement).toBe(endEl.parentElement)
+})
+
+it('should consume a date format configuration', () => {
+    const { getByText } = render(
+        <DateRange startDate="2000" endDate="2001" />,
+        {
+            resume: withConfig({
+                format: {
+                    date: 'MM/dd/yyyy',
+                },
+            }),
+        }
+    )
+    expect(getByText('01/01/2000')).toBeInTheDocument()
+    expect(getByText('01/01/2001')).toBeInTheDocument()
 })

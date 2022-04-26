@@ -3,7 +3,14 @@
     "meta": {
         "theme-stackoverflowed": {
             "format": {
-                "location": "{{city}}, {{countryAlias}}"
+                "date": "MMM yyyy",
+                "location": [
+                    "{{city}}, {{region}}",
+                    "{{city}}, {{countryNameAlias}}",
+                    "{{city}}, {{countryNameOfficial}}",
+                    "{{city}}, {{countryCode}}",
+                    "{{city}}"
+                ]
             }
         }
     }

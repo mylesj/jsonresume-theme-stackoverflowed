@@ -61,4 +61,14 @@ describe(dateFormat.name, () => {
             expect(result).toEqual(expectedWithEndTime)
         })
     })
+
+    describe('formatting', () => {
+        it('should optionally accept a "format" parameter', () => {
+            const result = dateFormat({
+                startDate: '1970-01-01',
+                format: 'MM/dd/yyyy',
+            })
+            expect(result?.startDate).toBe('01/01/1970')
+        })
+    })
 })
