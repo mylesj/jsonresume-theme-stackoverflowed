@@ -26,4 +26,8 @@ export type RenderOptions = {
     mediaType: string
 }
 
-export type Configuration = undefined
+export type Configuration = {
+    format?: {
+        location?: string | string[]
+    }
+}
