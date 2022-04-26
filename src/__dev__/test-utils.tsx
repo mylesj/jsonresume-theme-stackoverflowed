@@ -5,15 +5,9 @@ import { ThemeProvider } from '@emotion/react'
 
 import { AppContext } from '~/context'
 import { theme } from '~/theme'
-import { ResumeSchema } from '~/types'
+import { ResumeSchema, Configuration, THEME_NAME } from '~/types'
 
 import sampleResume from './sample.resume.json'
-import sampleConfig from './sample.config.json'
-
-const testSample = {
-    ...sampleResume,
-    ...sampleConfig,
-}
 
 type Options = {
     resume?: (sample: ResumeSchema) => ResumeSchema
@@ -26,7 +20,7 @@ export const render = (
     return testingLibraryRender(
         <AppContext.Provider
             value={{
-                resume: opts.resume ? opts.resume(testSample) : testSample,
+                resume: opts.resume ? opts.resume(sampleResume) : sampleResume,
             }}
         >
             <ThemeProvider theme={theme}>{node}</ThemeProvider>
@@ -41,3 +35,12 @@ export const pickResumeFields =
             (acc, key) => Object.assign(acc, { [key]: resume[key] }),
             {}
         )
+
+export const withConfig =
+    (config: Configuration) =>
+    (resume: ResumeSchema): ResumeSchema => ({
+        ...resume,
+        meta: {
+            [THEME_NAME]: config,
+        },
+    })

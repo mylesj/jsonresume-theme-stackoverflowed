@@ -1,4 +1,4 @@
-import { render } from '@/test-utils'
+import { render, withConfig } from '@/test-utils'
 
 import { Contact } from './Contact'
 
@@ -72,13 +72,9 @@ describe('location formats', () => {
                     }}
                 />,
                 {
-                    resume: () => ({
-                        meta: {
-                            'theme-stackoverflowed': {
-                                format: {
-                                    location: config,
-                                },
-                            },
+                    resume: withConfig({
+                        format: {
+                            location: config,
                         },
                     }),
                 }

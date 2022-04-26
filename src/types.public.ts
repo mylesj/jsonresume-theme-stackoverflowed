@@ -28,6 +28,7 @@ export type RenderOptions = {
 
 export type Configuration = {
     format?: {
+        date?: string
         location?: string | string[]
     }
 }

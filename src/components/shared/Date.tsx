@@ -1,3 +1,4 @@
+import { useConfig } from '~/context'
 import { dateFormat } from '~/util'
 
 type Props = {
@@ -8,7 +9,8 @@ type Props = {
 // todo: restructure dateFormat() into a singular dateFormat()
 //       and dateRangeFormat() utilities (this was a quick fudge)
 export const Date = ({ date: startDate, className }: Props) => {
-    const fmt = dateFormat({ startDate })
+    const configDateFormat = useConfig('format')?.date
+    const fmt = dateFormat({ startDate, format: configDateFormat })
 
     if (!fmt) {
         return null

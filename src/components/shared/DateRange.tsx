@@ -1,3 +1,4 @@
+import { useConfig } from '~/context'
 import { dateFormat } from '~/util'
 
 import { ZeroWidthSpace } from './ZeroWidthSpace'
@@ -9,7 +10,8 @@ type Props = {
 }
 
 export const DateRange = ({ startDate, endDate, className }: Props) => {
-    const fmt = dateFormat({ startDate, endDate })
+    const configDateFormat = useConfig('format')?.date
+    const fmt = dateFormat({ startDate, endDate, format: configDateFormat })
 
     if (!fmt) {
         return null
