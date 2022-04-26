@@ -1,22 +1,35 @@
 import { ResumeSchema } from '~/types'
-import { getCountryName } from '~/util'
+import { getCountryName, interpolate, asArray } from '~/util'
+import { useConfig } from '~/context'
 
 import { Link } from './Link'
+
+const DEFAULT_LOCATION_FORMATS = [
+    '{{city}}, {{region}}',
+    '{{city}}, {{countryNameAlias}}',
+    '{{city}}, {{countryNameOfficial}}',
+    '{{city}}, {{countryCode}}',
+    '{{city}}',
+]
 
 type Props = {
     className?: string
 } & Pick<NonNullable<ResumeSchema['basics']>, 'phone' | 'email' | 'location'>
 
 export const Contact = ({ location, phone, email, className }: Props) => {
-    // todo: configurable location format
+    const configLocationFormat = useConfig('format')?.location ?? []
+    const formats = asArray(configLocationFormat).concat(
+        ...DEFAULT_LOCATION_FORMATS
+    )
+
+    const enhancedLocation = {
+        ...location,
+        ...getCountryName(location?.countryCode),
+    }
+
     let locationText
-    if (location?.city && (location?.countryCode || location?.region)) {
-        locationText = [
-            location.city,
-            location.countryCode
-                ? getCountryName(location.countryCode, 'alias')
-                : location.region,
-        ].join(', ')
+    while (formats.length && !locationText) {
+        locationText = interpolate(formats.shift(), enhancedLocation)
     }
 
     return (

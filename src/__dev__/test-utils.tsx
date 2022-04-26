@@ -8,6 +8,12 @@ import { theme } from '~/theme'
 import { ResumeSchema } from '~/types'
 
 import sampleResume from './sample.resume.json'
+import sampleConfig from './sample.config.json'
+
+const testSample = {
+    ...sampleResume,
+    ...sampleConfig,
+}
 
 type Options = {
     resume?: (sample: ResumeSchema) => ResumeSchema
@@ -20,7 +26,7 @@ export const render = (
     return testingLibraryRender(
         <AppContext.Provider
             value={{
-                resume: opts.resume ? opts.resume(sampleResume) : sampleResume,
+                resume: opts.resume ? opts.resume(testSample) : testSample,
             }}
         >
             <ThemeProvider theme={theme}>{node}</ThemeProvider>
