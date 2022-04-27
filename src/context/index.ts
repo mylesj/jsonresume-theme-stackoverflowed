@@ -1,6 +1,7 @@
 import { createContext, useContext } from 'react'
 
-import { Dependencies, Configuration, THEME_NAME } from '~/types'
+import { Dependencies, Configuration } from '~/types'
+import { THEME_NAME } from '~/constants'
 
 export const AppContext = createContext<Dependencies>({
     resume: {},
