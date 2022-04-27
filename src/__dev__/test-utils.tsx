@@ -5,7 +5,8 @@ import { ThemeProvider } from '@emotion/react'
 
 import { AppContext } from '~/context'
 import { theme } from '~/theme'
-import { ResumeSchema, Configuration, THEME_NAME } from '~/types'
+import { ResumeSchema, Configuration } from '~/types'
+import { THEME_NAME } from '~/constants'
 
 import sampleResume from './sample.resume.json'
 
