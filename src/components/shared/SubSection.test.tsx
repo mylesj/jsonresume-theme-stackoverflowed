@@ -1,6 +1,11 @@
-import { render } from '@/test-utils'
+import { Renderer, getRenderer } from '@/test-utils'
 
 import { SubSection } from './SubSection'
+
+let render: Renderer
+beforeAll(async () => {
+    render = await getRenderer()
+})
 
 describe('labels', () => {
     const linkOneProps = { to: 'https://foo.com', children: 'one' }

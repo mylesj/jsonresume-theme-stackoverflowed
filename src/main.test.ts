@@ -10,8 +10,8 @@ jest.mock('./view', () => ({
     default: () => useResume().basics?.name,
 }))
 
-it('should render a basic html document', () => {
-    const rendered = render({
+it('should render a basic html document', async () => {
+    const rendered = await render({
         basics: {
             name: 'Richard Hendriks',
             label: 'Programmer',

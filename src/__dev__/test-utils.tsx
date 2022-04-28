@@ -3,7 +3,7 @@ import { ReactNode } from 'react'
 import { render as testingLibraryRender } from '@testing-library/react'
 import { ThemeProvider } from '@emotion/react'
 
-import { AppContext } from '~/context'
+import { AppContext, getLocale } from '~/context'
 import { theme } from '~/theme'
 import { ResumeSchema, Configuration } from '~/types'
 import { THEME_NAME } from '~/constants'
@@ -14,19 +14,27 @@ type Options = {
     resume?: (sample: ResumeSchema) => ResumeSchema
 }
 
-export const render = (
-    node: ReactNode,
-    opts: Options = {}
-): ReturnType<typeof testingLibraryRender> => {
-    return testingLibraryRender(
-        <AppContext.Provider
-            value={{
-                resume: opts.resume ? opts.resume(sampleResume) : sampleResume,
-            }}
-        >
-            <ThemeProvider theme={theme}>{node}</ThemeProvider>
-        </AppContext.Provider>
-    )
+export type Renderer = Awaited<ReturnType<typeof getRenderer>>
+
+export const getRenderer = async () => {
+    const defaultLocale = await getLocale()
+    return (
+        node: ReactNode,
+        opts: Options = {}
+    ): ReturnType<typeof testingLibraryRender> => {
+        return testingLibraryRender(
+            <AppContext.Provider
+                value={{
+                    resume: opts.resume
+                        ? opts.resume(sampleResume)
+                        : sampleResume,
+                    locale: defaultLocale,
+                }}
+            >
+                <ThemeProvider theme={theme}>{node}</ThemeProvider>
+            </AppContext.Provider>
+        )
+    }
 }
 
 export const pickResumeFields =

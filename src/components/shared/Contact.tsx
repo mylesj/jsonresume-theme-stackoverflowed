@@ -1,6 +1,6 @@
 import { ResumeSchema } from '~/types'
-import { getCountryName, interpolate, asArray } from '~/util'
-import { useConfig } from '~/context'
+import { interpolate, asArray } from '~/util'
+import { useConfig, useLocale } from '~/context'
 
 import { Link } from './Link'
 
@@ -21,10 +21,11 @@ export const Contact = ({ location, phone, email, className }: Props) => {
     const formats = asArray(configLocationFormat).concat(
         ...DEFAULT_LOCATION_FORMATS
     )
+    const locale = useLocale()
 
     const enhancedLocation = {
         ...location,
-        ...getCountryName(location?.countryCode),
+        ...locale.getCountryName(location?.countryCode),
     }
 
     let locationText

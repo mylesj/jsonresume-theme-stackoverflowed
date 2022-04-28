@@ -1,6 +1,11 @@
-import { render, pickResumeFields } from '@/test-utils'
+import { Renderer, getRenderer, pickResumeFields } from '@/test-utils'
 
 import { Pdf } from './Pdf'
+
+let render: Renderer
+beforeAll(async () => {
+    render = await getRenderer()
+})
 
 it.each`
     type              | text
@@ -16,7 +21,7 @@ it.each`
     ${'interests'}    | ${'Interests'}
     ${'basics'}       | ${'Profiles'}
     ${'references'}   | ${'References'}
-`('should render schema $type', ({ type, text }) => {
+`('should render schema $type', async ({ type, text }) => {
     const { getByText } = render(<Pdf />, {
         resume: pickResumeFields(type),
     })
