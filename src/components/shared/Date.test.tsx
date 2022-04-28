@@ -1,6 +1,11 @@
-import { render, withConfig } from '@/test-utils'
+import { Renderer, getRenderer, withConfig } from '@/test-utils'
 
 import { Date } from './Date'
+
+let render: Renderer
+beforeAll(async () => {
+    render = await getRenderer()
+})
 
 it('should render a valid date', () => {
     const { getByText } = render(<Date date="2000" />)

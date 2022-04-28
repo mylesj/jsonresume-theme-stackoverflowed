@@ -1,6 +1,11 @@
-import { render } from '@/test-utils'
+import { Renderer, getRenderer } from '@/test-utils'
 
 import { SimpleEntries } from './SimpleEntries'
+
+let render: Renderer
+beforeAll(async () => {
+    render = await getRenderer()
+})
 
 let entries: {
     [key in string]: Parameters<typeof SimpleEntries>[0]['entries'][number]

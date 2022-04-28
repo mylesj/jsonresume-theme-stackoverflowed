@@ -1,6 +1,11 @@
-import { render, withConfig } from '@/test-utils'
+import { Renderer, getRenderer, withConfig } from '@/test-utils'
 
 import { Contact } from './Contact'
+
+let render: Renderer
+beforeAll(async () => {
+    render = await getRenderer()
+})
 
 describe('renderer', () => {
     it('should render a phone number', () => {

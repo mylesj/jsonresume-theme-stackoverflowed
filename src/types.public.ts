@@ -20,13 +20,14 @@ export declare const pdfRenderOptions: RenderOptions
 
 // ----- type exports
 
-export type Renderer = (resume: ResumeSchema) => string
+export type Renderer = (resume: ResumeSchema) => Promise<string>
 
 export type RenderOptions = {
     mediaType: string
 }
 
 export type Configuration = {
+    locale?: string
     format?: {
         date?: string
         location?: string | string[]

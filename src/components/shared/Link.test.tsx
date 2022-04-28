@@ -1,6 +1,11 @@
-import { render } from '@/test-utils'
+import { Renderer, getRenderer } from '@/test-utils'
 
 import { Link } from './Link'
+
+let render: Renderer
+beforeAll(async () => {
+    render = await getRenderer()
+})
 
 it.each`
     case                                 | type      | to                        | expectedHref             | expectedText

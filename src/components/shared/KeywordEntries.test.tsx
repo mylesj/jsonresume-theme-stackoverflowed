@@ -1,6 +1,11 @@
-import { render } from '@/test-utils'
+import { Renderer, getRenderer } from '@/test-utils'
 
 import { KeywordEntries } from './KeywordEntries'
+
+let render: Renderer
+beforeAll(async () => {
+    render = await getRenderer()
+})
 
 it.each`
     name            | keywords
