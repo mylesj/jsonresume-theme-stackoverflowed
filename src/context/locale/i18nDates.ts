@@ -48,10 +48,11 @@ const getLocaleData = async (locale: string) => {
         )
     } catch (e) {
         try {
+            const short = shortCode(locale)
             localeData = await import(
-                `../../../node_modules/date-fns/locale/${shortCode(
-                    locale
-                )}/index.js`
+                `../../../node_modules/date-fns/locale/${
+                    short !== locale ? short : DEFAULT_LOCALE
+                }/index.js`
             )
         } catch (e) {
             localeData = await import(

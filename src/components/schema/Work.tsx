@@ -1,8 +1,9 @@
 import { filterPopulated } from '~/util'
-import { useResume } from '~/context'
+import { useResume, useLocale } from '~/context'
 import { Paragraph, Section, SubSection, Highlights } from '~/components/shared'
 
 export const Work = () => {
+    const i18n = useLocale('i18n')
     const { work } = useResume()
     const useableWork = work?.filter(
         filterPopulated('name', 'position', 'startDate')
@@ -13,7 +14,7 @@ export const Work = () => {
     }
 
     return (
-        <Section label="Experience">
+        <Section label={i18n('section.work.title')}>
             {useableWork.map((item, i) => (
                 <SubSection
                     key={i}

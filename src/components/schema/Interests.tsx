@@ -1,8 +1,9 @@
 import { filterPopulated } from '~/util'
-import { useResume } from '~/context'
+import { useLocale, useResume } from '~/context'
 import { Section, KeywordEntries } from '~/components/shared'
 
 export const Interests = () => {
+    const i18n = useLocale('i18n')
     const { interests } = useResume()
     const useableInterest = interests?.filter(
         filterPopulated('name', 'keywords')
@@ -13,7 +14,7 @@ export const Interests = () => {
     }
 
     return (
-        <Section label="Interests">
+        <Section label={i18n('section.interests.title')}>
             <KeywordEntries
                 css={{ marginBottom: '1rem' }}
                 entries={useableInterest}
