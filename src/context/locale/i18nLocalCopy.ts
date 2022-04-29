@@ -1,8 +1,3 @@
-/**
- * IMPORTANT: Dynamic imports must be relative to this file and include an explicit extension.
- * see: https://github.com/rollup/plugins/tree/master/packages/dynamic-import-vars#limitations
- */
-
 import { DEFAULT_LOCALE } from '~/constants'
 
 import { shortCode } from './util'

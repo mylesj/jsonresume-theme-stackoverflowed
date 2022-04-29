@@ -1,6 +1,5 @@
 /**
- * IMPORTANT: Dynamic imports must be relative to this file and include an explicit extension.
- * see: https://github.com/rollup/plugins/tree/master/packages/dynamic-import-vars#limitations
+ * IMPORTANT: do not relocate this file - see note in `rollup.config.ts`
  */
 
 import countries, { LocaleData } from 'i18n-iso-countries'

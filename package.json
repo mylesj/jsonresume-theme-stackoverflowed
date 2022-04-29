@@ -44,6 +44,7 @@
     },
     "devDependencies": {
         "@kurone-kito/jsonresume-types": "^0.2.5",
+        "@rollup/plugin-dynamic-import-vars": "^1.4.3",
         "@rollup/plugin-json": "^4.1.0",
         "@rollup/plugin-replace": "^4.0.0",
         "@rollup/plugin-typescript": "^8.3.1",
@@ -69,7 +70,7 @@
         "typescript": "^4.6.3",
         "vite": "^2.9.5"
     },
-    "peerDependencies": {
+    "optionalDependencies": {
         "@kurone-kito/jsonresume-types": "*"
     }
 }
