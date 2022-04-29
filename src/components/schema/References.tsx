@@ -1,8 +1,9 @@
 import { filterPopulated } from '~/util'
-import { useResume } from '~/context'
+import { useLocale, useResume } from '~/context'
 import { Paragraph, Section, SubSection } from '~/components/shared'
 
 export const References = () => {
+    const i18n = useLocale('i18n')
     const { references } = useResume()
     const useableReferences = references?.filter(
         filterPopulated('name', 'reference')
@@ -13,7 +14,7 @@ export const References = () => {
     }
 
     return (
-        <Section label="References">
+        <Section label={i18n('section.references.title')}>
             {useableReferences.map((item, i) => (
                 <SubSection key={i} label={item.name}>
                     <Paragraph

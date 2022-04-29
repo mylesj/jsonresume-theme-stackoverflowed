@@ -1,8 +1,9 @@
 import { filterPopulated } from '~/util'
-import { useResume } from '~/context'
+import { useLocale, useResume } from '~/context'
 import { Section, SubSection, Highlights } from '~/components/shared'
 
 export const Education = () => {
+    const i18n = useLocale('i18n')
     const { education } = useResume()
     const useableEducation = education?.filter(
         filterPopulated('area', 'institution', 'startDate')
@@ -13,7 +14,7 @@ export const Education = () => {
     }
 
     return (
-        <Section label="Education">
+        <Section label={i18n('section.education.title')}>
             {useableEducation.map((item, i) => (
                 <SubSection
                     key={i}

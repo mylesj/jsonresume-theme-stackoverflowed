@@ -1,8 +1,9 @@
 import { filterPopulated } from '~/util'
-import { useResume } from '~/context'
+import { useLocale, useResume } from '~/context'
 import { Section, SimpleEntries } from '~/components/shared'
 
 export const Languages = () => {
+    const i18n = useLocale('i18n')
     const { languages } = useResume()
     const useableLanguages = languages?.filter(
         filterPopulated('language', 'fluency')
@@ -13,7 +14,7 @@ export const Languages = () => {
     }
 
     return (
-        <Section label="Languages">
+        <Section label={i18n('section.languages.title')}>
             <SimpleEntries
                 entries={useableLanguages.map(
                     ({ language: title, fluency: label }) => ({ title, label })

@@ -1,8 +1,9 @@
 import { filterPopulated } from '~/util'
-import { useResume } from '~/context'
+import { useLocale, useResume } from '~/context'
 import { Paragraph, Section, SubSection } from '~/components/shared'
 
 export const Publications = () => {
+    const i18n = useLocale('i18n')
     const { publications } = useResume()
     const useablePublications = publications?.filter(
         filterPopulated('name', 'releaseDate')
@@ -13,7 +14,7 @@ export const Publications = () => {
     }
 
     return (
-        <Section label="Publications">
+        <Section label={i18n('section.publications.title')}>
             {useablePublications.map((item, i) => (
                 <SubSection
                     key={i}

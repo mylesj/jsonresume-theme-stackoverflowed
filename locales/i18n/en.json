@@ -1,0 +1,16 @@
+{
+    "locale": "en",
+    "language": {
+        "section.skills.title": "Technical Skills",
+        "section.work.title": "Experience",
+        "section.volunteer.title": "Volunteering",
+        "section.projects.title": "Projects",
+        "section.education.title": "Education",
+        "section.awards.title": "Awards",
+        "section.publications.title": "Publications",
+        "section.languages.title": "Languages",
+        "section.interests.title": "Interests",
+        "section.profiles.title": "Profiles",
+        "section.references.title": "References"
+    }
+}

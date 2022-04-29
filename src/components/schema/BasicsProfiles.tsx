@@ -1,8 +1,9 @@
 import { filterAny, filterPopulated } from '~/util'
-import { useResume } from '~/context'
+import { useLocale, useResume } from '~/context'
 import { Section, SimpleEntries } from '~/components/shared'
 
 export const BasicsProfiles = () => {
+    const i18n = useLocale('i18n')
     const profiles = useResume().basics?.profiles || []
     const useableProfiles = profiles.filter(
         filterAny(
@@ -18,7 +19,7 @@ export const BasicsProfiles = () => {
     // todo: social icons
     // todo: map usernames to URLs
     return (
-        <Section label="Profiles">
+        <Section label={i18n('section.profiles.title')}>
             <SimpleEntries
                 showUrl
                 entries={useableProfiles.map(
