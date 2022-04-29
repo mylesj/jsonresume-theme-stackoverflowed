@@ -18,7 +18,8 @@ const useAppContext = () => useContext(AppContext)
 
 export const useResume = () => useAppContext()?.resume as ResumeSchema
 
-export const useLocale = () => useAppContext()?.locale as Locale
+export const useLocale = <T extends keyof Locale>(key: T): Locale[T] =>
+    useAppContext()?.locale?.[key] as Locale[T]
 
 export const useConfig = <T extends keyof Configuration>(
     key: T

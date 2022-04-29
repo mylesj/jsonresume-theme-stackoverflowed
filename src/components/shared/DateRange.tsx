@@ -1,5 +1,4 @@
-import { useConfig } from '~/context'
-import { dateFormat } from '~/util'
+import { useConfig, useLocale } from '~/context'
 
 import { ZeroWidthSpace } from './ZeroWidthSpace'
 
@@ -11,7 +10,12 @@ type Props = {
 
 export const DateRange = ({ startDate, endDate, className }: Props) => {
     const configDateFormat = useConfig('format')?.date
-    const fmt = dateFormat({ startDate, endDate, format: configDateFormat })
+    const formatDateRange = useLocale('formatDateRange')
+    const fmt = formatDateRange({
+        startDate,
+        endDate,
+        format: configDateFormat,
+    })
 
     if (!fmt) {
         return null

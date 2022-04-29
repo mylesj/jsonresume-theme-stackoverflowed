@@ -21,11 +21,11 @@ export const Contact = ({ location, phone, email, className }: Props) => {
     const formats = asArray(configLocationFormat).concat(
         ...DEFAULT_LOCATION_FORMATS
     )
-    const locale = useLocale()
+    const countryName = useLocale('countryName')
 
     const enhancedLocation = {
         ...location,
-        ...locale.getCountryName(location?.countryCode),
+        ...countryName(location?.countryCode),
     }
 
     let locationText
