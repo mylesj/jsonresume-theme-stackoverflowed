@@ -9,6 +9,7 @@ type Props = {
 }
 
 export const DateRange = ({ startDate, endDate, className }: Props) => {
+    const i18n = useLocale('i18n')
     const configDateFormat = useConfig('format')?.date
     const formatDateRange = useLocale('formatDateRange')
     const fmt = formatDateRange({
@@ -38,7 +39,7 @@ export const DateRange = ({ startDate, endDate, className }: Props) => {
                 <time dateTime={fmt.startDateISO}>{fmt.startDate}</time>
                 <ZeroWidthSpace />
                 <time dateTime={fmt.endDateISO}>
-                    {endDate ? fmt.endDate : 'Current'}
+                    {endDate ? fmt.endDate : i18n('component.date.now')}
                 </time>
             </time>
         </div>

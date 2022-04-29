@@ -1,6 +1,7 @@
 {
     "locale": "en",
     "language": {
+        "component.date.now": "Current",
         "section.skills.title": "Technical Skills",
         "section.work.title": "Experience",
         "section.volunteer.title": "Volunteering",

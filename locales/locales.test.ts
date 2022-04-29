@@ -6,6 +6,7 @@ import { promises as fs } from 'fs'
 import path from 'path'
 
 const VALID_SCHEMA_ENTRIES = [
+    'component.date.now',
     'section.skills.title',
     'section.work.title',
     'section.volunteer.title',
