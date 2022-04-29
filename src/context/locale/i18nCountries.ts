@@ -14,7 +14,7 @@ type CountryName = {
     countryNameAlias: string
 }
 
-export const getCountryNameFactory = async (locale: string) => {
+export const countryNameFactory = async (locale: string) => {
     let data: LocaleData
     let shortLocale: string
 
@@ -34,18 +34,20 @@ export const getCountryNameFactory = async (locale: string) => {
 
     countries.registerLocale(data)
 
-    return (code?: string): CountryName | null => {
-        if (!code) {
-            return null
-        }
+    return {
+        countryName: (code?: string): CountryName | null => {
+            if (!code) {
+                return null
+            }
 
-        return {
-            countryNameOfficial: countries.getName(code, shortLocale, {
-                select: 'official',
-            }),
-            countryNameAlias: countries.getName(code, shortLocale, {
-                select: 'alias',
-            }),
-        }
+            return {
+                countryNameOfficial: countries.getName(code, shortLocale, {
+                    select: 'official',
+                }),
+                countryNameAlias: countries.getName(code, shortLocale, {
+                    select: 'alias',
+                }),
+            }
+        },
     }
 }

@@ -1,2 +1,4 @@
 export const THEME_NAME = 'theme-stackoverflowed'
-export const DEFAULT_LOCALE = 'en'
+
+// IMPORTANT: must exist in `date-fns/locale`
+export const DEFAULT_LOCALE = 'en-US'

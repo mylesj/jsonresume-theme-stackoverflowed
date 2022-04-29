@@ -1,4 +1,5 @@
 import { RollupOptions } from 'rollup'
+import replace from '@rollup/plugin-replace'
 import typescript from '@rollup/plugin-typescript'
 import json from '@rollup/plugin-json'
 
@@ -10,7 +11,14 @@ const config: RollupOptions = {
         { file: pkg.main, format: 'cjs' },
         { file: pkg.module, format: 'es' },
     ],
-    plugins: [typescript(), json()],
+    plugins: [
+        typescript(),
+        json(),
+        replace({
+            preventAssignment: true,
+            'process.env.NODE_ENV': JSON.stringify('production'),
+        }),
+    ],
     external: [
         'react',
         'react/jsx-runtime',
