@@ -1,7 +1,3 @@
-/**
- * IMPORTANT: do not relocate this file - see note in `rollup.config.ts`
- */
-
 import countries, { LocaleData } from 'i18n-iso-countries'
 
 import { DEFAULT_LOCALE } from '~/constants'
@@ -13,22 +9,28 @@ type CountryName = {
     countryNameAlias: string
 }
 
+const importLocale = (locale: string): Promise<LocaleData> => {
+    if (process.env.NODE_ENV === 'development') {
+        return import(
+            `../../../node_modules/i18n-iso-countries/langs/${locale}.json`
+        )
+    } else {
+        return import(
+            /* @vite-ignore */ `i18n-iso-countries/langs/${locale}.json`
+        )
+    }
+}
+
 export const countryNameFactory = async (locale: string) => {
     let data: LocaleData
     let shortLocale: string
 
     try {
         shortLocale = shortCode(locale)
-        data = await import(
-            `../../../node_modules/i18n-iso-countries/langs/${shortLocale}.json`
-        )
+        data = await importLocale(shortLocale)
     } catch (e) {
         shortLocale = shortCode(DEFAULT_LOCALE)
-        data = await import(
-            `../../../node_modules/i18n-iso-countries/langs/${shortCode(
-                DEFAULT_LOCALE
-            )}.json`
-        )
+        data = await importLocale(shortCode(shortLocale))
     }
 
     countries.registerLocale(data)

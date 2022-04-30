@@ -1,6 +1,6 @@
 {
     "name": "jsonresume-theme-stackoverflowed",
-    "version": "0.0.5",
+    "version": "0.0.6",
     "description": "A JSON Resume Theme inspired by the Stack Overflow Developer Story resume format.",
     "author": "mylesj <hi@mylesj.dev>",
     "license": "MIT",
@@ -28,7 +28,7 @@
         "build": "cross-env NODE_ENV=production rollup --config rollup.config.ts --configPlugin typescript",
         "postbuild": "tsc --declaration --emitDeclarationOnly --removeComments ./src/types.public.ts --outDir ./dist",
         "dev": "cross-env NODE_ENV=development vite",
-        "test": "cross-env TZ=UTC jest --config jest.config.json",
+        "test": "cross-env NODE_ENV=development TZ=UTC jest --config jest.config.json",
         "format": "prettier . --write",
         "lint": "eslint .",
         "ci:format": "prettier . --check --color",
@@ -44,7 +44,6 @@
     },
     "devDependencies": {
         "@kurone-kito/jsonresume-types": "^0.2.5",
-        "@rollup/plugin-dynamic-import-vars": "^1.4.3",
         "@rollup/plugin-json": "^4.1.0",
         "@rollup/plugin-replace": "^4.0.0",
         "@rollup/plugin-typescript": "^8.3.1",

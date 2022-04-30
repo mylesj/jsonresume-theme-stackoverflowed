@@ -32,19 +32,24 @@ let locales: {
 }
 
 beforeAll(async () => {
-    const localeImports = (await fs.readdir(path.join(__dirname, 'i18n')))
+    const localeImports = (await fs.readdir(path.join(__dirname, 'locales')))
         .filter((file: string) => file.endsWith('.json'))
         .map((file) => {
             return new Promise<[string, LocaleData]>((resolve) =>
-                fs.readFile(path.join(__dirname, 'i18n', file)).then((data) => {
-                    let json: LocaleData
-                    try {
-                        json = JSON.parse(data as unknown as string)
-                    } catch (e) {
-                        throw new Error(`Invalid JSON: ${file}`)
-                    }
-                    resolve([file.substring(0, file.lastIndexOf('.')), json])
-                })
+                fs
+                    .readFile(path.join(__dirname, 'locales', file))
+                    .then((data) => {
+                        let json: LocaleData
+                        try {
+                            json = JSON.parse(data as unknown as string)
+                        } catch (e) {
+                            throw new Error(`Invalid JSON: ${file}`)
+                        }
+                        resolve([
+                            file.substring(0, file.lastIndexOf('.')),
+                            json,
+                        ])
+                    })
             )
         })
 

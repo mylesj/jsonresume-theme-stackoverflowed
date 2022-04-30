@@ -1,3 +1,4 @@
 *
 !dist/*
+!i18n/locales/*
 !index.js

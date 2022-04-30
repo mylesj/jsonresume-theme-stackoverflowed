@@ -1,6 +1,6 @@
 import { localCopyFactory } from './i18nLocalCopy'
 
-jest.mock('../../../locales/i18n/en.json', () => ({
+jest.mock('../../../i18n/locales/en.json', () => ({
     locale: 'en',
     language: {
         'section.work.title': 'foo',
