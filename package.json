@@ -1,6 +1,6 @@
 {
     "name": "jsonresume-theme-stackoverflowed",
-    "version": "0.0.7",
+    "version": "0.0.0-development",
     "description": "A JSON Resume Theme inspired by the Stack Overflow Developer Story resume format.",
     "author": "mylesj <hi@mylesj.dev>",
     "license": "MIT",
@@ -43,6 +43,8 @@
         "react-dom": "^18.0.0"
     },
     "devDependencies": {
+        "@commitlint/cli": "^16.2.4",
+        "@commitlint/config-conventional": "^16.2.4",
         "@kurone-kito/jsonresume-types": "^0.2.5",
         "@rollup/plugin-json": "^4.1.0",
         "@rollup/plugin-replace": "^4.0.0",
@@ -64,6 +66,7 @@
         "prettier": "^2.6.2",
         "rimraf": "^3.0.2",
         "rollup": "^2.70.1",
+        "semantic-release": "^19.0.2",
         "ts-jest": "^27.1.4",
         "tslib": "^2.3.1",
         "typescript": "^4.6.3",
