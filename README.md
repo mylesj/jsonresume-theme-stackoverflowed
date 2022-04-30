@@ -83,6 +83,17 @@ the following keys are also available.
 | `countryNameAlias`    | A colloquial name resolved from the `countryCode`.    |
 | `countryNameOfficial` | A full country title resolved from the `countryCode`. |
 
+If it is preferable to split an address across multiple lines, this can be achieved by inserting
+a newline character in the template - note that this needs to be doubly escaped to be valid JSON.
+
+```json
+{
+    "format": {
+        "location": "{{address}}, {{postalCode}} \\n {{city}}, {{region}}"
+    }
+}
+```
+
 <!-- project links -->
 
 [npm]: https://www.npmjs.com/package/jsonresume-theme-stackoverflowed

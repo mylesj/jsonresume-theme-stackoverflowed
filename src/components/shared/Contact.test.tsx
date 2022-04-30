@@ -87,4 +87,31 @@ describe('location formats', () => {
             expect(getByText(expected)).toBeInTheDocument()
         })
     })
+
+    describe('when a template contains newline characters', () => {
+        it('should split the text across multiple lines', () => {
+            const { getByText } = render(
+                <Contact
+                    location={{
+                        address: '2712 Broadway St',
+                        postalCode: 'CA 94115',
+                        city: 'San Francisco',
+                        region: 'California',
+                    }}
+                />,
+                {
+                    resume: withConfig({
+                        format: {
+                            location: JSON.parse(
+                                '"{{address}}, {{postalCode}} \\n {{city}}, {{region}}"'
+                            ),
+                        },
+                    }),
+                }
+            )
+
+            expect(getByText('2712 Broadway St, CA 94115')).toBeInTheDocument()
+            expect(getByText('San Francisco, California')).toBeInTheDocument()
+        })
+    })
 })
