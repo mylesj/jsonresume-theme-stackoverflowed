@@ -1,0 +1,17 @@
+{
+    "locale": "is",
+    "language": {
+        "component.date.now": "Nútíminn",
+        "section.skills.title": "Tæknilegir hæfileikar",
+        "section.work.title": "Reynsla",
+        "section.volunteer.title": "Sjálfboðaliðastarf",
+        "section.projects.title": "Verkefni",
+        "section.education.title": "Menntun",
+        "section.awards.title": "Verðlaun",
+        "section.publications.title": "Rit",
+        "section.languages.title": "Tungumál",
+        "section.interests.title": "Áhugamál",
+        "section.profiles.title": "Snið",
+        "section.references.title": "Heimildir"
+    }
+}

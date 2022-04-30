@@ -1,0 +1,17 @@
+{
+    "locale": "zh",
+    "language": {
+        "component.date.now": "现在时间",
+        "section.skills.title": "技术能力",
+        "section.work.title": "经验",
+        "section.volunteer.title": "志愿服务",
+        "section.projects.title": "项目",
+        "section.education.title": "教育",
+        "section.awards.title": "奖项",
+        "section.publications.title": "出版物",
+        "section.languages.title": "语言",
+        "section.interests.title": "兴趣",
+        "section.profiles.title": "简介",
+        "section.references.title": "参考"
+    }
+}

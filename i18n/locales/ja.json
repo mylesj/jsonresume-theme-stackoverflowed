@@ -1,0 +1,17 @@
+{
+    "locale": "ja",
+    "language": {
+        "component.date.now": "現時点",
+        "section.skills.title": "技術的なスキル",
+        "section.work.title": "経験",
+        "section.volunteer.title": "ボランティア",
+        "section.projects.title": "プロジェクト",
+        "section.education.title": "教育",
+        "section.awards.title": "賞",
+        "section.publications.title": "出版物",
+        "section.languages.title": "言語",
+        "section.interests.title": "興味",
+        "section.profiles.title": "プロファイル",
+        "section.references.title": "参考文献"
+    }
+}

@@ -1,0 +1,17 @@
+{
+    "locale": "ko",
+    "language": {
+        "component.date.now": "현재 시간",
+        "section.skills.title": "기술 능력",
+        "section.work.title": "경험",
+        "section.volunteer.title": "자원",
+        "section.projects.title": "프로젝트",
+        "section.education.title": "교육",
+        "section.awards.title": "수상",
+        "section.publications.title": "간행물",
+        "section.languages.title": "언어",
+        "section.interests.title": "이해",
+        "section.profiles.title": "프로필",
+        "section.references.title": "참고문헌"
+    }
+}

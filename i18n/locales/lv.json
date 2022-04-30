@@ -1,0 +1,17 @@
+{
+    "locale": "lv",
+    "language": {
+        "component.date.now": "Pašreizējais laiks",
+        "section.skills.title": "Tehniskās iemaņas",
+        "section.work.title": "Pieredze",
+        "section.volunteer.title": "Brīvprātīgais darbs",
+        "section.projects.title": "Projekti",
+        "section.education.title": "Izglītība",
+        "section.awards.title": "Apbalvojumi",
+        "section.publications.title": "Publikācijas",
+        "section.languages.title": "Valodas",
+        "section.interests.title": "Intereses",
+        "section.profiles.title": "Profili",
+        "section.references.title": "Atsauces"
+    }
+}

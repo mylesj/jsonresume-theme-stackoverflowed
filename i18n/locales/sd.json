@@ -1,0 +1,17 @@
+{
+    "locale": "sd",
+    "language": {
+        "component.date.now": "موجوده وقت",
+        "section.skills.title": "ٽيڪنيڪل صلاحيتن",
+        "section.work.title": "تجربو",
+        "section.volunteer.title": "رضاڪارانه",
+        "section.projects.title": "منصوبا",
+        "section.education.title": "تعليم",
+        "section.awards.title": "انعام",
+        "section.publications.title": "پبليڪيشن",
+        "section.languages.title": "ٻوليون",
+        "section.interests.title": "دلچسپيون",
+        "section.profiles.title": "پروفائلز",
+        "section.references.title": "حوالا"
+    }
+}

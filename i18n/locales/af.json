@@ -1,0 +1,17 @@
+{
+    "locale": "af",
+    "language": {
+        "component.date.now": "Tans",
+        "section.skills.title": "Tegniese vaardighede",
+        "section.work.title": "Ervaring",
+        "section.volunteer.title": "Vrywilligerswerk",
+        "section.projects.title": "Projekte",
+        "section.education.title": "Onderwys",
+        "section.awards.title": "Toekennings",
+        "section.publications.title": "Publikasies",
+        "section.languages.title": "Tale",
+        "section.interests.title": "Belange",
+        "section.profiles.title": "Profiele",
+        "section.references.title": "Verwysings"
+    }
+}

@@ -1,0 +1,17 @@
+{
+    "locale": "pl",
+    "language": {
+        "component.date.now": "Czas teraźniejszy",
+        "section.skills.title": "Umiejętności techniczne",
+        "section.work.title": "Doświadczenie",
+        "section.volunteer.title": "Zgłaszanie się na ochotnika",
+        "section.projects.title": "Projektowanie",
+        "section.education.title": "Edukacja",
+        "section.awards.title": "Nagrody",
+        "section.publications.title": "Publikacje",
+        "section.languages.title": "Języki",
+        "section.interests.title": "Zainteresowania",
+        "section.profiles.title": "Profile",
+        "section.references.title": "Bibliografia"
+    }
+}

@@ -1,0 +1,17 @@
+{
+    "locale": "ky",
+    "language": {
+        "component.date.now": "Учур чак",
+        "section.skills.title": "Техникалык көндүмдөр",
+        "section.work.title": "Тажрыйба",
+        "section.volunteer.title": "Волонтерлук",
+        "section.projects.title": "Долбоорлор",
+        "section.education.title": "Билим берүү",
+        "section.awards.title": "Сыйлыктар",
+        "section.publications.title": "Басылмалар",
+        "section.languages.title": "Тилдер",
+        "section.interests.title": "Кызыкчылыктар",
+        "section.profiles.title": "Профильдер",
+        "section.references.title": "Шилтемелер"
+    }
+}

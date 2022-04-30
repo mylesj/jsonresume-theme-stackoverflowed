@@ -1,0 +1,17 @@
+{
+    "locale": "so",
+    "language": {
+        "component.date.now": "Waqtiga xaadirka ah",
+        "section.skills.title": "Xirfadaha Farsamada",
+        "section.work.title": "Khibrad",
+        "section.volunteer.title": "Iskaa wax u qabso",
+        "section.projects.title": "Mashaariicda",
+        "section.education.title": "Waxbarasho",
+        "section.awards.title": "Abaalmarino",
+        "section.publications.title": "Daabacaad",
+        "section.languages.title": "Luuqadaha",
+        "section.interests.title": "Danaha",
+        "section.profiles.title": "Profiles",
+        "section.references.title": "Tixraacyo"
+    }
+}

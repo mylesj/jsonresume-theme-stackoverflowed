@@ -1,0 +1,17 @@
+{
+    "locale": "id",
+    "language": {
+        "component.date.now": "Saat ini",
+        "section.skills.title": "Keterampilan teknis",
+        "section.work.title": "Pengalaman",
+        "section.volunteer.title": "Sukarelawan",
+        "section.projects.title": "Proyek",
+        "section.education.title": "Pendidikan",
+        "section.awards.title": "Penghargaan",
+        "section.publications.title": "Publikasi",
+        "section.languages.title": "Bahasa",
+        "section.interests.title": "Minat",
+        "section.profiles.title": "Profil",
+        "section.references.title": "Referensi"
+    }
+}

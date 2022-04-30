@@ -1,0 +1,17 @@
+{
+    "locale": "el",
+    "language": {
+        "component.date.now": "Αυτη τη ΣΤΙΓΜΗ",
+        "section.skills.title": "Τεχνικές δεξιότητες",
+        "section.work.title": "Εμπειρία",
+        "section.volunteer.title": "Εθελοντισμός",
+        "section.projects.title": "Εργα",
+        "section.education.title": "Εκπαίδευση",
+        "section.awards.title": "Βραβεία",
+        "section.publications.title": "Δημοσιεύσεις",
+        "section.languages.title": "Γλώσσες",
+        "section.interests.title": "Τα ενδιαφέροντα",
+        "section.profiles.title": "Προφίλ",
+        "section.references.title": "βιβλιογραφικές αναφορές"
+    }
+}

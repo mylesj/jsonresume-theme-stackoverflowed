@@ -1,0 +1,17 @@
+{
+    "locale": "tr",
+    "language": {
+        "component.date.now": "Şimdiki zaman",
+        "section.skills.title": "Teknik beceriler",
+        "section.work.title": "Tecrübe etmek",
+        "section.volunteer.title": "gönüllülük",
+        "section.projects.title": "Projeler",
+        "section.education.title": "Eğitim",
+        "section.awards.title": "Ödüller",
+        "section.publications.title": "Yayınlar",
+        "section.languages.title": "Diller",
+        "section.interests.title": "ilgi alanları",
+        "section.profiles.title": "profiller",
+        "section.references.title": "Referanslar"
+    }
+}

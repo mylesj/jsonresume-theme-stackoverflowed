@@ -1,0 +1,17 @@
+{
+    "locale": "hi",
+    "language": {
+        "component.date.now": "वर्तमान समय",
+        "section.skills.title": "तकनीकी कौशल",
+        "section.work.title": "अनुभव",
+        "section.volunteer.title": "स्वयं सेवा",
+        "section.projects.title": "परियोजनाओं",
+        "section.education.title": "शिक्षा",
+        "section.awards.title": "पुरस्कार",
+        "section.publications.title": "प्रकाशनों",
+        "section.languages.title": "बोली",
+        "section.interests.title": "रूचियाँ",
+        "section.profiles.title": "प्रोफाइल",
+        "section.references.title": "संदर्भ"
+    }
+}

@@ -1,0 +1,17 @@
+{
+    "locale": "bn",
+    "language": {
+        "component.date.now": "বর্তমান সময়",
+        "section.skills.title": "প্রযুক্তিগত দক্ষতা",
+        "section.work.title": "অভিজ্ঞতা",
+        "section.volunteer.title": "স্বেচ্ছাসেবক",
+        "section.projects.title": "প্রকল্প",
+        "section.education.title": "শিক্ষা",
+        "section.awards.title": "পুরস্কার",
+        "section.publications.title": "প্রকাশনা",
+        "section.languages.title": "ভাষা",
+        "section.interests.title": "আগ্রহ",
+        "section.profiles.title": "প্রোফাইল",
+        "section.references.title": "তথ্যসূত্র"
+    }
+}

@@ -1,0 +1,17 @@
+{
+    "locale": "sv",
+    "language": {
+        "component.date.now": "Nutid",
+        "section.skills.title": "Tekniska förmågor",
+        "section.work.title": "Erfarenhet",
+        "section.volunteer.title": "Volontärarbete",
+        "section.projects.title": "Projekt",
+        "section.education.title": "Utbildning",
+        "section.awards.title": "Utmärkelser",
+        "section.publications.title": "Publikationer",
+        "section.languages.title": "språk",
+        "section.interests.title": "Intressen",
+        "section.profiles.title": "Profiler",
+        "section.references.title": "Referenser"
+    }
+}

@@ -1,0 +1,17 @@
+{
+    "locale": "ru",
+    "language": {
+        "component.date.now": "Настоящее время",
+        "section.skills.title": "Технические навыки",
+        "section.work.title": "Опыт",
+        "section.volunteer.title": "Волонтерство",
+        "section.projects.title": "Проекты",
+        "section.education.title": "Образование",
+        "section.awards.title": "Награды",
+        "section.publications.title": "Публикации",
+        "section.languages.title": "Языки",
+        "section.interests.title": "Интересы",
+        "section.profiles.title": "Профили",
+        "section.references.title": "Рекомендации"
+    }
+}

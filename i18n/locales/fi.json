@@ -1,0 +1,17 @@
+{
+    "locale": "fi",
+    "language": {
+        "component.date.now": "Nykyhetki",
+        "section.skills.title": "Teknisiä taitoja",
+        "section.work.title": "Kokea",
+        "section.volunteer.title": "Vapaaehtoistyö",
+        "section.projects.title": "Projektit",
+        "section.education.title": "koulutus",
+        "section.awards.title": "Palkinnot",
+        "section.publications.title": "Julkaisut",
+        "section.languages.title": "Kieli (kielet",
+        "section.interests.title": "Kiinnostuksen kohteet",
+        "section.profiles.title": "Profiilit",
+        "section.references.title": "Viitteet"
+    }
+}

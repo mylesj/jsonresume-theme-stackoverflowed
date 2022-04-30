@@ -1,0 +1,17 @@
+{
+    "locale": "nl",
+    "language": {
+        "component.date.now": "Tegenwoordige tijd",
+        "section.skills.title": "Technische vaardigheden",
+        "section.work.title": "Beleven",
+        "section.volunteer.title": "Vrijwilligerswerk",
+        "section.projects.title": "projecten",
+        "section.education.title": "Opleiding",
+        "section.awards.title": "onderscheidingen",
+        "section.publications.title": "publicaties",
+        "section.languages.title": "Talen",
+        "section.interests.title": "interesses",
+        "section.profiles.title": "Profielen",
+        "section.references.title": "Referenties"
+    }
+}

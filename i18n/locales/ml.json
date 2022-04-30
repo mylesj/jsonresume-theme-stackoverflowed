@@ -1,0 +1,17 @@
+{
+    "locale": "ml",
+    "language": {
+        "component.date.now": "ഇപ്പോൾ",
+        "section.skills.title": "സാങ്കേതിക കഴിവുകളും",
+        "section.work.title": "അനുഭവം",
+        "section.volunteer.title": "സന്നദ്ധസേവനം",
+        "section.projects.title": "പദ്ധതികൾ",
+        "section.education.title": "വിദ്യാഭ്യാസം",
+        "section.awards.title": "അവാർഡുകൾ",
+        "section.publications.title": "പ്രസിദ്ധീകരണങ്ങൾ",
+        "section.languages.title": "ഭാഷകൾ",
+        "section.interests.title": "താൽപ്പര്യങ്ങൾ",
+        "section.profiles.title": "പ്രൊഫൈലുകൾ",
+        "section.references.title": "റഫറൻസുകൾ"
+    }
+}

@@ -1,0 +1,17 @@
+{
+    "locale": "et",
+    "language": {
+        "component.date.now": "Praegune aeg",
+        "section.skills.title": "Tehnilised oskused",
+        "section.work.title": "Kogemused",
+        "section.volunteer.title": "Vabatahtlikkus",
+        "section.projects.title": "Projektid",
+        "section.education.title": "Haridus",
+        "section.awards.title": "Auhinnad",
+        "section.publications.title": "Väljaanded",
+        "section.languages.title": "Keeled",
+        "section.interests.title": "Huvid",
+        "section.profiles.title": "Profiilid",
+        "section.references.title": "Viited"
+    }
+}

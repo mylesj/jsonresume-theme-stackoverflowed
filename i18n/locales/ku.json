@@ -1,0 +1,17 @@
+{
+    "locale": "ku",
+    "language": {
+        "component.date.now": "Dema niha",
+        "section.skills.title": "Technical Skills",
+        "section.work.title": "Tecribe",
+        "section.volunteer.title": "Dilxwazî",
+        "section.projects.title": "Projects",
+        "section.education.title": "Zanyarî",
+        "section.awards.title": "Xelat",
+        "section.publications.title": "Weşanên",
+        "section.languages.title": "Languages",
+        "section.interests.title": "Interests",
+        "section.profiles.title": "Profiles",
+        "section.references.title": "Çavkanî"
+    }
+}

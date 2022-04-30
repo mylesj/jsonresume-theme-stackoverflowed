@@ -1,0 +1,17 @@
+{
+    "locale": "ms",
+    "language": {
+        "component.date.now": "Masa kini",
+        "section.skills.title": "Kemahiran teknikal",
+        "section.work.title": "Pengalaman",
+        "section.volunteer.title": "Sukarelawan",
+        "section.projects.title": "Projek",
+        "section.education.title": "Pendidikan",
+        "section.awards.title": "Anugerah",
+        "section.publications.title": "Penerbitan",
+        "section.languages.title": "Bahasa",
+        "section.interests.title": "minat",
+        "section.profiles.title": "Profil",
+        "section.references.title": "Rujukan"
+    }
+}

@@ -1,0 +1,17 @@
+{
+    "locale": "kk",
+    "language": {
+        "component.date.now": "Қазіргі уақыт",
+        "section.skills.title": "Техникалық дағдылар",
+        "section.work.title": "Тәжірибе",
+        "section.volunteer.title": "Волонтерлік",
+        "section.projects.title": "Жобалар",
+        "section.education.title": "Білім",
+        "section.awards.title": "Марапаттары",
+        "section.publications.title": "Жарияланымдар",
+        "section.languages.title": "Тілдер",
+        "section.interests.title": "Қызығушылықтар",
+        "section.profiles.title": "Профильдер",
+        "section.references.title": "Анықтамалар"
+    }
+}

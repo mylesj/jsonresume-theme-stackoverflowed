@@ -1,0 +1,17 @@
+{
+    "locale": "ar",
+    "language": {
+        "component.date.now": "الوقت الحاضر",
+        "section.skills.title": "مهارات تقنية",
+        "section.work.title": "خبرة",
+        "section.volunteer.title": "التطوع",
+        "section.projects.title": "المشاريع",
+        "section.education.title": "تعليم",
+        "section.awards.title": "الجوائز",
+        "section.publications.title": "المنشورات",
+        "section.languages.title": "اللغات",
+        "section.interests.title": "الإهتمامات",
+        "section.profiles.title": "مظهر",
+        "section.references.title": "مراجع"
+    }
+}

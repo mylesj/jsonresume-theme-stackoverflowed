@@ -1,0 +1,17 @@
+{
+    "locale": "hu",
+    "language": {
+        "component.date.now": "Jelen idő",
+        "section.skills.title": "Technikai készségek",
+        "section.work.title": "Tapasztalat",
+        "section.volunteer.title": "Önkéntesség",
+        "section.projects.title": "Projektek",
+        "section.education.title": "Oktatás",
+        "section.awards.title": "Díjak",
+        "section.publications.title": "Publikációk",
+        "section.languages.title": "Nyelvek",
+        "section.interests.title": "Érdeklődések",
+        "section.profiles.title": "Profilok",
+        "section.references.title": "Hivatkozások"
+    }
+}

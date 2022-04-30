@@ -1,0 +1,17 @@
+{
+    "locale": "vi",
+    "language": {
+        "component.date.now": "Hiện nay",
+        "section.skills.title": "Kĩ năng công nghệ",
+        "section.work.title": "Trải qua",
+        "section.volunteer.title": "Tình nguyện",
+        "section.projects.title": "Dự án",
+        "section.education.title": "Giáo dục",
+        "section.awards.title": "Giải thưởng",
+        "section.publications.title": "Ấn phẩm",
+        "section.languages.title": "Ngôn ngữ",
+        "section.interests.title": "Sở thích",
+        "section.profiles.title": "Hồ sơ",
+        "section.references.title": "Người giới thiệu"
+    }
+}

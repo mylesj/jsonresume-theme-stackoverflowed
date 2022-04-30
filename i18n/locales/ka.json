@@ -1,0 +1,17 @@
+{
+    "locale": "ka",
+    "language": {
+        "component.date.now": "Აწმყო დრო",
+        "section.skills.title": "ტექნიკური უნარები",
+        "section.work.title": "გამოცდილება",
+        "section.volunteer.title": "Მოხალისეობა",
+        "section.projects.title": "პროექტები",
+        "section.education.title": "Განათლება",
+        "section.awards.title": "Ჯილდო",
+        "section.publications.title": "პუბლიკაციები",
+        "section.languages.title": "ენები",
+        "section.interests.title": "ინტერესები",
+        "section.profiles.title": "პროფილები",
+        "section.references.title": "ცნობები"
+    }
+}

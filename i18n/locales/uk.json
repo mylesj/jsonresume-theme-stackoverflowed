@@ -1,0 +1,17 @@
+{
+    "locale": "uk",
+    "language": {
+        "component.date.now": "Теперішній час",
+        "section.skills.title": "Технічні навички",
+        "section.work.title": "Досвід",
+        "section.volunteer.title": "Волонтерство",
+        "section.projects.title": "Проекти",
+        "section.education.title": "Освіта",
+        "section.awards.title": "Нагороди",
+        "section.publications.title": "Публікації",
+        "section.languages.title": "Мови",
+        "section.interests.title": "Інтереси",
+        "section.profiles.title": "Профілі",
+        "section.references.title": "Посилання"
+    }
+}

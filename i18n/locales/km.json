@@ -1,0 +1,17 @@
+{
+    "locale": "km",
+    "language": {
+        "component.date.now": "ពេលបច្ចុប្បន្ន",
+        "section.skills.title": "ជំនាញបច្ចេកទេស",
+        "section.work.title": "បទពិសោធន៍",
+        "section.volunteer.title": "ការងារស្ម័គ្រចិត្ត",
+        "section.projects.title": "គម្រោង",
+        "section.education.title": "ការអប់រំ",
+        "section.awards.title": "រង្វាន់",
+        "section.publications.title": "ការបោះពុម្ពផ្សាយ",
+        "section.languages.title": "ភាសា",
+        "section.interests.title": "ចំណាប់អារម្មណ៍",
+        "section.profiles.title": "ប្រវត្តិរូប",
+        "section.references.title": "ឯកសារយោង"
+    }
+}

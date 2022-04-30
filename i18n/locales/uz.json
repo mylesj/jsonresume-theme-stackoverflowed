@@ -1,0 +1,17 @@
+{
+    "locale": "uz",
+    "language": {
+        "component.date.now": "Hozirgi vaqt",
+        "section.skills.title": "Texnik ko'nikmalar",
+        "section.work.title": "Tajriba",
+        "section.volunteer.title": "Ko'ngillilik",
+        "section.projects.title": "Loyihalar",
+        "section.education.title": "Ta'lim",
+        "section.awards.title": "Mukofotlar",
+        "section.publications.title": "Nashrlar",
+        "section.languages.title": "Tillar",
+        "section.interests.title": "Qiziqishlar",
+        "section.profiles.title": "Profillar",
+        "section.references.title": "Ma'lumotnomalar"
+    }
+}
