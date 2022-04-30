@@ -1,7 +1,3 @@
-/**
- * IMPORTANT: do not relocate this file - see note in `rollup.config.ts`
- */
-
 import {
     fromUnixTime,
     parseISO,
@@ -18,6 +14,14 @@ import { DEFAULT_LOCALE } from '~/constants'
 import { shortCode } from './util'
 
 const DEFAULT_DATE_FORMAT = 'MMM yyyy'
+
+const importLocale = (locale: string): Promise<LocaleData> => {
+    if (process.env.NODE_ENV === 'development') {
+        throw new Error("vite doesn't like the date-fns export syntax")
+    } else {
+        return import(/* @vite-ignore */ `date-fns/locale/${locale}/index.js`)
+    }
+}
 
 const getLocaleData = async (locale: string) => {
     if (process.env.NODE_ENV === 'development') {
@@ -42,21 +46,15 @@ const getLocaleData = async (locale: string) => {
     let localeData: LocaleData
 
     try {
-        localeData = await import(
-            `../../../node_modules/date-fns/locale/${locale}/index.js`
-        )
+        localeData = await importLocale(locale)
     } catch (e) {
         try {
-            const short = shortCode(locale)
-            localeData = await import(
-                `../../../node_modules/date-fns/locale/${
-                    short !== locale ? short : DEFAULT_LOCALE
-                }/index.js`
-            )
+            if (shortCode(locale) === locale) {
+                throw 'no point... try next'
+            }
+            localeData = await importLocale(shortCode(locale))
         } catch (e) {
-            localeData = await import(
-                `../../../node_modules/date-fns/locale/${DEFAULT_LOCALE}/index.js`
-            )
+            localeData = await importLocale(DEFAULT_LOCALE)
         }
     }
 
