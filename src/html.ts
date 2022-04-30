@@ -3,12 +3,17 @@ import { ResumeSchema } from '~/types'
 // Tagging literals as "html" lets prettier format the template.
 const html = (...a: Parameters<typeof String.raw>) => String.raw(...a).trim()
 
-type Props = {
-    body: string
-    meta: ResumeSchema['basics']
+type Meta = {
+    generator: string
 }
 
-const template = ({ body, meta }: Props) => html`
+type Props = {
+    body: string
+    meta: Meta
+    resume: ResumeSchema
+}
+
+const template = ({ body, meta, resume }: Props) => html`
     <!DOCTYPE html>
     <html lang="en">
         <head>
@@ -17,8 +22,9 @@ const template = ({ body, meta }: Props) => html`
                 name="viewport"
                 content="width=device-width, initial-scale=1"
             />
+            <meta name="generator" content="${meta.generator}" />
             <title>
-                ${[meta?.name, meta?.label, 'Resume']
+                ${[resume?.basics?.name, resume?.basics?.label, 'Resume']
                     .filter(Boolean)
                     .join(' - ')}
             </title>

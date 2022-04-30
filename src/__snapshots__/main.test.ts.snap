@@ -9,6 +9,7 @@ exports[`should render a basic html document 1`] = `
                 name=\\"viewport\\"
                 content=\\"width=device-width, initial-scale=1\\"
             />
+            <meta name=\\"generator\\" content=\\"jsonresume-theme-stackoverflowed@0.0.0-development\\" />
             <title>
                 Richard Hendriks - Programmer - Resume
             </title>
