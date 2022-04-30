@@ -1,2 +1,2 @@
-export const shortCode = (locale: string) =>
-    locale.substring(0, 2).toLowerCase()
+export const shortCode = (locale?: string) =>
+    (locale ?? '').split(/_|-/)[0].toLowerCase()

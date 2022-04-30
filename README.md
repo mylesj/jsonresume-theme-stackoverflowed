@@ -40,6 +40,23 @@ otherwise unspecified.
 
 ---
 
+### Localisation
+
+```typescript
+{
+    "locale": string
+}
+```
+
+**`locale`** &mdash; `string`
+
+A language (_e.g._ `en`) or regional variant (_e.g._ `en-GB`) that will localise dates
+and text content.
+
+-   defaults to `en-US`
+
+---
+
 ### Formatting
 
 ```typescript
