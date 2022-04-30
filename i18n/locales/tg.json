@@ -1,0 +1,17 @@
+{
+    "locale": "tg",
+    "language": {
+        "component.date.now": "Замони ҳозира",
+        "section.skills.title": "Малакаҳои техникӣ",
+        "section.work.title": "Таҷриба",
+        "section.volunteer.title": "Волонтёрӣ",
+        "section.projects.title": "Лоиҳаҳо",
+        "section.education.title": "Маориф",
+        "section.awards.title": "Мукофотхо",
+        "section.publications.title": "Нашрияҳо",
+        "section.languages.title": "Забонҳо",
+        "section.interests.title": "Манфиатҳо",
+        "section.profiles.title": "Профилҳо",
+        "section.references.title": "Иқтибосҳо"
+    }
+}

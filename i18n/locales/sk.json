@@ -1,0 +1,17 @@
+{
+    "locale": "sk",
+    "language": {
+        "component.date.now": "Súčasnosť",
+        "section.skills.title": "Technické zručnosti",
+        "section.work.title": "Skúsenosti",
+        "section.volunteer.title": "Dobrovoľníctvo",
+        "section.projects.title": "projekty",
+        "section.education.title": "Vzdelávanie",
+        "section.awards.title": "ocenenia",
+        "section.publications.title": "Publikácie",
+        "section.languages.title": "Jazyky",
+        "section.interests.title": "Záujmy",
+        "section.profiles.title": "Profily",
+        "section.references.title": "Referencie"
+    }
+}

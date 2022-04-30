@@ -1,0 +1,17 @@
+{
+    "locale": "th",
+    "language": {
+        "component.date.now": "เวลาปัจจุบัน",
+        "section.skills.title": "ทักษะทางเทคนิค",
+        "section.work.title": "ประสบการณ์",
+        "section.volunteer.title": "อาสาสมัคร",
+        "section.projects.title": "โครงการ",
+        "section.education.title": "การศึกษา",
+        "section.awards.title": "รางวัล",
+        "section.publications.title": "สิ่งพิมพ์",
+        "section.languages.title": "ภาษา",
+        "section.interests.title": "ความสนใจ",
+        "section.profiles.title": "โปรไฟล์",
+        "section.references.title": "อ้างอิง"
+    }
+}

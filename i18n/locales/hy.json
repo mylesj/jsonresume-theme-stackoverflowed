@@ -1,0 +1,17 @@
+{
+    "locale": "hy",
+    "language": {
+        "component.date.now": "Ներկա ժամանակ",
+        "section.skills.title": "Տեխնիկական հմտություններ",
+        "section.work.title": "Փորձ",
+        "section.volunteer.title": "Կամավորություն",
+        "section.projects.title": "Նախագծեր",
+        "section.education.title": "Կրթություն",
+        "section.awards.title": "Մրցանակներ",
+        "section.publications.title": "Հրապարակումներ",
+        "section.languages.title": "Լեզուներ",
+        "section.interests.title": "Հետաքրքրություններ",
+        "section.profiles.title": "Պրոֆիլներ",
+        "section.references.title": "Հղումներ"
+    }
+}

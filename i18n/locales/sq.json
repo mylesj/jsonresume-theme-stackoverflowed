@@ -1,0 +1,17 @@
+{
+    "locale": "sq",
+    "language": {
+        "component.date.now": "Koha e tashme",
+        "section.skills.title": "Aftësitë teknike",
+        "section.work.title": "Përvoja",
+        "section.volunteer.title": "Vullnetarizmi",
+        "section.projects.title": "Projektet",
+        "section.education.title": "Arsimi",
+        "section.awards.title": "Çmimet",
+        "section.publications.title": "Publikimet",
+        "section.languages.title": "Gjuhët",
+        "section.interests.title": "Interesat",
+        "section.profiles.title": "Profilet",
+        "section.references.title": "Referencat"
+    }
+}

@@ -1,0 +1,17 @@
+{
+    "locale": "he",
+    "language": {
+        "component.date.now": "הווה",
+        "section.skills.title": "כישורים טכניים",
+        "section.work.title": "ניסיון",
+        "section.volunteer.title": "התנדבות",
+        "section.projects.title": "פרויקטים",
+        "section.education.title": "חינוך",
+        "section.awards.title": "פרסים",
+        "section.publications.title": "פרסומים",
+        "section.languages.title": "שפות",
+        "section.interests.title": "תחומי עניין",
+        "section.profiles.title": "פרופילים",
+        "section.references.title": "הפניות"
+    }
+}

@@ -1,0 +1,17 @@
+{
+    "locale": "cy",
+    "language": {
+        "component.date.now": "Amser Presennol",
+        "section.skills.title": "Sgiliau Technegol",
+        "section.work.title": "Profiad",
+        "section.volunteer.title": "Gwirfoddoli",
+        "section.projects.title": "Prosiectau",
+        "section.education.title": "Addysg",
+        "section.awards.title": "Gwobrau",
+        "section.publications.title": "Cyhoeddiadau",
+        "section.languages.title": "Ieithoedd",
+        "section.interests.title": "Diddordebau",
+        "section.profiles.title": "Proffiliau",
+        "section.references.title": "Cyfeiriadau"
+    }
+}

@@ -1,0 +1,17 @@
+{
+    "locale": "tt",
+    "language": {
+        "component.date.now": "Хәзерге вакыт",
+        "section.skills.title": "Техник осталык",
+        "section.work.title": "Тәҗрибә",
+        "section.volunteer.title": "Волонтерлык",
+        "section.projects.title": "Проектлар",
+        "section.education.title": "Мәгариф",
+        "section.awards.title": "Бүләкләр",
+        "section.publications.title": "Басмалар",
+        "section.languages.title": "Телләр",
+        "section.interests.title": "Кызыксынулар",
+        "section.profiles.title": "Профильләр",
+        "section.references.title": "Белешмәләр"
+    }
+}

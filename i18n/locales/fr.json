@@ -1,0 +1,17 @@
+{
+    "locale": "fr",
+    "language": {
+        "component.date.now": "Temps présent",
+        "section.skills.title": "Compétences techniques",
+        "section.work.title": "Vivre",
+        "section.volunteer.title": "Faire du bénévolat",
+        "section.projects.title": "Projets",
+        "section.education.title": "Éducation",
+        "section.awards.title": "Récompenses",
+        "section.publications.title": "Ouvrages",
+        "section.languages.title": "Langues",
+        "section.interests.title": "Intérêts",
+        "section.profiles.title": "Profils",
+        "section.references.title": "Références"
+    }
+}

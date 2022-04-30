@@ -1,0 +1,17 @@
+{
+    "locale": "ca",
+    "language": {
+        "component.date.now": "Temps present",
+        "section.skills.title": "Habilitats tècniques",
+        "section.work.title": "Experiència",
+        "section.volunteer.title": "Voluntariat",
+        "section.projects.title": "Projectes",
+        "section.education.title": "Educació",
+        "section.awards.title": "Premis",
+        "section.publications.title": "Publicacions",
+        "section.languages.title": "Idiomes",
+        "section.interests.title": "Interessos",
+        "section.profiles.title": "Perfils",
+        "section.references.title": "Referències"
+    }
+}

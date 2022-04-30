@@ -1,0 +1,17 @@
+{
+    "locale": "ps",
+    "language": {
+        "component.date.now": "اوسنی وخت",
+        "section.skills.title": "تخنيکي مهارتونه",
+        "section.work.title": "تجربه",
+        "section.volunteer.title": "رضاکارانه کار کول",
+        "section.projects.title": "پروژې",
+        "section.education.title": "زده کړه",
+        "section.awards.title": "جایزې",
+        "section.publications.title": "خپرونې",
+        "section.languages.title": "ژبې",
+        "section.interests.title": "ګټو",
+        "section.profiles.title": "پروفایلونه",
+        "section.references.title": "حوالې"
+    }
+}

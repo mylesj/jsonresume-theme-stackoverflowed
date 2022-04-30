@@ -1,0 +1,17 @@
+{
+    "locale": "be",
+    "language": {
+        "component.date.now": "Цяперашні час",
+        "section.skills.title": "Тэхнічныя навыкі",
+        "section.work.title": "Вопыт",
+        "section.volunteer.title": "Валанцёрства",
+        "section.projects.title": "Праекты",
+        "section.education.title": "Адукацыя",
+        "section.awards.title": "Узнагароды",
+        "section.publications.title": "Публікацыі",
+        "section.languages.title": "Мовы",
+        "section.interests.title": "Інтарэсы",
+        "section.profiles.title": "Профілі",
+        "section.references.title": "Літаратура"
+    }
+}

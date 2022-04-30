@@ -1,0 +1,17 @@
+{
+    "locale": "mk",
+    "language": {
+        "component.date.now": "Сегашно време",
+        "section.skills.title": "Технички вештини",
+        "section.work.title": "Искуство",
+        "section.volunteer.title": "Волонтирање",
+        "section.projects.title": "Проекти",
+        "section.education.title": "Образование",
+        "section.awards.title": "Награди",
+        "section.publications.title": "Публикации",
+        "section.languages.title": "Јазици",
+        "section.interests.title": "Интереси",
+        "section.profiles.title": "Профили",
+        "section.references.title": "Референци"
+    }
+}

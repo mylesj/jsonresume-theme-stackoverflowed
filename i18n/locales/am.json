@@ -1,0 +1,17 @@
+{
+    "locale": "am",
+    "language": {
+        "component.date.now": "የአሁኑ ጊዜ",
+        "section.skills.title": "የቴክኒክ ችሎታዎች",
+        "section.work.title": "ልምድ",
+        "section.volunteer.title": "በጎ ፈቃደኝነት",
+        "section.projects.title": "ፕሮጀክቶች",
+        "section.education.title": "ትምህርት",
+        "section.awards.title": "ሽልማቶች",
+        "section.publications.title": "ህትመቶች",
+        "section.languages.title": "ቋንቋዎች",
+        "section.interests.title": "ፍላጎቶች",
+        "section.profiles.title": "መገለጫዎች",
+        "section.references.title": "ዋቢዎች"
+    }
+}

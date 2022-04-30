@@ -1,0 +1,17 @@
+{
+    "locale": "az",
+    "language": {
+        "component.date.now": "İndiki zaman",
+        "section.skills.title": "Texniki Bacarıqlar",
+        "section.work.title": "Təcrübə",
+        "section.volunteer.title": "Könüllülük",
+        "section.projects.title": "Layihələr",
+        "section.education.title": "Təhsil",
+        "section.awards.title": "Mükafatlar",
+        "section.publications.title": "Nəşrlər",
+        "section.languages.title": "Dillər",
+        "section.interests.title": "Maraqlar",
+        "section.profiles.title": "Profillər",
+        "section.references.title": "İstinadlar"
+    }
+}

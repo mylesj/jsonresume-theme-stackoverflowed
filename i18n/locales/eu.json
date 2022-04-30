@@ -1,0 +1,17 @@
+{
+    "locale": "eu",
+    "language": {
+        "component.date.now": "Oraingo Denbora",
+        "section.skills.title": "Trebetasun Teknikoak",
+        "section.work.title": "Esperientzia",
+        "section.volunteer.title": "Boluntariotza",
+        "section.projects.title": "Proiektuak",
+        "section.education.title": "Hezkuntza",
+        "section.awards.title": "Sariak",
+        "section.publications.title": "Argitalpenak",
+        "section.languages.title": "Hizkuntzak",
+        "section.interests.title": "Interesak",
+        "section.profiles.title": "Profilak",
+        "section.references.title": "Erreferentziak"
+    }
+}

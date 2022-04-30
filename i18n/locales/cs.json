@@ -1,0 +1,17 @@
+{
+    "locale": "cs",
+    "language": {
+        "component.date.now": "Přítomnost",
+        "section.skills.title": "Technické dovednosti",
+        "section.work.title": "Zkušenosti",
+        "section.volunteer.title": "Dobrovolnictví",
+        "section.projects.title": "Projekty",
+        "section.education.title": "Vzdělávání",
+        "section.awards.title": "Ocenění",
+        "section.publications.title": "Publikace",
+        "section.languages.title": "Jazyky",
+        "section.interests.title": "Zájmy",
+        "section.profiles.title": "Profily",
+        "section.references.title": "Reference"
+    }
+}

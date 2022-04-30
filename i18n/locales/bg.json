@@ -1,0 +1,17 @@
+{
+    "locale": "bg",
+    "language": {
+        "component.date.now": "Сегашно време",
+        "section.skills.title": "Технически умения",
+        "section.work.title": "Опит",
+        "section.volunteer.title": "Доброволчество",
+        "section.projects.title": "Проекти",
+        "section.education.title": "Образование",
+        "section.awards.title": "награди",
+        "section.publications.title": "Публикации",
+        "section.languages.title": "езици",
+        "section.interests.title": "интереси",
+        "section.profiles.title": "Профили",
+        "section.references.title": "Препратки"
+    }
+}

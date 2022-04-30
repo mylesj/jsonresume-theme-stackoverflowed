@@ -1,0 +1,17 @@
+{
+    "locale": "hr",
+    "language": {
+        "component.date.now": "Sadašnjost",
+        "section.skills.title": "Tehničke vještine",
+        "section.work.title": "Iskustvo",
+        "section.volunteer.title": "Volontiranje",
+        "section.projects.title": "Projekti",
+        "section.education.title": "Obrazovanje",
+        "section.awards.title": "Nagrade",
+        "section.publications.title": "Publikacije",
+        "section.languages.title": "Jezici",
+        "section.interests.title": "Interesi",
+        "section.profiles.title": "Profili",
+        "section.references.title": "Reference"
+    }
+}

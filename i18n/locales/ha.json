@@ -1,0 +1,17 @@
+{
+    "locale": "ha",
+    "language": {
+        "component.date.now": "Lokacin Yanzu",
+        "section.skills.title": "Ƙwarewar Fasaha",
+        "section.work.title": "Kwarewa",
+        "section.volunteer.title": "Sa kai",
+        "section.projects.title": "Ayyuka",
+        "section.education.title": "Ilimi",
+        "section.awards.title": "Kyauta",
+        "section.publications.title": "Labarai",
+        "section.languages.title": "Harsuna",
+        "section.interests.title": "Abubuwan sha'awa",
+        "section.profiles.title": "Bayanan martaba",
+        "section.references.title": "Magana"
+    }
+}

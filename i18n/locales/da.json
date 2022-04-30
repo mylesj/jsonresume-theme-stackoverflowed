@@ -1,0 +1,17 @@
+{
+    "locale": "da",
+    "language": {
+        "component.date.now": "Nutid",
+        "section.skills.title": "Tekniske færdigheder",
+        "section.work.title": "Erfaring",
+        "section.volunteer.title": "Frivilligt arbejde",
+        "section.projects.title": "Projekter",
+        "section.education.title": "Uddannelse",
+        "section.awards.title": "Priser",
+        "section.publications.title": "Publikationer",
+        "section.languages.title": "Sprog",
+        "section.interests.title": "Interesser",
+        "section.profiles.title": "Profiler",
+        "section.references.title": "Referencer"
+    }
+}

@@ -1,0 +1,17 @@
+{
+    "locale": "sw",
+    "language": {
+        "component.date.now": "Wakati uliopo",
+        "section.skills.title": "Ujuzi wa Kiufundi",
+        "section.work.title": "Uzoefu",
+        "section.volunteer.title": "Kujitolea",
+        "section.projects.title": "Miradi",
+        "section.education.title": "Elimu",
+        "section.awards.title": "Tuzo",
+        "section.publications.title": "Machapisho",
+        "section.languages.title": "Lugha",
+        "section.interests.title": "Maslahi",
+        "section.profiles.title": "Wasifu",
+        "section.references.title": "Marejeleo"
+    }
+}

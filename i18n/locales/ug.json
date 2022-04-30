@@ -1,0 +1,17 @@
+{
+    "locale": "ug",
+    "language": {
+        "component.date.now": "ھازىرقى ۋاقىت",
+        "section.skills.title": "تېخنىكىلىق ماھارەت",
+        "section.work.title": "تەجرىبە",
+        "section.volunteer.title": "پىدائىيلار",
+        "section.projects.title": "Projects",
+        "section.education.title": "مائارىپ",
+        "section.awards.title": "مۇكاپات",
+        "section.publications.title": "نەشر بۇيۇملىرى",
+        "section.languages.title": "تىللار",
+        "section.interests.title": "قىزىقىش",
+        "section.profiles.title": "Profiles",
+        "section.references.title": "پايدىلانما"
+    }
+}

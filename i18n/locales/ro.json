@@ -1,0 +1,17 @@
+{
+    "locale": "ro",
+    "language": {
+        "component.date.now": "Timp prezent",
+        "section.skills.title": "Abilitati tehnice",
+        "section.work.title": "Experienţă",
+        "section.volunteer.title": "Voluntariat",
+        "section.projects.title": "Proiecte",
+        "section.education.title": "Educaţie",
+        "section.awards.title": "Premii",
+        "section.publications.title": "Publicaţii",
+        "section.languages.title": "Limbi",
+        "section.interests.title": "Interese",
+        "section.profiles.title": "Profiluri",
+        "section.references.title": "Referințe"
+    }
+}

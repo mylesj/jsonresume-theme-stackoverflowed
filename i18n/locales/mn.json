@@ -1,0 +1,17 @@
+{
+    "locale": "mn",
+    "language": {
+        "component.date.now": "Одоо цаг",
+        "section.skills.title": "Техникийн ур чадвар",
+        "section.work.title": "Туршлага",
+        "section.volunteer.title": "Сайн дурын ажил",
+        "section.projects.title": "Төслүүд",
+        "section.education.title": "Боловсрол",
+        "section.awards.title": "Шагнал",
+        "section.publications.title": "Хэвлэлүүд",
+        "section.languages.title": "Хэлнүүд",
+        "section.interests.title": "Сонирхол",
+        "section.profiles.title": "Профайлууд",
+        "section.references.title": "Лавлагаа"
+    }
+}

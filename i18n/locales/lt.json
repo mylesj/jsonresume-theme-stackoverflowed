@@ -1,0 +1,17 @@
+{
+    "locale": "lt",
+    "language": {
+        "component.date.now": "Esamasis laikas",
+        "section.skills.title": "Techniniai įgūdžiai",
+        "section.work.title": "Patirtis",
+        "section.volunteer.title": "Savanoriška veikla",
+        "section.projects.title": "Projektai",
+        "section.education.title": "Išsilavinimas",
+        "section.awards.title": "Apdovanojimai",
+        "section.publications.title": "Publikacijos",
+        "section.languages.title": "Kalbos",
+        "section.interests.title": "Pomėgiai",
+        "section.profiles.title": "Profiliai",
+        "section.references.title": "Nuorodos"
+    }
+}

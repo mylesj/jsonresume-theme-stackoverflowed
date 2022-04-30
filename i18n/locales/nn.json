@@ -1,0 +1,17 @@
+{
+    "locale": "nn",
+    "language": {
+        "component.date.now": "Nåtid",
+        "section.skills.title": "Tekniske ferdigheter",
+        "section.work.title": "Erfaring",
+        "section.volunteer.title": "Frivillig arbeid",
+        "section.projects.title": "Prosjekter",
+        "section.education.title": "utdanning",
+        "section.awards.title": "Priser",
+        "section.publications.title": "Publikasjoner",
+        "section.languages.title": "Språk",
+        "section.interests.title": "Interesser",
+        "section.profiles.title": "Profiler",
+        "section.references.title": "Referanser"
+    }
+}

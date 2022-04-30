@@ -1,0 +1,17 @@
+{
+    "locale": "ur",
+    "language": {
+        "component.date.now": "موجودہ وقت",
+        "section.skills.title": "تکنیکی مہارت",
+        "section.work.title": "تجربہ",
+        "section.volunteer.title": "رضاکارانہ",
+        "section.projects.title": "پروجیکٹس",
+        "section.education.title": "تعلیم",
+        "section.awards.title": "ایوارڈز",
+        "section.publications.title": "اشاعتیں",
+        "section.languages.title": "زبانیں",
+        "section.interests.title": "دلچسپیاں",
+        "section.profiles.title": "پروفائلز",
+        "section.references.title": "حوالہ جات"
+    }
+}

@@ -1,0 +1,17 @@
+{
+    "locale": "sl",
+    "language": {
+        "component.date.now": "Sedanjik",
+        "section.skills.title": "Tehnična znanja",
+        "section.work.title": "Izkušnje",
+        "section.volunteer.title": "Prostovoljstvo",
+        "section.projects.title": "Projekti",
+        "section.education.title": "Izobraževanje",
+        "section.awards.title": "Nagrade",
+        "section.publications.title": "Publikacije",
+        "section.languages.title": "jeziki",
+        "section.interests.title": "Zanimanja",
+        "section.profiles.title": "Profili",
+        "section.references.title": "Reference"
+    }
+}

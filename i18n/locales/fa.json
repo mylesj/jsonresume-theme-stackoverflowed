@@ -1,0 +1,17 @@
+{
+    "locale": "fa",
+    "language": {
+        "component.date.now": "زمان حال",
+        "section.skills.title": "مهارتهای فنی",
+        "section.work.title": "تجربه",
+        "section.volunteer.title": "داوطلب شدن",
+        "section.projects.title": "پروژه ها",
+        "section.education.title": "تحصیلات",
+        "section.awards.title": "جوایز",
+        "section.publications.title": "انتشارات",
+        "section.languages.title": "زبان ها",
+        "section.interests.title": "منافع",
+        "section.profiles.title": "پروفایل ها",
+        "section.references.title": "منابع"
+    }
+}

@@ -1,0 +1,17 @@
+{
+    "locale": "ta",
+    "language": {
+        "component.date.now": "தற்போதைய நேரம்",
+        "section.skills.title": "தொழில்நுட்ப திறன்கள்",
+        "section.work.title": "அனுபவம்",
+        "section.volunteer.title": "தன்னார்வத் தொண்டு",
+        "section.projects.title": "திட்டங்கள்",
+        "section.education.title": "கல்வி",
+        "section.awards.title": "விருதுகள்",
+        "section.publications.title": "வெளியீடுகள்",
+        "section.languages.title": "மொழிகள்",
+        "section.interests.title": "ஆர்வங்கள்",
+        "section.profiles.title": "சுயவிவரங்கள்",
+        "section.references.title": "குறிப்புகள்"
+    }
+}
