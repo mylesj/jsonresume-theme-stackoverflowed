@@ -35,7 +35,10 @@ export const Contact = ({ location, phone, email, className }: Props) => {
 
     return (
         <address className={className} css={{ textAlign: 'right' }}>
-            {locationText && <div>{locationText}</div>}
+            {locationText &&
+                locationText
+                    .split(/\\n|\n/g)
+                    .map((location, i) => <div key={i}>{location}</div>)}
             {phone && <Link type="tel" to={phone} css={{ display: 'block' }} />}
             {email && (
                 <Link type="mail" to={email} css={{ display: 'block' }} />
