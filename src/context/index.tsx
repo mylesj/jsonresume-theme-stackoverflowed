@@ -23,4 +23,4 @@ export const useLocale = <T extends keyof Locale>(key: T): Locale[T] =>
 
 export const useConfig = <T extends keyof Configuration>(
     key: T
-): Configuration[T] => useResume()?.meta?.[THEME_NAME]?.[key]
+): Configuration[T] => useAppContext()?.resume?.meta?.[THEME_NAME]?.[key]
