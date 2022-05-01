@@ -30,6 +30,15 @@ describe('labels', () => {
             ? expect(el).toBeInTheDocument()
             : expect(el).not.toBeInTheDocument()
     })
+
+    it('should ignore unexpected input', () => {
+        const { getByRole } = render(
+            <SubSection label={[(() => undefined) as unknown as string]}>
+                foo
+            </SubSection>
+        )
+        expect(getByRole('heading').childElementCount).toBe(0)
+    })
 })
 
 describe('dates', () => {
@@ -54,7 +63,7 @@ describe('dates', () => {
         expect(getByText('Jan 2001')).toBeInTheDocument()
     })
 
-    it('should prioritize a date range if ambiguous input is recieved', () => {
+    it('should prioritize a date range if ambiguous input is received', () => {
         const { getByText } = render(
             <SubSection label="" date="2000" startDate="2001">
                 foo
