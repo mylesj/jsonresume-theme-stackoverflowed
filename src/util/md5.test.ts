@@ -1,3 +1,5 @@
+export {}
+
 describe('md5 module', () => {
     const ENV = process.env
 

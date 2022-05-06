@@ -17,6 +17,7 @@ beforeEach(() => {
         titleLabel: { title: 'foo', label: 'bar' },
         titleUrl: { title: 'foo', url: 'https://foo.com' },
         titleLabelUrl: { title: 'foo', label: 'bar', url: 'https://foo.com' },
+        titleIcon: { title: 'icon entry', icon: 'stackoverflow' },
     }
 })
 
@@ -63,4 +64,12 @@ it('should prioritise rendering URLs if the showUrl prop is true', () => {
     expect(getByText('foo')).toBeInTheDocument()
     expect(getByText('foo.com')).toBeInTheDocument()
     expect(getByText('foo.com').getAttribute('href')).toBe('https://foo.com')
+})
+
+it('should render an icon for valid social network types', () => {
+    const { getByText } = render(
+        <SimpleEntries showUrl entries={[entries.titleIcon]} />
+    )
+    const svg = getByText('icon entry').parentElement?.querySelector('svg')
+    expect(svg).toBeInTheDocument()
 })

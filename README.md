@@ -135,6 +135,10 @@ be configured to align to the `left` of the name and title.
 [date-fns-format]: https://date-fns.org/v2.28.0/docs/format
 [gravatar]: https://en.gravatar.com/
 
+<!--
+[simple-icons]: https://simpleicons.org/
+-->
+
 <!-- images -->
 
 [img-sample]: https://repository-images.githubusercontent.com/482519223/7a3c02dd-2f3f-401e-af71-7f3aebf7ff3f

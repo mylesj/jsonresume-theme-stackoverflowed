@@ -1,8 +1,12 @@
+import { useMemo } from 'react'
+import icons from 'simple-icons'
+
 import { ZeroWidthSpace } from './ZeroWidthSpace'
 import { Link } from './Link'
 
 type Props = {
     entries: {
+        icon?: string
         title?: string
         label?: string
         url?: string
@@ -11,20 +15,62 @@ type Props = {
     className?: string
 }
 
+const useSvgIcons = (entries: Props['entries']) => {
+    const svgIcons = useMemo(() => {
+        return entries.reduce<Record<string, string>>((acc, { icon }) => {
+            const key = icon?.toLowerCase()
+            const svg = key && icons.Get(key)?.svg
+            if (svg) {
+                acc[key] = svg
+            }
+            return acc
+        }, {})
+    }, [entries])
+
+    const hasIcons = Boolean(svgIcons && Object.keys(svgIcons).length)
+    const getIcon = (key?: string) =>
+        (key && svgIcons[key.toLowerCase()]) ?? null
+
+    return [hasIcons, getIcon] as const
+}
+
 export const SimpleEntries = ({ showUrl, entries, className }: Props) => {
+    const [hasIcons, getIcon] = useSvgIcons(entries)
     return (
         <ul className={className}>
-            {entries.map(({ title, label, url }, i) => (
+            {entries.map(({ icon, title, label, url }, i) => (
                 <li
                     key={i}
                     css={{
                         '&:not(:last-of-type)': {
-                            marginBottom: '.4rem',
+                            marginBottom: '.6rem',
                         },
                     }}
                 >
+                    {hasIcons && (
+                        <div
+                            css={(theme) => ({
+                                float: 'left',
+                                marginRight: '.8rem',
+                                width: '1.25rem',
+                                // force dimensions when inner content is empty
+                                minHeight: '1px',
+                                '& > svg': {
+                                    display: 'block',
+                                    fill: theme.text.color.tertiary,
+                                },
+                            })}
+                            dangerouslySetInnerHTML={{
+                                __html: getIcon(icon) || '',
+                            }}
+                        />
+                    )}
                     {title && (
-                        <strong css={{ fontWeight: 'bold' }}>
+                        <strong
+                            css={{
+                                fontWeight: 'bold',
+                            }}
+                        >
                             {title}
                             {(label || url) && <ZeroWidthSpace />}
                         </strong>
