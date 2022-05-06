@@ -2,6 +2,8 @@
     "locale": "cy",
     "language": {
         "component.date.now": "Amser Presennol",
+        "component.picture.alt": "Llun o {{name}}.",
+        "component.avatar.alt": "Avatar proffil ar gyfer {{name}}.",
         "section.skills.title": "Sgiliau Technegol",
         "section.work.title": "Profiad",
         "section.volunteer.title": "Gwirfoddoli",

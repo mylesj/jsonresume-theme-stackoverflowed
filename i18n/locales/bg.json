@@ -2,6 +2,8 @@
     "locale": "bg",
     "language": {
         "component.date.now": "Сегашно време",
+        "component.picture.alt": "Снимка на {{name}}.",
+        "component.avatar.alt": "Аватар на потребителския профил за {{name}}.",
         "section.skills.title": "Технически умения",
         "section.work.title": "Опит",
         "section.volunteer.title": "Доброволчество",

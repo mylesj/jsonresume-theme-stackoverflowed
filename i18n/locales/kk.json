@@ -2,6 +2,8 @@
     "locale": "kk",
     "language": {
         "component.date.now": "Қазіргі уақыт",
+        "component.picture.alt": "{{name}} суреті.",
+        "component.avatar.alt": "{{name}} профилінің аватары.",
         "section.skills.title": "Техникалық дағдылар",
         "section.work.title": "Тәжірибе",
         "section.volunteer.title": "Волонтерлік",

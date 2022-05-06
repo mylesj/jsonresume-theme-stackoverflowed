@@ -2,6 +2,8 @@
     "locale": "nl",
     "language": {
         "component.date.now": "Tegenwoordige tijd",
+        "component.picture.alt": "Een foto van {{name}}.",
+        "component.avatar.alt": "Een profielavatar voor {{name}}.",
         "section.skills.title": "Technische vaardigheden",
         "section.work.title": "Beleven",
         "section.volunteer.title": "Vrijwilligerswerk",
@@ -10,7 +12,7 @@
         "section.awards.title": "onderscheidingen",
         "section.publications.title": "publicaties",
         "section.languages.title": "Talen",
-        "section.interests.title": "interesses",
+        "section.interests.title": "Interesses",
         "section.profiles.title": "Profielen",
         "section.references.title": "Referenties"
     }

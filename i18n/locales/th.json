@@ -2,6 +2,8 @@
     "locale": "th",
     "language": {
         "component.date.now": "เวลาปัจจุบัน",
+        "component.picture.alt": "ภาพของ {{name}}",
+        "component.avatar.alt": "รูปโปรไฟล์ของ {{name}}",
         "section.skills.title": "ทักษะทางเทคนิค",
         "section.work.title": "ประสบการณ์",
         "section.volunteer.title": "อาสาสมัคร",

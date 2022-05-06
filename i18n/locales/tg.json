@@ -2,6 +2,8 @@
     "locale": "tg",
     "language": {
         "component.date.now": "Замони ҳозира",
+        "component.picture.alt": "Акси {{name}}.",
+        "component.avatar.alt": "Аватари профил барои {{name}}.",
         "section.skills.title": "Малакаҳои техникӣ",
         "section.work.title": "Таҷриба",
         "section.volunteer.title": "Волонтёрӣ",

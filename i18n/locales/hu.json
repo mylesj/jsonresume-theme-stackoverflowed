@@ -2,6 +2,8 @@
     "locale": "hu",
     "language": {
         "component.date.now": "Jelen idő",
+        "component.picture.alt": "{{name}} képe.",
+        "component.avatar.alt": "Profil avatar a következőhöz: {{name}}.",
         "section.skills.title": "Technikai készségek",
         "section.work.title": "Tapasztalat",
         "section.volunteer.title": "Önkéntesség",

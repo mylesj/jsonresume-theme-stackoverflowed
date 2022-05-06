@@ -2,6 +2,8 @@
     "locale": "pl",
     "language": {
         "component.date.now": "Czas teraźniejszy",
+        "component.picture.alt": "Zdjęcie {{name}}.",
+        "component.avatar.alt": "Awatar profilu dla {{name}}.",
         "section.skills.title": "Umiejętności techniczne",
         "section.work.title": "Doświadczenie",
         "section.volunteer.title": "Zgłaszanie się na ochotnika",

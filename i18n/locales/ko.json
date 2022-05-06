@@ -2,6 +2,8 @@
     "locale": "ko",
     "language": {
         "component.date.now": "현재 시간",
+        "component.picture.alt": "{{name}}의 사진.",
+        "component.avatar.alt": "{{name}}의 프로필 아바타입니다.",
         "section.skills.title": "기술 능력",
         "section.work.title": "경험",
         "section.volunteer.title": "자원",

@@ -2,6 +2,8 @@
     "locale": "nb",
     "language": {
         "component.date.now": "Nåtid",
+        "component.picture.alt": "Et bilde av {{name}}.",
+        "component.avatar.alt": "En profilavatar for {{name}}.",
         "section.skills.title": "Tekniske ferdigheter",
         "section.work.title": "Erfaring",
         "section.volunteer.title": "Frivillig arbeid",

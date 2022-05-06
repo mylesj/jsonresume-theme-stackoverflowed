@@ -7,6 +7,8 @@ import path from 'path'
 
 const VALID_SCHEMA_ENTRIES = [
     'component.date.now',
+    'component.avatar.alt',
+    'component.picture.alt',
     'section.skills.title',
     'section.work.title',
     'section.volunteer.title',

@@ -2,6 +2,8 @@
     "locale": "so",
     "language": {
         "component.date.now": "Waqtiga xaadirka ah",
+        "component.picture.alt": "Sawirka {{name}}",
+        "component.avatar.alt": "Avatar profile ah {{name}}",
         "section.skills.title": "Xirfadaha Farsamada",
         "section.work.title": "Khibrad",
         "section.volunteer.title": "Iskaa wax u qabso",

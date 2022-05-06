@@ -2,6 +2,8 @@
     "locale": "ka",
     "language": {
         "component.date.now": "Აწმყო დრო",
+        "component.picture.alt": "{{name}}-ის სურათი.",
+        "component.avatar.alt": "პროფილის ავატარი {{name}}-ისთვის.",
         "section.skills.title": "ტექნიკური უნარები",
         "section.work.title": "გამოცდილება",
         "section.volunteer.title": "Მოხალისეობა",

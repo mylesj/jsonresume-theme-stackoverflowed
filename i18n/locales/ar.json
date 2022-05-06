@@ -2,6 +2,8 @@
     "locale": "ar",
     "language": {
         "component.date.now": "الوقت الحاضر",
+        "component.picture.alt": "صورة {{name}}.",
+        "component.avatar.alt": "صورة رمزية للملف الشخصي لـ {{name}}.",
         "section.skills.title": "مهارات تقنية",
         "section.work.title": "خبرة",
         "section.volunteer.title": "التطوع",

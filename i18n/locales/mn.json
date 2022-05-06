@@ -2,6 +2,8 @@
     "locale": "mn",
     "language": {
         "component.date.now": "Одоо цаг",
+        "component.picture.alt": "{{name}}-н зураг.",
+        "component.avatar.alt": "{{name}}-н профайлын аватар.",
         "section.skills.title": "Техникийн ур чадвар",
         "section.work.title": "Туршлага",
         "section.volunteer.title": "Сайн дурын ажил",

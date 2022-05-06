@@ -2,6 +2,8 @@
     "locale": "km",
     "language": {
         "component.date.now": "ពេលបច្ចុប្បន្ន",
+        "component.picture.alt": "រូបភាពនៃ {{name}} ។",
+        "component.avatar.alt": "រូបតំណាងកម្រងព័ត៌មានសម្រាប់ {{name}} ។",
         "section.skills.title": "ជំនាញបច្ចេកទេស",
         "section.work.title": "បទពិសោធន៍",
         "section.volunteer.title": "ការងារស្ម័គ្រចិត្ត",

@@ -2,6 +2,8 @@
     "locale": "id",
     "language": {
         "component.date.now": "Saat ini",
+        "component.picture.alt": "Gambar {{name}}.",
+        "component.avatar.alt": "Avatar profil untuk {{name}}.",
         "section.skills.title": "Keterampilan teknis",
         "section.work.title": "Pengalaman",
         "section.volunteer.title": "Sukarelawan",

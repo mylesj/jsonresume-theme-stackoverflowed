@@ -2,6 +2,8 @@
     "locale": "ug",
     "language": {
         "component.date.now": "ھازىرقى ۋاقىت",
+        "component.picture.alt": "{{Name} of نىڭ رەسىمى.",
+        "component.avatar.alt": "{{Name} for نىڭ ئارخىپ باش سۈرىتى.",
         "section.skills.title": "تېخنىكىلىق ماھارەت",
         "section.work.title": "تەجرىبە",
         "section.volunteer.title": "پىدائىيلار",

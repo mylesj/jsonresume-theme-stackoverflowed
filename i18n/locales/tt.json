@@ -2,6 +2,8 @@
     "locale": "tt",
     "language": {
         "component.date.now": "Хәзерге вакыт",
+        "component.picture.alt": "{{name}} of рәсеме.",
+        "component.avatar.alt": "{{name}} for өчен профиль аватары.",
         "section.skills.title": "Техник осталык",
         "section.work.title": "Тәҗрибә",
         "section.volunteer.title": "Волонтерлык",

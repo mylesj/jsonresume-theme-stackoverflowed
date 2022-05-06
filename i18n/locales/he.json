@@ -2,6 +2,8 @@
     "locale": "he",
     "language": {
         "component.date.now": "הווה",
+        "component.picture.alt": "תמונה של {{name}}.",
+        "component.avatar.alt": "דמות פרופיל עבור {{name}}.",
         "section.skills.title": "כישורים טכניים",
         "section.work.title": "ניסיון",
         "section.volunteer.title": "התנדבות",

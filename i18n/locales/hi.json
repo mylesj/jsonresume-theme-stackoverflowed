@@ -2,6 +2,8 @@
     "locale": "hi",
     "language": {
         "component.date.now": "वर्तमान समय",
+        "component.picture.alt": "{{name}} की एक तस्वीर।",
+        "component.avatar.alt": "{{name}} के लिए प्रोफ़ाइल अवतार।",
         "section.skills.title": "तकनीकी कौशल",
         "section.work.title": "अनुभव",
         "section.volunteer.title": "स्वयं सेवा",

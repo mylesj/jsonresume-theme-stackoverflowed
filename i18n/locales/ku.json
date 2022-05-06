@@ -2,6 +2,8 @@
     "locale": "ku",
     "language": {
         "component.date.now": "Dema niha",
+        "component.picture.alt": "Wêneyek {{name}}.",
+        "component.avatar.alt": "Avatarek profîlek ji bo {{name}}.",
         "section.skills.title": "Technical Skills",
         "section.work.title": "Tecribe",
         "section.volunteer.title": "Dilxwazî",

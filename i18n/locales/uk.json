@@ -2,6 +2,8 @@
     "locale": "uk",
     "language": {
         "component.date.now": "Теперішній час",
+        "component.picture.alt": "Зображення {{name}}.",
+        "component.avatar.alt": "Аватар профілю для {{name}}.",
         "section.skills.title": "Технічні навички",
         "section.work.title": "Досвід",
         "section.volunteer.title": "Волонтерство",

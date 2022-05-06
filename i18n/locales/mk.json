@@ -2,6 +2,8 @@
     "locale": "mk",
     "language": {
         "component.date.now": "Сегашно време",
+        "component.picture.alt": "Слика од {{name}}.",
+        "component.avatar.alt": "Аватар на профилот за {{name}}.",
         "section.skills.title": "Технички вештини",
         "section.work.title": "Искуство",
         "section.volunteer.title": "Волонтирање",

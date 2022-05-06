@@ -2,6 +2,8 @@
     "locale": "ms",
     "language": {
         "component.date.now": "Masa kini",
+        "component.picture.alt": "Gambar {{name}}.",
+        "component.avatar.alt": "Avatar profil untuk {{name}}.",
         "section.skills.title": "Kemahiran teknikal",
         "section.work.title": "Pengalaman",
         "section.volunteer.title": "Sukarelawan",
