@@ -16,15 +16,15 @@ export const BasicsProfiles = () => {
         return null
     }
 
-    // todo: social icons
     // todo: map usernames to URLs
     return (
         <Section label={i18n('section.profiles.title')}>
             <SimpleEntries
                 showUrl
                 entries={useableProfiles.map(
-                    ({ network: title, username: label, url }) => ({
-                        title,
+                    ({ network, username: label, url }) => ({
+                        title: network,
+                        icon: network,
                         label,
                         url,
                     })
