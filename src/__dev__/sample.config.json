@@ -12,6 +12,12 @@
                     "{{city}}, {{countryCode}}",
                     "{{city}}"
                 ]
+            },
+            "intro": {
+                "avatar": {
+                    "show": true,
+                    "align": "right"
+                }
             }
         }
     }

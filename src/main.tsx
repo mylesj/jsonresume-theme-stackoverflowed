@@ -7,9 +7,12 @@ import { THEME_NAME } from '~/constants'
 import html from './html'
 import View from './view'
 
+import { resumeMiddleware } from './middleware'
+
 import pkg from '../package.json'
 
 export const render: Renderer = async (resume) => {
+    const enhancedResume = await resumeMiddleware(resume)
     const locale = await getLocale(resume.meta?.[THEME_NAME]?.locale)
 
     return html({
@@ -18,7 +21,7 @@ export const render: Renderer = async (resume) => {
             generator: `${pkg.name}@${pkg.version}`,
         },
         body: renderToString(
-            <AppContext.Provider value={{ resume, locale }}>
+            <AppContext.Provider value={{ resume: enhancedResume, locale }}>
                 <View />
             </AppContext.Provider>
         ),

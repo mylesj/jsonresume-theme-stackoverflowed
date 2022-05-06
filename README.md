@@ -94,6 +94,30 @@ a newline character in the template - note that this needs to be doubly escaped 
 }
 ```
 
+### Introduction
+
+```typescript
+{
+    "intro": {
+        "avatar": {
+            "show": boolean,
+            "align": string
+        }
+    }
+}
+```
+
+**`intro.avatar.show`** &mdash; `boolean`
+
+All resume data will be displayed by default if there is content, however the profile image can be
+hidden if preferable. Should a profile `image` not be available, this theme will lookup a Gravatar
+for the `email` field under the `basics` profile data.
+
+**`intro.avatar.align`** &mdash; `string` &mdash; `"left"` &vert; `"right"`
+
+By default the avatar will align to the `right` of the address and contact details - however can
+be configured to align to the `left` of the name and title.
+
 <!-- project links -->
 
 [npm]: https://www.npmjs.com/package/jsonresume-theme-stackoverflowed
@@ -109,10 +133,11 @@ a newline character in the template - note that this needs to be doubly escaped 
 [resume-cli]: https://github.com/jsonresume/resume-cli
 [so-meta]: https://meta.stackoverflow.com/questions/415293/sunsetting-jobs-developer-story
 [date-fns-format]: https://date-fns.org/v2.28.0/docs/format
+[gravatar]: https://en.gravatar.com/
 
 <!-- images -->
 
-[img-sample]: https://repository-images.githubusercontent.com/482519223/ddfa650d-29ce-4672-9523-ac3737b9f950
+[img-sample]: https://repository-images.githubusercontent.com/482519223/7a3c02dd-2f3f-401e-af71-7f3aebf7ff3f
 [shield-github]: https://img.shields.io/badge/%20-Source-555555?logo=github&style=for-the-badge
 [shield-changelog]: https://img.shields.io/badge/%20-Changelog-555555?logo=github&style=for-the-badge
 [shield-ci-main]: https://img.shields.io/github/workflow/status/mylesj/jsonresume-theme-stackoverflowed/CI/main?label=CI&logo=github&style=for-the-badge

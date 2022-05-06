@@ -1,4 +1,5 @@
 import { DEFAULT_LOCALE } from '~/constants'
+import { interpolate, InterpolateValues } from '~/util'
 
 import { shortCode } from './util'
 
@@ -30,8 +31,8 @@ export const localCopyFactory = async (locale: string) => {
     }
 
     return {
-        i18n: (key: LocaleKey): string => {
-            return data.language[key]
+        i18n: (key: LocaleKey, values: InterpolateValues = {}): string => {
+            return interpolate(data.language[key], values) ?? ''
         },
     }
 }
