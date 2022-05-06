@@ -2,6 +2,8 @@
     "locale": "ja",
     "language": {
         "component.date.now": "現時点",
+        "component.picture.alt": "{{name}}の写真。",
+        "component.avatar.alt": "{{name}}のプロフィールアバター。",
         "section.skills.title": "技術的なスキル",
         "section.work.title": "経験",
         "section.volunteer.title": "ボランティア",

@@ -2,6 +2,8 @@
     "locale": "uz",
     "language": {
         "component.date.now": "Hozirgi vaqt",
+        "component.picture.alt": "{{name}} surati.",
+        "component.avatar.alt": "{{name}} uchun profil avatar.",
         "section.skills.title": "Texnik ko'nikmalar",
         "section.work.title": "Tajriba",
         "section.volunteer.title": "Ko'ngillilik",

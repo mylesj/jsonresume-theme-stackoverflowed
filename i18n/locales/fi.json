@@ -2,6 +2,8 @@
     "locale": "fi",
     "language": {
         "component.date.now": "Nykyhetki",
+        "component.picture.alt": "Kuva henkilöstä {{name}}.",
+        "component.avatar.alt": "Profiiliavatar henkilölle {{name}}.",
         "section.skills.title": "Teknisiä taitoja",
         "section.work.title": "Kokea",
         "section.volunteer.title": "Vapaaehtoistyö",

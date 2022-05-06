@@ -2,6 +2,8 @@
     "locale": "lv",
     "language": {
         "component.date.now": "Pašreizējais laiks",
+        "component.picture.alt": "{{name}} attēls.",
+        "component.avatar.alt": "Profila iemiesojums lietotājam {{name}}.",
         "section.skills.title": "Tehniskās iemaņas",
         "section.work.title": "Pieredze",
         "section.volunteer.title": "Brīvprātīgais darbs",

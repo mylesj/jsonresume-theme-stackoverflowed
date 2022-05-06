@@ -2,6 +2,8 @@
     "locale": "el",
     "language": {
         "component.date.now": "Αυτη τη ΣΤΙΓΜΗ",
+        "component.picture.alt": "Μια εικόνα του {{name}}.",
+        "component.avatar.alt": "Ένα avatar προφίλ για {{name}}.",
         "section.skills.title": "Τεχνικές δεξιότητες",
         "section.work.title": "Εμπειρία",
         "section.volunteer.title": "Εθελοντισμός",

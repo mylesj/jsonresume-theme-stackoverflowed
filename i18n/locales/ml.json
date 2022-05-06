@@ -2,6 +2,8 @@
     "locale": "ml",
     "language": {
         "component.date.now": "ഇപ്പോൾ",
+        "component.picture.alt": "{{name}} എന്നയാളുടെ ചിത്രം.",
+        "component.avatar.alt": "{{name}} എന്നതിനായുള്ള ഒരു പ്രൊഫൈൽ അവതാർ.",
         "section.skills.title": "സാങ്കേതിക കഴിവുകളും",
         "section.work.title": "അനുഭവം",
         "section.volunteer.title": "സന്നദ്ധസേവനം",

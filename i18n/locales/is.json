@@ -2,6 +2,8 @@
     "locale": "is",
     "language": {
         "component.date.now": "Nútíminn",
+        "component.picture.alt": "Mynd af {{name}}.",
+        "component.avatar.alt": "Avatar prófíls fyrir {{name}}.",
         "section.skills.title": "Tæknilegir hæfileikar",
         "section.work.title": "Reynsla",
         "section.volunteer.title": "Sjálfboðaliðastarf",

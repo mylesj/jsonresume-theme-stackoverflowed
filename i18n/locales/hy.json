@@ -2,6 +2,8 @@
     "locale": "hy",
     "language": {
         "component.date.now": "Ներկա ժամանակ",
+        "component.picture.alt": "{{name}}-ի նկարը:",
+        "component.avatar.alt": "{{name}}-ի պրոֆիլի ավատար:",
         "section.skills.title": "Տեխնիկական հմտություններ",
         "section.work.title": "Փորձ",
         "section.volunteer.title": "Կամավորություն",

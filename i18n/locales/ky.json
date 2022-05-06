@@ -2,6 +2,8 @@
     "locale": "ky",
     "language": {
         "component.date.now": "Учур чак",
+        "component.picture.alt": "{{name}} сүрөтү.",
+        "component.avatar.alt": "{{name}} профилинин аватары.",
         "section.skills.title": "Техникалык көндүмдөр",
         "section.work.title": "Тажрыйба",
         "section.volunteer.title": "Волонтерлук",

@@ -2,6 +2,8 @@
     "locale": "sd",
     "language": {
         "component.date.now": "موجوده وقت",
+        "component.picture.alt": "{{name}} جي تصوير.",
+        "component.avatar.alt": "پروفائل اوتار {{name}} لاءِ.",
         "section.skills.title": "ٽيڪنيڪل صلاحيتن",
         "section.work.title": "تجربو",
         "section.volunteer.title": "رضاڪارانه",

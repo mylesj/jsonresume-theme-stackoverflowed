@@ -2,6 +2,8 @@
     "locale": "fa",
     "language": {
         "component.date.now": "زمان حال",
+        "component.picture.alt": "تصویری از {{name}}.",
+        "component.avatar.alt": "یک نماد نمایه برای {{name}}.",
         "section.skills.title": "مهارتهای فنی",
         "section.work.title": "تجربه",
         "section.volunteer.title": "داوطلب شدن",

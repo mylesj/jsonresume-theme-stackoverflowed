@@ -2,6 +2,8 @@
     "locale": "am",
     "language": {
         "component.date.now": "የአሁኑ ጊዜ",
+        "component.picture.alt": "የ{{name}} ሥዕል።",
+        "component.avatar.alt": "የ{{name}} መገለጫ አምሳያ።",
         "section.skills.title": "የቴክኒክ ችሎታዎች",
         "section.work.title": "ልምድ",
         "section.volunteer.title": "በጎ ፈቃደኝነት",

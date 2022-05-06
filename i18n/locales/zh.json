@@ -2,6 +2,8 @@
     "locale": "zh",
     "language": {
         "component.date.now": "现在时间",
+        "component.picture.alt": "{{name}} 的照片。",
+        "component.avatar.alt": "{{name}} 的个人资料头像。",
         "section.skills.title": "技术能力",
         "section.work.title": "经验",
         "section.volunteer.title": "志愿服务",

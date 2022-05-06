@@ -2,6 +2,8 @@
     "locale": "ha",
     "language": {
         "component.date.now": "Lokacin Yanzu",
+        "component.picture.alt": "Hoton {{name}}.",
+        "component.avatar.alt": "Avatar bayanin martaba don {{name}}.",
         "section.skills.title": "Ƙwarewar Fasaha",
         "section.work.title": "Kwarewa",
         "section.volunteer.title": "Sa kai",

@@ -2,6 +2,8 @@
     "locale": "ur",
     "language": {
         "component.date.now": "موجودہ وقت",
+        "component.picture.alt": "{{name}} کی تصویر۔",
+        "component.avatar.alt": "{{name}} کے لیے پروفائل اوتار۔",
         "section.skills.title": "تکنیکی مہارت",
         "section.work.title": "تجربہ",
         "section.volunteer.title": "رضاکارانہ",

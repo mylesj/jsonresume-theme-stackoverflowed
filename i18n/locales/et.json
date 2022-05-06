@@ -2,6 +2,8 @@
     "locale": "et",
     "language": {
         "component.date.now": "Praegune aeg",
+        "component.picture.alt": "Pilt kasutajast {{name}}.",
+        "component.avatar.alt": "Profiili avatar kasutajale {{name}}.",
         "section.skills.title": "Tehnilised oskused",
         "section.work.title": "Kogemused",
         "section.volunteer.title": "Vabatahtlikkus",

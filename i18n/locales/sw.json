@@ -2,6 +2,8 @@
     "locale": "sw",
     "language": {
         "component.date.now": "Wakati uliopo",
+        "component.picture.alt": "Picha ya {{name}}.",
+        "component.avatar.alt": "Ishara ya wasifu wa {{name}}.",
         "section.skills.title": "Ujuzi wa Kiufundi",
         "section.work.title": "Uzoefu",
         "section.volunteer.title": "Kujitolea",

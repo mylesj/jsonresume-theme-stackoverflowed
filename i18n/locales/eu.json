@@ -2,6 +2,8 @@
     "locale": "eu",
     "language": {
         "component.date.now": "Oraingo Denbora",
+        "component.picture.alt": "{{name}} erabiltzailearen argazkia.",
+        "component.avatar.alt": "{{name}}-ren profileko avatarra.",
         "section.skills.title": "Trebetasun Teknikoak",
         "section.work.title": "Esperientzia",
         "section.volunteer.title": "Boluntariotza",

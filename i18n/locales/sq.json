@@ -2,6 +2,8 @@
     "locale": "sq",
     "language": {
         "component.date.now": "Koha e tashme",
+        "component.picture.alt": "Një fotografi e {{name}}.",
+        "component.avatar.alt": "Një avatar profili për {{name}}.",
         "section.skills.title": "Aftësitë teknike",
         "section.work.title": "Përvoja",
         "section.volunteer.title": "Vullnetarizmi",

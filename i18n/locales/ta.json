@@ -2,6 +2,8 @@
     "locale": "ta",
     "language": {
         "component.date.now": "தற்போதைய நேரம்",
+        "component.picture.alt": "{{name}} இன் படம்.",
+        "component.avatar.alt": "{{name}}க்கான சுயவிவர அவதாரம்.",
         "section.skills.title": "தொழில்நுட்ப திறன்கள்",
         "section.work.title": "அனுபவம்",
         "section.volunteer.title": "தன்னார்வத் தொண்டு",

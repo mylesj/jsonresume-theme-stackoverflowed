@@ -2,6 +2,8 @@
     "locale": "az",
     "language": {
         "component.date.now": "İndiki zaman",
+        "component.picture.alt": "{{name}} şəkli.",
+        "component.avatar.alt": "{{name}} üçün profil avatarı.",
         "section.skills.title": "Texniki Bacarıqlar",
         "section.work.title": "Təcrübə",
         "section.volunteer.title": "Könüllülük",

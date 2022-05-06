@@ -2,6 +2,8 @@
     "locale": "sv",
     "language": {
         "component.date.now": "Nutid",
+        "component.picture.alt": "En bild på {{name}}.",
+        "component.avatar.alt": "En profilavatar för {{name}}.",
         "section.skills.title": "Tekniska förmågor",
         "section.work.title": "Erfarenhet",
         "section.volunteer.title": "Volontärarbete",

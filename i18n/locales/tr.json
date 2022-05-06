@@ -2,6 +2,8 @@
     "locale": "tr",
     "language": {
         "component.date.now": "Şimdiki zaman",
+        "component.picture.alt": "{{name}} resmi.",
+        "component.avatar.alt": "{{name}} için bir profil avatarı.",
         "section.skills.title": "Teknik beceriler",
         "section.work.title": "Tecrübe etmek",
         "section.volunteer.title": "gönüllülük",

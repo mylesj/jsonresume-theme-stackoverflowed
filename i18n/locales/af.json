@@ -2,6 +2,8 @@
     "locale": "af",
     "language": {
         "component.date.now": "Tans",
+        "component.picture.alt": "'n Foto van {{name}}.",
+        "component.avatar.alt": "'n Profielavatar vir {{name}}.",
         "section.skills.title": "Tegniese vaardighede",
         "section.work.title": "Ervaring",
         "section.volunteer.title": "Vrywilligerswerk",

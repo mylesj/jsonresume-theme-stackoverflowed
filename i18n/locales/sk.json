@@ -2,6 +2,8 @@
     "locale": "sk",
     "language": {
         "component.date.now": "Súčasnosť",
+        "component.picture.alt": "Obrázok {{name}}.",
+        "component.avatar.alt": "Avatar profilu pre {{name}}.",
         "section.skills.title": "Technické zručnosti",
         "section.work.title": "Skúsenosti",
         "section.volunteer.title": "Dobrovoľníctvo",

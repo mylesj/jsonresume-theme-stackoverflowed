@@ -2,6 +2,8 @@
     "locale": "ps",
     "language": {
         "component.date.now": "اوسنی وخت",
+        "component.picture.alt": "د {{name}} انځور.",
+        "component.avatar.alt": "د {{name}} لپاره د پروفایل اوتار.",
         "section.skills.title": "تخنيکي مهارتونه",
         "section.work.title": "تجربه",
         "section.volunteer.title": "رضاکارانه کار کول",

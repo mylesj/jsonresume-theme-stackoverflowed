@@ -2,6 +2,8 @@
     "locale": "vi",
     "language": {
         "component.date.now": "Hiện nay",
+        "component.picture.alt": "Hình ảnh của {{name}}.",
+        "component.avatar.alt": "Hình đại diện tiểu sử cho {{name}}.",
         "section.skills.title": "Kĩ năng công nghệ",
         "section.work.title": "Trải qua",
         "section.volunteer.title": "Tình nguyện",
