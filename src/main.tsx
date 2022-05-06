@@ -9,7 +9,7 @@ import View from './view'
 
 import { resumeMiddleware } from './middleware'
 
-import pkg from '../package.json'
+import { name as pkgName, version as pkgVersion } from '../package.json'
 
 export const render: Renderer = async (resume) => {
     const enhancedResume = await resumeMiddleware(resume)
@@ -18,7 +18,7 @@ export const render: Renderer = async (resume) => {
     return html({
         resume,
         meta: {
-            generator: `${pkg.name}@${pkg.version}`,
+            generator: `${pkgName}@${pkgVersion}`,
         },
         body: renderToString(
             <AppContext.Provider value={{ resume: enhancedResume, locale }}>
