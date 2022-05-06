@@ -109,9 +109,9 @@ a newline character in the template - note that this needs to be doubly escaped 
 
 **`intro.avatar.show`** &mdash; `boolean`
 
-All resume data will be displayed by default if there is content, however the profile image can be
-hidden if preferable. Should a profile `image` not be available, this theme will lookup a Gravatar
-for the `email` field under the `basics` profile data.
+All resume data will be displayed by default, where content exists - however the profile image can
+be hidden if preferable. If a profile `image` is not available, then this theme will lookup a
+[Gravatar][gravatar] for the `email` field under the `basics` profile data.
 
 **`intro.avatar.align`** &mdash; `string` &mdash; `"left"` &vert; `"right"`
 
