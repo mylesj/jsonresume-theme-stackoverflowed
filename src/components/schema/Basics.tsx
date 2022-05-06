@@ -1,4 +1,4 @@
-import { useResume } from '~/context'
+import { useResume, useLocale, useConfig } from '~/context'
 import { Paragraph, Contact } from '~/components/shared'
 import { FlexRow, FlexColumn } from '~/components/layout'
 
@@ -91,6 +91,55 @@ const Summary = ({ summary }: SummaryProps) => {
     )
 }
 
+type AvatarProps = {
+    name?: string
+    image?: string
+    gravatar?: string
+}
+
+const Avatar = ({ name, image, gravatar }: AvatarProps) => {
+    const i18n = useLocale('i18n')
+    const config = useConfig('intro')
+    const showAvatar = config?.avatar?.show ?? true
+
+    if (!showAvatar || !name || !(image || gravatar)) {
+        return null
+    }
+
+    return (
+        <div
+            css={{
+                alignSelf: 'start',
+                maxWidth: '150px',
+                ...(config?.avatar?.align === 'left'
+                    ? {
+                          marginRight: '3rem',
+                          order: -1,
+                      }
+                    : {
+                          marginLeft: '2rem',
+                      }),
+            }}
+        >
+            <img
+                css={{
+                    display: 'block',
+                    width: '100%',
+                    height: 'auto',
+                    borderRadius: '4px',
+                }}
+                src={image || gravatar}
+                alt={i18n(
+                    image ? 'component.picture.alt' : 'component.avatar.alt',
+                    {
+                        name,
+                    }
+                )}
+            />
+        </div>
+    )
+}
+
 export const Basics = () => {
     const { basics } = useResume()
     if (!basics) {
@@ -105,6 +154,11 @@ export const Basics = () => {
                     email={basics.email}
                     location={basics.location}
                     css={{ alignSelf: 'start' }}
+                />
+                <Avatar
+                    name={basics.name}
+                    image={basics.image}
+                    gravatar={basics.gravatar}
                 />
             </FlexRow>
             <Summary summary={basics.summary} />

@@ -1,8 +1,13 @@
 const RE_INTERPOLATE = /\{\{([a-z0-9_.-]+)\}\}/gi
 
+export type InterpolateValues = Record<
+    string,
+    string | number | null | undefined
+>
+
 export const interpolate = (
     template: string | undefined,
-    values: Record<string, string | number | null | undefined>
+    values: InterpolateValues
 ): string | null => {
     if (template === undefined) {
         return ''

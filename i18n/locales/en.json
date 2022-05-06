@@ -2,6 +2,8 @@
     "locale": "en",
     "language": {
         "component.date.now": "Current",
+        "component.picture.alt": "A picture of {{name}}.",
+        "component.avatar.alt": "A profile avatar for {{name}}.",
         "section.skills.title": "Technical Skills",
         "section.work.title": "Experience",
         "section.volunteer.title": "Volunteering",

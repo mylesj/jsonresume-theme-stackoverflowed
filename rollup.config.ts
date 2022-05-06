@@ -28,6 +28,10 @@ const config: RollupOptions = {
         'i18n-iso-countries',
         'date-fns',
         'date-fns/locale',
+        'crypto',
+        'axios',
+        'immer',
+        'immer-compose',
     ],
     onwarn: (err) => {
         throw new Error(err.message)

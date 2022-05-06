@@ -5,13 +5,22 @@
 
 // ----- merged schema
 
-// eslint-disable-next-line @typescript-eslint/no-empty-interface
-export declare interface ResumeSchema extends ResumeSchema_ {}
-type ResumeSchema_ = import('@kurone-kito/jsonresume-types').ResumeSchema & {
+type TypeOrUnknown<T> = unknown extends T
+    ? [keyof T] extends [never]
+        ? T
+        : unknown
+    : T
+
+type ResumeSchema_ = TypeOrUnknown<
+    import('@kurone-kito/jsonresume-types').ResumeSchema
+> & {
     meta?: {
         'theme-stackoverflowed'?: Configuration
     }
 }
+
+// eslint-disable-next-line @typescript-eslint/no-empty-interface
+export declare interface ResumeSchema extends ResumeSchema_ {}
 
 // ----- module exports
 
@@ -31,5 +40,11 @@ export type Configuration = {
     format?: {
         date?: string
         location?: string | string[]
+    }
+    intro?: {
+        avatar?: {
+            show?: boolean
+            align?: string
+        }
     }
 }
