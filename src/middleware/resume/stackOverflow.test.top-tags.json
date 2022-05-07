@@ -1,0 +1,39 @@
+{
+    "items": [
+        {
+            "user_id": 123456,
+            "answer_count": 141,
+            "answer_score": 483,
+            "question_count": 3,
+            "question_score": 14,
+            "tag_name": "JavaScript"
+        },
+        {
+            "user_id": 123456,
+            "answer_count": 93,
+            "answer_score": 145,
+            "question_count": 0,
+            "question_score": 0,
+            "tag_name": "PHP"
+        },
+        {
+            "user_id": 123456,
+            "answer_count": 43,
+            "answer_score": 138,
+            "question_count": 0,
+            "question_score": 0,
+            "tag_name": "Arrays"
+        },
+        {
+            "user_id": 123456,
+            "answer_count": 41,
+            "answer_score": 99,
+            "question_count": 2,
+            "question_score": 3,
+            "tag_name": "Sorting"
+        }
+    ],
+    "has_more": true,
+    "quota_max": 300,
+    "quota_remaining": 299
+}
