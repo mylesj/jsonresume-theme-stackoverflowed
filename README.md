@@ -118,6 +118,42 @@ be hidden if preferable. If a profile `image` is not available, then this theme 
 By default the avatar will align to the `right` of the address and contact details - however can
 be configured to align to the `left` of the name and title.
 
+### Sections
+
+```typescript
+{
+    "section": {
+        [string]: {
+            "order": number
+            "break": boolean
+            "hidden": boolean
+        }
+    }
+}
+```
+
+Sections map directly to resume schema fields and the currently supported names are: `skills`
+&vert; `work` &vert; `volunteer` &vert; `projects` &vert; `education` &vert; `awards` &vert;
+`publications` &vert; `languages` &vert; `interests` &vert; `profiles` &vert; `references`.
+Sections are only rendered if there is sufficient data for each in a given resume.
+
+**`section.<name>.order`** &mdash; `number`
+
+Sections are by default laid out with the same priority as stated above - each section relevant
+to a resume will be assigned a number (starting from 1). This may be overridden on a per-section
+basis to customise the order.
+
+**`section.<name>.break`** &mdash; `boolean`
+
+Sometimes a page break may split a section in an awkward place - this is difficult to compensate
+for programmatically given the unknown nature of the configuration and / or data being rendered.
+As such, this escape hatch allows a section to force a page break (above) by setting it to `true`.
+
+**`section.<name>.hidden`** &mdash; `boolean`
+
+If it is preferable to maintain data in a resume but not have it rendered, a section can be
+disabled by setting this to `true`.
+
 <!-- project links -->
 
 [npm]: https://www.npmjs.com/package/jsonresume-theme-stackoverflowed
