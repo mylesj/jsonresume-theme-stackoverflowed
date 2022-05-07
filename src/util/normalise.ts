@@ -1,2 +1,2 @@
-export const normaliseNetwork = (name: string): string =>
+export const normaliseTag = (name: string): string =>
     String(name).toLowerCase().replace(/\s+/g, '')
