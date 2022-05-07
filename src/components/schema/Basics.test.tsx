@@ -1,3 +1,5 @@
+import { compose } from 'ramda'
+
 import { Renderer, getRenderer, withConfig } from '@/test-utils'
 
 import { Basics } from './Basics'
@@ -52,20 +54,22 @@ describe(Basics.name, () => {
 
         it('should not render when configured not to show', () => {
             const { queryByRole } = render(<Basics />, {
-                resume: () =>
+                resume: compose(
                     withConfig({
                         intro: {
                             avatar: {
                                 show: false,
                             },
                         },
-                    })({
+                    }),
+                    () => ({
                         basics: {
                             name: 'name',
                             image: 'http://image',
                             gravatar: 'http://gravatar',
                         },
-                    }),
+                    })
+                ),
             })
             expect(queryByRole('img')).not.toBeInTheDocument()
         })
@@ -83,16 +87,18 @@ describe(Basics.name, () => {
 
         it('should align left when configured', () => {
             const { getByRole } = render(<Basics />, {
-                resume: () =>
+                resume: compose(
                     withConfig({
                         intro: {
                             avatar: {
                                 align: 'left',
                             },
                         },
-                    })({
-                        basics: { name: 'name', image: 'http://image' },
                     }),
+                    () => ({
+                        basics: { name: 'name', image: 'http://image' },
+                    })
+                ),
             })
             expect(getByRole('img').parentElement).toHaveStyle({
                 order: '-1',

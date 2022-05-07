@@ -47,4 +47,15 @@ export type Configuration = {
             align?: string
         }
     }
+    section?: {
+        [key in SectionName]?: {
+            order?: number
+            break?: boolean
+            hidden?: boolean
+        }
+    }
 }
+
+export type SectionName =
+    | keyof Omit<ResumeSchema, '$schema' | 'meta' | 'basics'>
+    | 'profiles'

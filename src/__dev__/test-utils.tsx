@@ -40,7 +40,7 @@ export const getRenderer = async () => {
 export const pickResumeFields =
     (...keys: (keyof ResumeSchema)[]) =>
     (resume: ResumeSchema): ResumeSchema =>
-        keys.reduce(
+        ([...keys, 'meta'] as const).reduce(
             (acc, key) => Object.assign(acc, { [key]: resume[key] }),
             {}
         )
