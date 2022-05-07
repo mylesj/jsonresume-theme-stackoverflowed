@@ -1,4 +1,4 @@
-import { useMemo } from 'react'
+import { useMemo, Fragment } from 'react'
 
 import { FlexColumn } from '~/components/layout'
 
@@ -17,7 +17,9 @@ import {
     References,
 } from '~/components/schema'
 
-import { useConfig } from '~/context'
+import { PageBreak } from '~/components/shared'
+
+import { useConfig, useResume } from '~/context'
 
 import { SectionName, Component } from '~/types'
 
@@ -40,6 +42,7 @@ const SECTIONS: Sections = {
     references: References,
 }
 
+// [name, Component, pageBreak, order]
 const useSections = () => {
     const config = useConfig('section')
     const sectionConfig = (name: string) => config?.[name as SectionName]
@@ -52,10 +55,11 @@ const useSections = () => {
                     [
                         name,
                         Component,
+                        sectionConfig(name)?.break ?? false,
                         sectionConfig(name)?.order ?? (i + 1) * 100,
                     ] as const
             )
-            .sort(([, , aOrder], [, , bOrder]) => aOrder - bOrder)
+            .sort(([, , , aOrder], [, , , bOrder]) => aOrder - bOrder)
     }, [config])
 }
 
@@ -80,8 +84,11 @@ export const Pdf = () => {
                 <Basics />
             </header>
             <main>
-                {sections.map(([name, Component]) => (
-                    <Component key={name} />
+                {sections.map(([name, Component, pageBreak]) => (
+                    <Fragment key={name}>
+                        <PageBreak enable={pageBreak} />
+                        <Component />
+                    </Fragment>
                 ))}
             </main>
         </FlexColumn>
