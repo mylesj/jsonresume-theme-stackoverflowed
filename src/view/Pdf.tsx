@@ -19,7 +19,7 @@ import {
 
 import { PageBreak } from '~/components/shared'
 
-import { useConfig, useResume } from '~/context'
+import { useConfig } from '~/context'
 
 import { SectionName, Component } from '~/types'
 
