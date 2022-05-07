@@ -23,57 +23,57 @@
                 "skills": {
                     "break": false,
                     "hidden": false,
-                    "order": 100
+                    "order": 1
                 },
                 "work": {
                     "break": false,
                     "hidden": false,
-                    "order": 200
+                    "order": 2
                 },
                 "volunteer": {
                     "break": false,
                     "hidden": false,
-                    "order": 300
+                    "order": 3
                 },
                 "projects": {
                     "break": false,
                     "hidden": false,
-                    "order": 400
+                    "order": 4
                 },
                 "education": {
                     "break": false,
                     "hidden": false,
-                    "order": 500
+                    "order": 5
                 },
                 "awards": {
                     "break": false,
                     "hidden": false,
-                    "order": 600
+                    "order": 6
                 },
                 "publications": {
                     "break": false,
                     "hidden": false,
-                    "order": 700
+                    "order": 7
                 },
                 "languages": {
                     "break": false,
                     "hidden": false,
-                    "order": 800
+                    "order": 8
                 },
                 "interests": {
                     "break": false,
                     "hidden": false,
-                    "order": 900
+                    "order": 9
                 },
                 "profiles": {
                     "break": false,
                     "hidden": false,
-                    "order": 1000
+                    "order": 10
                 },
                 "references": {
                     "break": false,
                     "hidden": false,
-                    "order": 1100
+                    "order": 11
                 }
             }
         }
