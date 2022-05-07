@@ -1,4 +1,7 @@
+import { useMemo } from 'react'
+
 import { FlexColumn } from '~/components/layout'
+
 import {
     Basics,
     BasicsProfiles,
@@ -14,7 +17,51 @@ import {
     References,
 } from '~/components/schema'
 
+import { useConfig } from '~/context'
+
+import { SectionName, Component } from '~/types'
+
+// todo: remove optionality - turns out I've missed a "certificates" section
+type Sections = {
+    [key in SectionName]?: Component
+}
+
+const SECTIONS: Sections = {
+    skills: Skills,
+    work: Work,
+    volunteer: Volunteer,
+    projects: Projects,
+    education: Education,
+    awards: Awards,
+    publications: Publications,
+    languages: Languages,
+    interests: Interests,
+    profiles: BasicsProfiles,
+    references: References,
+}
+
+const useSections = () => {
+    const config = useConfig('section')
+    const sectionConfig = (name: string) => config?.[name as SectionName]
+
+    return useMemo(() => {
+        return Object.entries(SECTIONS)
+            .filter(([name]) => !sectionConfig(name)?.hidden)
+            .map(
+                ([name, Component], i) =>
+                    [
+                        name,
+                        Component,
+                        sectionConfig(name)?.order ?? (i + 1) * 100,
+                    ] as const
+            )
+            .sort(([, , aOrder], [, , bOrder]) => aOrder - bOrder)
+    }, [config])
+}
+
 export const Pdf = () => {
+    const sections = useSections()
+
     return (
         <FlexColumn
             css={(theme) => ({
@@ -33,17 +80,9 @@ export const Pdf = () => {
                 <Basics />
             </header>
             <main>
-                <Skills />
-                <Work />
-                <Volunteer />
-                <Projects />
-                <Education />
-                <Awards />
-                <Publications />
-                <Languages />
-                <Interests />
-                <BasicsProfiles />
-                <References />
+                {sections.map(([name, Component]) => (
+                    <Component key={name} />
+                ))}
             </main>
         </FlexColumn>
     )

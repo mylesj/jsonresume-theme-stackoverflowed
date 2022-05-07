@@ -16,7 +16,6 @@ export const BasicsProfiles = () => {
         return null
     }
 
-    // todo: map usernames to URLs
     return (
         <Section label={i18n('section.profiles.title')}>
             <SimpleEntries

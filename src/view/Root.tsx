@@ -71,12 +71,11 @@ const cssPageContext = {
 } as const
 
 const Root = () => {
-    const View = Pdf
     return (
         <ThemeProvider theme={theme}>
             <Global styles={cssReset} />
             <Global styles={cssPageContext} />
-            <View />
+            <Pdf />
         </ThemeProvider>
     )
 }

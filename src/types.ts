@@ -7,3 +7,5 @@ export declare interface ResumeSchema extends ResumeSchema_ {
         gravatar?: string
     }
 }
+
+export type Component = () => JSX.Element | null
