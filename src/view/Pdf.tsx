@@ -56,7 +56,7 @@ const useSections = () => {
                         name,
                         Component,
                         sectionConfig(name)?.break ?? false,
-                        sectionConfig(name)?.order ?? (i + 1) * 100,
+                        sectionConfig(name)?.order ?? i + 1,
                     ] as const
             )
             .sort(([, , , aOrder], [, , , bOrder]) => aOrder - bOrder)
