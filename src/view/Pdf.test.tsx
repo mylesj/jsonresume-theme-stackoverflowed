@@ -150,3 +150,32 @@ describe('ordering', () => {
         expect(result).toEqual(expected)
     })
 })
+
+describe('page breaks', () => {
+    it('should render a page-break if configured', () => {
+        const { getByRole } = render(<Pdf />, {
+            resume: compose(
+                pickResumeFields('work'),
+                withConfig({
+                    section: {
+                        work: {
+                            break: true,
+                        },
+                    },
+                })
+            ),
+        })
+        expect(
+            getByRole('main').querySelector('[class$="PageBreak"]')
+        ).toBeInTheDocument()
+    })
+
+    it('should not render a page-break if not configured', () => {
+        const { getByRole } = render(<Pdf />, {
+            resume: pickResumeFields('work'),
+        })
+        expect(
+            getByRole('main').querySelector('[class$="PageBreak"]')
+        ).not.toBeInTheDocument()
+    })
+})
