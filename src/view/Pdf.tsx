@@ -23,7 +23,6 @@ import { useConfig } from '~/context'
 
 import { SectionName, Component } from '~/types'
 
-// todo: remove optionality - turns out I've missed a "certificates" section
 type Sections = {
     [key in SectionName]?: Component
 }
