@@ -14,6 +14,7 @@
         "section.languages.title": "שפות",
         "section.interests.title": "תחומי עניין",
         "section.profiles.title": "פרופילים",
+        "section.profiles.stackoverflow-activity": "נכתבו {{answers}} תשובות. פעיל ב-{{tags}}.",
         "section.references.title": "הפניות"
     }
 }

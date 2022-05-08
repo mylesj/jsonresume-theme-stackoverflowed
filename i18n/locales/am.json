@@ -14,6 +14,7 @@
         "section.languages.title": "ቋንቋዎች",
         "section.interests.title": "ፍላጎቶች",
         "section.profiles.title": "መገለጫዎች",
+        "section.profiles.stackoverflow-activity": "የተፃፉ {{answers}} መልሶች በ{{tags}} ውስጥ ንቁ።",
         "section.references.title": "ዋቢዎች"
     }
 }

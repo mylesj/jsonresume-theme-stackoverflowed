@@ -14,6 +14,7 @@
         "section.languages.title": "Valodas",
         "section.interests.title": "Intereses",
         "section.profiles.title": "Profili",
+        "section.profiles.stackoverflow-activity": "Rakstiskas {{answers}} atbildes. Aktīvs šeit: {{tags}}.",
         "section.references.title": "Atsauces"
     }
 }

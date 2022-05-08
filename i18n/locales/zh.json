@@ -14,6 +14,7 @@
         "section.languages.title": "语言",
         "section.interests.title": "兴趣",
         "section.profiles.title": "简介",
+        "section.profiles.stackoverflow-activity": "书面 {{answers}} 个答案。活跃于 {{tags}}。",
         "section.references.title": "参考"
     }
 }

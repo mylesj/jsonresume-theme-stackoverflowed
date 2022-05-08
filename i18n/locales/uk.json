@@ -14,6 +14,7 @@
         "section.languages.title": "Мови",
         "section.interests.title": "Інтереси",
         "section.profiles.title": "Профілі",
+        "section.profiles.stackoverflow-activity": "Написано {{answers}} відповідей. Активний у {{tags}}.",
         "section.references.title": "Посилання"
     }
 }

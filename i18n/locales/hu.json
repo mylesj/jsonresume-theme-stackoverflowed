@@ -14,6 +14,7 @@
         "section.languages.title": "Nyelvek",
         "section.interests.title": "Érdeklődések",
         "section.profiles.title": "Profilok",
+        "section.profiles.stackoverflow-activity": "{{answers}} írásbeli válasz. Aktív itt: {{tags}}.",
         "section.references.title": "Hivatkozások"
     }
 }

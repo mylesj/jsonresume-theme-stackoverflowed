@@ -14,6 +14,7 @@
         "section.languages.title": "Diller",
         "section.interests.title": "ilgi alanları",
         "section.profiles.title": "profiller",
+        "section.profiles.stackoverflow-activity": "Yazılı {{answers}} cevaplar. {{tags}} içinde aktif.",
         "section.references.title": "Referanslar"
     }
 }

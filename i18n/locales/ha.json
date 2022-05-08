@@ -14,6 +14,7 @@
         "section.languages.title": "Harsuna",
         "section.interests.title": "Abubuwan sha'awa",
         "section.profiles.title": "Bayanan martaba",
+        "section.profiles.stackoverflow-activity": "An rubuta {{answers}} amsoshi. Yana aiki a cikin {{tags}}.",
         "section.references.title": "Magana"
     }
 }

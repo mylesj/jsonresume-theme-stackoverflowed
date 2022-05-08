@@ -14,6 +14,7 @@
         "section.languages.title": "Tale",
         "section.interests.title": "Belange",
         "section.profiles.title": "Profiele",
+        "section.profiles.stackoverflow-activity": "Geskrewe {{answers}} antwoorde. Aktief in {{tags}}.",
         "section.references.title": "Verwysings"
     }
 }

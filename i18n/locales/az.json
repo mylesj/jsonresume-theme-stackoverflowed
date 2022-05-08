@@ -14,6 +14,7 @@
         "section.languages.title": "Dillər",
         "section.interests.title": "Maraqlar",
         "section.profiles.title": "Profillər",
+        "section.profiles.stackoverflow-activity": "Yazılı {{answers}} cavab. {{tags}} daxilində aktivdir.",
         "section.references.title": "İstinadlar"
     }
 }

@@ -14,6 +14,7 @@
         "section.languages.title": "ენები",
         "section.interests.title": "ინტერესები",
         "section.profiles.title": "პროფილები",
+        "section.profiles.stackoverflow-activity": "დაწერილი {{answers}} პასუხი. აქტიურია {{tags}}-ში.",
         "section.references.title": "ცნობები"
     }
 }

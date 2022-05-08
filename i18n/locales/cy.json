@@ -14,6 +14,7 @@
         "section.languages.title": "Ieithoedd",
         "section.interests.title": "Diddordebau",
         "section.profiles.title": "Proffiliau",
+        "section.profiles.stackoverflow-activity": "{{answers}} ateb ysgrifenedig. Yn weithredol yn {{tags}}.",
         "section.references.title": "Cyfeiriadau"
     }
 }

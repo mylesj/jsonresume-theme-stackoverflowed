@@ -14,6 +14,7 @@
         "section.languages.title": "Tillar",
         "section.interests.title": "Qiziqishlar",
         "section.profiles.title": "Profillar",
+        "section.profiles.stackoverflow-activity": "Yozma {{answers}} ta javob. {{tags}} ichida faol.",
         "section.references.title": "Ma'lumotnomalar"
     }
 }

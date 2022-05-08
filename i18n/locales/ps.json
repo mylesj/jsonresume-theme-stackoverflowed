@@ -14,6 +14,7 @@
         "section.languages.title": "ژبې",
         "section.interests.title": "ګټو",
         "section.profiles.title": "پروفایلونه",
+        "section.profiles.stackoverflow-activity": "لیکل شوي {{answers}} ځوابونه. په {{tags}} کې فعال.",
         "section.references.title": "حوالې"
     }
 }

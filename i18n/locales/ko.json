@@ -14,6 +14,7 @@
         "section.languages.title": "언어",
         "section.interests.title": "이해",
         "section.profiles.title": "프로필",
+        "section.profiles.stackoverflow-activity": "{{answers}} 답변을 작성했습니다. {{tags}}에서 활성 상태입니다.",
         "section.references.title": "참고문헌"
     }
 }
