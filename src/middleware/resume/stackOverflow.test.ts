@@ -19,15 +19,23 @@ beforeEach(() => {
 })
 
 describe(stackOverflow.name, () => {
+    const ENV = process.env
+
+    beforeEach(() => {
+        process.env = { ...ENV }
+    })
+
+    afterAll(() => {
+        process.env = ENV
+    })
+
     it('should do nothing if there is no basic data', async () => {
-        axios.head = jest.fn()
         const recipe = await stackOverflow({})
         expect(axios.get).not.toHaveBeenCalled()
         expect(recipe?.({})).toEqual(undefined)
     })
 
     it('should do nothing if there is no StackOverflow profile', async () => {
-        axios.head = jest.fn()
         const recipe = await stackOverflow({
             basics: {
                 profiles: [
@@ -42,7 +50,38 @@ describe(stackOverflow.name, () => {
         expect(recipe?.({})).toEqual(undefined)
     })
 
+    it('should do nothing if there is no StackExchange API key', async () => {
+        const recipe = await stackOverflow({
+            basics: {
+                profiles: [
+                    {
+                        network: 'stackoverflow',
+                        url: 'https://stackoverflow.com/users/123456/thedude',
+                    },
+                ],
+            },
+        })
+        expect(axios.get).not.toHaveBeenCalled()
+        expect(recipe?.({})).toEqual(undefined)
+    })
+
+    it('should used the StackExchange API anonymously if explicitly set to', async () => {
+        process.env.STACK_EXCHANGE_API_KEY = 'anon'
+        const recipe = await stackOverflow({
+            basics: {
+                profiles: [
+                    {
+                        network: 'stackoverflow',
+                        url: 'https://stackoverflow.com/users/123456/thedude',
+                    },
+                ],
+            },
+        })
+        expect(axios.get).toHaveBeenCalled()
+    })
+
     it('should resolve meta data if there is a StackOverflow profile', async () => {
+        process.env.STACK_EXCHANGE_API_KEY = 'key'
         const recipe = await stackOverflow({
             basics: {
                 profiles: [
@@ -67,6 +106,7 @@ describe(stackOverflow.name, () => {
     })
 
     it('should resolve empty defaults on API failure', async () => {
+        process.env.STACK_EXCHANGE_API_KEY = 'key'
         axios.get = jest.fn(() => Promise.reject())
         const recipe = await stackOverflow({
             basics: {
