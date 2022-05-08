@@ -67,14 +67,6 @@ it('should prioritise rendering URLs if the showUrl prop is true', () => {
     expect(getByText('foo.com').getAttribute('href')).toBe('https://foo.com')
 })
 
-it('should render an icon for valid social network types', () => {
-    const { getByText } = render(
-        <SimpleEntries showUrl entries={[entries.titleIcon]} />
-    )
-    const svg = getByText('icon entry').parentElement?.querySelector('svg')
-    expect(svg).toBeInTheDocument()
-})
-
 it('should render child elements of entries', () => {
     const { getByText } = render(
         <SimpleEntries showUrl entries={[entries.titleChildren]} />

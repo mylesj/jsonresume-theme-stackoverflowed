@@ -39,35 +39,41 @@ const useSvgIcons = (entries: Props['entries']) => {
 
 export const SimpleEntries = ({ showUrl, entries, className }: Props) => {
     const [hasIcons, getIcon] = useSvgIcons(entries)
+
     return (
         <ul className={className}>
             {entries.map(({ icon, title, label, url, children = null }, i) => (
                 <li
                     key={i}
-                    css={{
-                        '&:not(:last-of-type)': {
-                            marginBottom: '.6rem',
-                        },
+                    css={(theme) => {
+                        const svg = getIcon(icon)
+                        return {
+                            '&:not(:last-of-type)': {
+                                marginBottom: '.6rem',
+                            },
+                            paddingLeft: hasIcons
+                                ? 'calc(1.25rem + 0.8rem)'
+                                : 0,
+                            ...(svg && {
+                                position: 'relative',
+                                '&::before': {
+                                    display: 'block',
+                                    position: 'absolute',
+                                    top: '0.15rem',
+                                    left: 0,
+                                    width: '1.25rem',
+                                    height: '100%',
+                                    backgroundColor: theme.text.color.tertiary,
+                                    content: `""`,
+                                    maskImage: `url(data:image/svg+xml;utf8,${encodeURIComponent(
+                                        svg
+                                    )})`,
+                                    maskRepeat: 'no-repeat',
+                                },
+                            }),
+                        }
                     }}
                 >
-                    {hasIcons && (
-                        <div
-                            css={(theme) => ({
-                                float: 'left',
-                                marginRight: '.8rem',
-                                width: '1.25rem',
-                                // force dimensions when inner content is empty
-                                minHeight: '1px',
-                                '& > svg': {
-                                    display: 'block',
-                                    fill: theme.text.color.tertiary,
-                                },
-                            })}
-                            dangerouslySetInnerHTML={{
-                                __html: getIcon(icon) || '',
-                            }}
-                        />
-                    )}
                     <div>
                         {title && (
                             <strong
