@@ -21,10 +21,19 @@ describe(BasicsProfiles.name, () => {
             const { queryByRole, getByText } = render(<BasicsProfiles />, {
                 resume: produce((resume) => {
                     // eslint-disable-next-line @typescript-eslint/no-non-null-assertion
-                    resume.basics!.stackOverflow = {
-                        answersTotal,
-                        activeTags,
-                    }
+                    Object.assign(resume.basics, {
+                        profiles: [
+                            {
+                                network: 'Stack Overflow',
+                                username: 'thedude',
+                                url: 'https://stackoverflow.com/users/123456/thedude',
+                            },
+                        ],
+                        stackOverflow: {
+                            answersTotal,
+                            activeTags,
+                        },
+                    })
                 }),
             })
 
