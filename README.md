@@ -20,7 +20,7 @@ is compatible with the [Resume CLI][resume-cli] tool.
 
 ![Screenshot: Resume Sample][img-sample]
 
-## Gettings Started
+## Getting Started
 
 Start a new project and install the following dependencies.
 
@@ -28,7 +28,7 @@ Start a new project and install the following dependencies.
 npm install resume-cli jsonresume-theme-stackoverflowed
 ```
 
-Optionally generate some sample data if not not starting with an existing resume.
+Optionally generate some sample data if not starting with an existing resume.
 
 ```sh
 npx resume init
