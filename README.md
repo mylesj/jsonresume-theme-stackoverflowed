@@ -20,13 +20,47 @@ is compatible with the [Resume CLI][resume-cli] tool.
 
 ![Screenshot: Resume Sample][img-sample]
 
+## Gettings Started
+
+Start a new project and install the following dependencies.
+
+```sh
+npm install resume-cli jsonresume-theme-stackoverflowed
+```
+
+Optionally generate some sample data if not not starting with an existing resume.
+
+```sh
+npx resume init
+```
+
+Add some workflow scripts to the `package.json`
+
+```json
+{
+    "scripts": {
+        "validate": "resume validate --resume ./resume.json",
+        "serve": "resume serve --resume ./resume.json --theme stackoverflowed",
+        "export": "resume export --resume ./resume.json --theme stackoverflowed",
+        "pdf": "$npm_execpath run export -- --format pdf \"./$(date +'%Y-%m-%d').pdf\"",
+        "html": "$npm_execpath run export -- --format html \"./$(date +'%Y-%m-%d').html\""
+    }
+}
+```
+
+Happy job hunting...
+
+```sh
+npm run <script>
+```
+
 ## Environment Configuration
 
 ### StackExchange
 
 This theme can make requests to fetch a short summary of contributor activity that will be displayed
 underneath a StackOverflow profile entry when a valid `url` is specified. By default this behaviour
-is switched off due to the API throttling limiting anonymous requests to 300 per day. However this
+is switched off due to the API throttling, limiting anonymous requests to 300 per day. However this
 should be okay for occasional use and can be explicitly enabled by setting the key to `anon`.
 
 ```none
