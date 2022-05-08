@@ -67,7 +67,7 @@ describe(stackOverflow.name, () => {
 
     it('should used the StackExchange API anonymously if explicitly set to', async () => {
         process.env.STACK_EXCHANGE_API_KEY = 'anon'
-        const recipe = await stackOverflow({
+        await stackOverflow({
             basics: {
                 profiles: [
                     {
