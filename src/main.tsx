@@ -9,9 +9,9 @@ import View from './view'
 
 import { resumeMiddleware } from './middleware'
 
-import { name as pkgName, version as pkgVersion } from '../package.json'
-
 export const render: Renderer = async (resume) => {
+    // eslint-disable-next-line @typescript-eslint/no-var-requires
+    const { name: pkgName, version: pkgVersion } = require('../package.json')
     const enhancedResume = await resumeMiddleware(resume)
     const locale = await getLocale(resume.meta?.[THEME_NAME]?.locale)
 
