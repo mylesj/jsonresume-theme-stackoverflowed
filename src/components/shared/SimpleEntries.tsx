@@ -1,4 +1,4 @@
-import { useMemo } from 'react'
+import { useMemo, ReactNode } from 'react'
 import icons from 'simple-icons'
 
 import { normaliseTag } from '~/util'
@@ -12,6 +12,7 @@ type Props = {
         title?: string
         label?: string
         url?: string
+        children?: ReactNode
     }[]
     showUrl?: boolean
     className?: string
@@ -40,7 +41,7 @@ export const SimpleEntries = ({ showUrl, entries, className }: Props) => {
     const [hasIcons, getIcon] = useSvgIcons(entries)
     return (
         <ul className={className}>
-            {entries.map(({ icon, title, label, url }, i) => (
+            {entries.map(({ icon, title, label, url, children = null }, i) => (
                 <li
                     key={i}
                     css={{
@@ -67,41 +68,44 @@ export const SimpleEntries = ({ showUrl, entries, className }: Props) => {
                             }}
                         />
                     )}
-                    {title && (
-                        <strong
-                            css={{
-                                fontWeight: 'bold',
-                            }}
-                        >
-                            {title}
-                            {(label || url) && <ZeroWidthSpace />}
-                        </strong>
-                    )}
-                    {!url && label && (
-                        <span
-                            css={{
-                                '&::before': {
-                                    content: '"—"',
-                                    margin: '0 .5rem',
-                                },
-                            }}
-                        >
-                            {label}
-                        </span>
-                    )}
-                    {url && (
-                        <Link
-                            css={{
-                                '&::before': {
-                                    content: '"—"',
-                                    margin: '0 .5rem',
-                                },
-                            }}
-                            to={url}
-                        >
-                            {showUrl ? undefined : label}
-                        </Link>
-                    )}
+                    <div>
+                        {title && (
+                            <strong
+                                css={{
+                                    fontWeight: 'bold',
+                                }}
+                            >
+                                {title}
+                                {(label || url) && <ZeroWidthSpace />}
+                            </strong>
+                        )}
+                        {!url && label && (
+                            <span
+                                css={{
+                                    '&::before': {
+                                        content: '"—"',
+                                        margin: '0 .5rem',
+                                    },
+                                }}
+                            >
+                                {label}
+                            </span>
+                        )}
+                        {url && (
+                            <Link
+                                css={{
+                                    '&::before': {
+                                        content: '"—"',
+                                        margin: '0 .5rem',
+                                    },
+                                }}
+                                to={url}
+                            >
+                                {showUrl ? undefined : label}
+                            </Link>
+                        )}
+                    </div>
+                    {children && <div>{children}</div>}
                 </li>
             ))}
         </ul>

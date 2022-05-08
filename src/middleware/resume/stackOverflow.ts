@@ -2,11 +2,10 @@ import { ComposeTask } from 'immer-compose'
 import axios from 'axios'
 
 import { normaliseTag } from '~/util'
-
+import { TAG_STACKOVERFLOW } from '~/constants'
 import { ResumeSchema } from '~/types'
 
 const API = 'https://api.stackexchange.com/2.3'
-const SITE = 'stackoverflow'
 
 type SchemaProfile = NonNullable<
     NonNullable<ResumeSchema['basics']>['profiles']
@@ -21,7 +20,9 @@ type StackOverflowTopTags = {
 }
 
 const findProfile = (profiles?: SchemaProfile[]): SchemaProfile | undefined =>
-    profiles?.find(({ network }) => network && normaliseTag(network) === SITE)
+    profiles?.find(
+        ({ network }) => network && normaliseTag(network) === TAG_STACKOVERFLOW
+    )
 
 const findUserId = (profiles?: SchemaProfile[]): string | undefined => {
     const profile = findProfile(profiles)
@@ -35,7 +36,7 @@ const fetchTopTags = (id: string) => {
     const query = new URLSearchParams({
         order: 'desc',
         sort: 'popular',
-        site: SITE,
+        site: TAG_STACKOVERFLOW,
     })
     return axios
         .get(`${API}/users/${id}/top-tags?${query}`)
@@ -46,7 +47,7 @@ const fetchTopTags = (id: string) => {
 const fetchAnswersTotal = (id: string) => {
     const query = new URLSearchParams({
         filter: 'total',
-        site: SITE,
+        site: TAG_STACKOVERFLOW,
     })
     return axios
         .get(`${API}/users/${id}/answers?${query}`)
