@@ -19,6 +19,7 @@ const VALID_SCHEMA_ENTRIES = [
     'section.languages.title',
     'section.interests.title',
     'section.profiles.title',
+    'section.profiles.stackoverflow-activity',
     'section.references.title',
 ]
 
