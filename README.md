@@ -54,6 +54,9 @@ Happy job hunting...
 npm run <script>
 ```
 
+> ⚠️&nbsp; _**Windows users:** the resume-cli tool and puppeteer combo is difficult to get running in
+> WSL and not reliable when generating PDFs - A linux virtual machine is recommended in this case._
+
 ## Environment Configuration
 
 ### StackExchange
