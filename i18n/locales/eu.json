@@ -14,6 +14,7 @@
         "section.languages.title": "Hizkuntzak",
         "section.interests.title": "Interesak",
         "section.profiles.title": "Profilak",
+        "section.profiles.stackoverflow-activity": "{{answers}} erantzun idatziak. Aktiboa {{tags}}-n.",
         "section.references.title": "Erreferentziak"
     }
 }

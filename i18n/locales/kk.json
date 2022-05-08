@@ -14,6 +14,7 @@
         "section.languages.title": "Тілдер",
         "section.interests.title": "Қызығушылықтар",
         "section.profiles.title": "Профильдер",
+        "section.profiles.stackoverflow-activity": "Жазбаша {{answers}} жауап. {{tags}} ішінде белсенді.",
         "section.references.title": "Анықтамалар"
     }
 }

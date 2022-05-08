@@ -14,6 +14,7 @@
         "section.languages.title": "Tungumál",
         "section.interests.title": "Áhugamál",
         "section.profiles.title": "Snið",
+        "section.profiles.stackoverflow-activity": "Skrifað {{answers}} svör. Virkur í {{tags}}.",
         "section.references.title": "Heimildir"
     }
 }

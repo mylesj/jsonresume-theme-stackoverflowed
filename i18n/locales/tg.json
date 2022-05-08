@@ -14,6 +14,7 @@
         "section.languages.title": "Забонҳо",
         "section.interests.title": "Манфиатҳо",
         "section.profiles.title": "Профилҳо",
+        "section.profiles.stackoverflow-activity": "{{answers}} ҷавобҳои хаттӣ. Дар {{tags}} фаъол аст.",
         "section.references.title": "Иқтибосҳо"
     }
 }

@@ -14,6 +14,7 @@
         "section.languages.title": "ভাষা",
         "section.interests.title": "আগ্রহ",
         "section.profiles.title": "প্রোফাইল",
+        "section.profiles.stackoverflow-activity": "লিখিত {{answers}}টি উত্তর। {{tags}} এ সক্রিয়৷",
         "section.references.title": "তথ্যসূত্র"
     }
 }

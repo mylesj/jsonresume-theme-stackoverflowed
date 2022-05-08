@@ -14,6 +14,7 @@
         "section.languages.title": "Języki",
         "section.interests.title": "Zainteresowania",
         "section.profiles.title": "Profile",
+        "section.profiles.stackoverflow-activity": "Pisemne odpowiedzi {{answers}}. Aktywny w {{tags}}.",
         "section.references.title": "Bibliografia"
     }
 }

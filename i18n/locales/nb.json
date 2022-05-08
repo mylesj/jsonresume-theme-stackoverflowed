@@ -14,6 +14,7 @@
         "section.languages.title": "Språk",
         "section.interests.title": "Interesser",
         "section.profiles.title": "Profiler",
+        "section.profiles.stackoverflow-activity": "Skrevet {{answers}} svar. Aktiv i {{tags}}.",
         "section.references.title": "Referanser"
     }
 }

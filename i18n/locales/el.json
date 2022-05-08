@@ -14,6 +14,7 @@
         "section.languages.title": "Γλώσσες",
         "section.interests.title": "Τα ενδιαφέροντα",
         "section.profiles.title": "Προφίλ",
+        "section.profiles.stackoverflow-activity": "Γραπτές {{answers}} απαντήσεις. Ενεργός σε {{tags}}.",
         "section.references.title": "βιβλιογραφικές αναφορές"
     }
 }

@@ -14,6 +14,7 @@
         "section.languages.title": "Lugha",
         "section.interests.title": "Maslahi",
         "section.profiles.title": "Wasifu",
+        "section.profiles.stackoverflow-activity": "Majibu {{answers}} yaliyoandikwa. Inatumika katika {{tags}}.",
         "section.references.title": "Marejeleo"
     }
 }

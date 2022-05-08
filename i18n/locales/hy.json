@@ -14,6 +14,7 @@
         "section.languages.title": "Լեզուներ",
         "section.interests.title": "Հետաքրքրություններ",
         "section.profiles.title": "Պրոֆիլներ",
+        "section.profiles.stackoverflow-activity": "Գրավոր {{answers}} պատասխաններ: Ակտիվ է {{tags}}-ում:",
         "section.references.title": "Հղումներ"
     }
 }

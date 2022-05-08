@@ -14,6 +14,7 @@
         "section.languages.title": "Ngôn ngữ",
         "section.interests.title": "Sở thích",
         "section.profiles.title": "Hồ sơ",
+        "section.profiles.stackoverflow-activity": "Câu trả lời bằng văn bản {{answers}}. Hoạt động trong {{tags}}.",
         "section.references.title": "Người giới thiệu"
     }
 }

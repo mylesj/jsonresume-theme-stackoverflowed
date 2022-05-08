@@ -14,6 +14,7 @@
         "section.languages.title": "ภาษา",
         "section.interests.title": "ความสนใจ",
         "section.profiles.title": "โปรไฟล์",
+        "section.profiles.stackoverflow-activity": "เขียน {{answers}} คำตอบ ใช้งานอยู่ใน {{tags}}",
         "section.references.title": "อ้างอิง"
     }
 }

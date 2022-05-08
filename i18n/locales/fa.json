@@ -14,6 +14,7 @@
         "section.languages.title": "زبان ها",
         "section.interests.title": "منافع",
         "section.profiles.title": "پروفایل ها",
+        "section.profiles.stackoverflow-activity": "{{answers}} پاسخ کتبی. فعال در {{tags}}.",
         "section.references.title": "منابع"
     }
 }

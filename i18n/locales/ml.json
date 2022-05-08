@@ -14,6 +14,7 @@
         "section.languages.title": "ഭാഷകൾ",
         "section.interests.title": "താൽപ്പര്യങ്ങൾ",
         "section.profiles.title": "പ്രൊഫൈലുകൾ",
+        "section.profiles.stackoverflow-activity": "{{answers}} ഉത്തരങ്ങൾ എഴുതി. {{tags}} എന്നതിൽ സജീവമാണ്.",
         "section.references.title": "റഫറൻസുകൾ"
     }
 }

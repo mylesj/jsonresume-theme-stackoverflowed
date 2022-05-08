@@ -14,6 +14,7 @@
         "section.languages.title": "تىللار",
         "section.interests.title": "قىزىقىش",
         "section.profiles.title": "Profiles",
+        "section.profiles.stackoverflow-activity": "يېزىلغان {{answers}} جاۋابلار. {{tags}} In دىكى ئاكتىپ.",
         "section.references.title": "پايدىلانما"
     }
 }

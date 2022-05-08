@@ -14,6 +14,7 @@
         "section.languages.title": "Jazyky",
         "section.interests.title": "Zájmy",
         "section.profiles.title": "Profily",
+        "section.profiles.stackoverflow-activity": "Písemné odpovědi: {{answers}}. Aktivní v {{tags}}.",
         "section.references.title": "Reference"
     }
 }

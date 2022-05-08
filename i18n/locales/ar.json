@@ -14,6 +14,7 @@
         "section.languages.title": "اللغات",
         "section.interests.title": "الإهتمامات",
         "section.profiles.title": "مظهر",
+        "section.profiles.stackoverflow-activity": "{{answers}} إجابات مكتوبة. نشط في {{tags}}.",
         "section.references.title": "مراجع"
     }
 }

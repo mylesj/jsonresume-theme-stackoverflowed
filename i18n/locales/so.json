@@ -14,6 +14,7 @@
         "section.languages.title": "Luuqadaha",
         "section.interests.title": "Danaha",
         "section.profiles.title": "Profiles",
+        "section.profiles.stackoverflow-activity": "Jawaabo qoran {{answers}} Ka shaqeeya gudaha {{tags}}",
         "section.references.title": "Tixraacyo"
     }
 }

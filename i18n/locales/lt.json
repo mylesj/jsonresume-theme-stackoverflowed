@@ -14,6 +14,7 @@
         "section.languages.title": "Kalbos",
         "section.interests.title": "Pomėgiai",
         "section.profiles.title": "Profiliai",
+        "section.profiles.stackoverflow-activity": "Parašyta {{answers}} atsakymų. Aktyvus {{tags}}.",
         "section.references.title": "Nuorodos"
     }
 }

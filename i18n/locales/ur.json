@@ -14,6 +14,7 @@
         "section.languages.title": "زبانیں",
         "section.interests.title": "دلچسپیاں",
         "section.profiles.title": "پروفائلز",
+        "section.profiles.stackoverflow-activity": "تحریری {{answers}} جوابات۔ {{tags}} میں فعال۔",
         "section.references.title": "حوالہ جات"
     }
 }
