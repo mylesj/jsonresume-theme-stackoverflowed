@@ -18,6 +18,7 @@ beforeEach(() => {
         titleUrl: { title: 'foo', url: 'https://foo.com' },
         titleLabelUrl: { title: 'foo', label: 'bar', url: 'https://foo.com' },
         titleIcon: { title: 'icon entry', icon: 'stackoverflow' },
+        titleChildren: { title: 'entry with child', children: 'child entry' },
     }
 })
 
@@ -72,4 +73,11 @@ it('should render an icon for valid social network types', () => {
     )
     const svg = getByText('icon entry').parentElement?.querySelector('svg')
     expect(svg).toBeInTheDocument()
+})
+
+it('should render child elements of entries', () => {
+    const { getByText } = render(
+        <SimpleEntries showUrl entries={[entries.titleChildren]} />
+    )
+    expect(getByText('child entry')).toBeInTheDocument()
 })
