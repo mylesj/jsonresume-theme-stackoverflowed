@@ -20,7 +20,21 @@ is compatible with the [Resume CLI][resume-cli] tool.
 
 ![Screenshot: Resume Sample][img-sample]
 
-## Configuration
+## Environment Configuration
+
+### StackExchange
+
+This theme can make requests to fetch a short summary of contributor activity that will be displayed
+underneath a StackOverflow profile entry when a valid `url` is specified. By default this behaviour
+is switched off due to the API throttling limiting anonymous requests to 300 per day. However this
+should be okay for occasional use and can be explicitly enabled by setting the key to `anon`.
+
+```none
+STACK_EXCHANGE_API_KEY=anon
+STACK_EXCHANGE_ACCESS_TOKEN=
+```
+
+## Resume Configuration
 
 The JSON Resume schema allows space for arbitrary meta data. This theme will consume a custom
 configuration from JSON defined under the following namespace, all further parameters listed on

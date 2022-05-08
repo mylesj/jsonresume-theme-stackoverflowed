@@ -19,6 +19,26 @@ type StackOverflowTopTags = {
     question_score: number
 }
 
+const getCredentials = () => {
+    const {
+        STACK_EXCHANGE_API_KEY: key,
+        STACK_EXCHANGE_ACCESS_TOKEN: access_token,
+    } = process.env
+
+    if (!key) {
+        return null
+    }
+    if (['anon', 'anonymous'].includes(key.toLowerCase())) {
+        return {}
+    }
+    return {
+        key,
+        ...(access_token && {
+            access_token,
+        }),
+    }
+}
+
 const findProfile = (profiles?: SchemaProfile[]): SchemaProfile | undefined =>
     profiles?.find(
         ({ network }) => network && normaliseTag(network) === TAG_STACKOVERFLOW
@@ -32,11 +52,12 @@ const findUserId = (profiles?: SchemaProfile[]): string | undefined => {
     )
 }
 
-const fetchTopTags = (id: string) => {
+const fetchTopTags = (id: string, credentials: Record<string, string>) => {
     const query = new URLSearchParams({
         order: 'desc',
         sort: 'popular',
         site: TAG_STACKOVERFLOW,
+        ...credentials,
     })
     return axios
         .get(`${API}/users/${id}/top-tags?${query}`)
@@ -44,10 +65,11 @@ const fetchTopTags = (id: string) => {
         .catch<StackOverflowTopTags[]>(() => [])
 }
 
-const fetchAnswersTotal = (id: string) => {
+const fetchAnswersTotal = (id: string, credentials: Record<string, string>) => {
     const query = new URLSearchParams({
         filter: 'total',
         site: TAG_STACKOVERFLOW,
+        ...credentials,
     })
     return axios
         .get(`${API}/users/${id}/answers?${query}`)
@@ -56,13 +78,15 @@ const fetchAnswersTotal = (id: string) => {
 }
 
 export const stackOverflow: ComposeTask<ResumeSchema> = async (resume) => {
+    const credentials = getCredentials()
     const userId = findUserId(resume.basics?.profiles)
-    if (!userId) {
+
+    if (!credentials || !userId) {
         return
     }
     const [answersTotal, topTags] = await Promise.all([
-        fetchAnswersTotal(userId),
-        fetchTopTags(userId),
+        fetchAnswersTotal(userId, credentials),
+        fetchTopTags(userId, credentials),
     ])
 
     return (draft) => {
