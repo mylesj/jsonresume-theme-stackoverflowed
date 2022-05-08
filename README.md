@@ -148,23 +148,24 @@ a newline character in the template - note that this needs to be doubly escaped 
 {
     "intro": {
         "avatar": {
-            "show": boolean,
-            "align": string
+            "align": string,
+            "hidden": boolean
         }
     }
 }
 ```
 
-**`intro.avatar.show`** &mdash; `boolean`
-
-All resume data will be displayed by default, where content exists - however the profile image can
-be hidden if preferable. If a profile `image` is not available, then this theme will lookup a
-[Gravatar][gravatar] for the `email` field under the `basics` profile data.
-
 **`intro.avatar.align`** &mdash; `string` &mdash; `"left"` &vert; `"right"`
 
 By default the avatar will align to the `right` of the address and contact details - however can
 be configured to align to the `left` of the name and title.
+
+**`intro.avatar.hidden`** &mdash; `boolean`
+
+All resume data will be displayed by default, where content exists - if a profile `image` is not
+available, then this theme will lookup a [Gravatar][gravatar] for the `email` listed under the
+`basics` profile data. However if it is preferable to hide a profile image then the `hidden` option
+can be set to `true`.
 
 ### Sections
 

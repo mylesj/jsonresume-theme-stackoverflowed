@@ -52,13 +52,13 @@ describe(Basics.name, () => {
             expect(queryByRole('img')).not.toBeInTheDocument()
         })
 
-        it('should not render when configured not to show', () => {
+        it('should not render when configured as hidden', () => {
             const { queryByRole } = render(<Basics />, {
                 resume: compose(
                     withConfig({
                         intro: {
                             avatar: {
-                                show: false,
+                                hidden: true,
                             },
                         },
                     }),

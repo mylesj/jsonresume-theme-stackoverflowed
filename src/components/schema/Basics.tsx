@@ -100,7 +100,7 @@ type AvatarProps = {
 const Avatar = ({ name, image, gravatar }: AvatarProps) => {
     const i18n = useLocale('i18n')
     const config = useConfig('intro')
-    const showAvatar = config?.avatar?.show ?? true
+    const showAvatar = !config?.avatar?.hidden
 
     if (!showAvatar || !name || !(image || gravatar)) {
         return null

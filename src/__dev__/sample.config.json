@@ -15,7 +15,7 @@
             },
             "intro": {
                 "avatar": {
-                    "show": true,
+                    "hidden": false,
                     "align": "right"
                 }
             },

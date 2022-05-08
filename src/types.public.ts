@@ -43,7 +43,7 @@ export type Configuration = {
     }
     intro?: {
         avatar?: {
-            show?: boolean
+            hidden?: boolean
             align?: string
         }
     }
