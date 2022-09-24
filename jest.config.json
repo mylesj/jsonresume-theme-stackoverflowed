@@ -2,7 +2,12 @@
     "preset": "ts-jest",
     "testEnvironment": "jsdom",
     "restoreMocks": true,
-    "timers": "modern",
+    "fakeTimers": {
+        "enableGlobally": true
+    },
+    "transform": {
+        "\\/(src|i18n)\\/.+\\.tsx?$": "ts-jest"
+    },
     "moduleNameMapper": {
         "~/(.*)": "<rootDir>/src/$1",
         "@/test-utils": "<rootDir>/src/__dev__/test-utils"
@@ -11,10 +16,5 @@
         "<rootDir>/src/**/*.{ts,tsx}",
         "!<rootDir>/node_modules/**",
         "!<rootDir>/src/__dev__/**"
-    ],
-    "globals": {
-        "ts-jest": {
-            "isolatedModules": true
-        }
-    }
+    ]
 }

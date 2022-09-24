@@ -20,8 +20,7 @@ describe(BasicsProfiles.name, () => {
         `('should $case', ({ answersTotal, activeTags, expected }) => {
             const { queryByRole, getByText } = render(<BasicsProfiles />, {
                 resume: produce((resume) => {
-                    // eslint-disable-next-line @typescript-eslint/no-non-null-assertion
-                    Object.assign(resume.basics, {
+                    Object.assign(resume.basics ?? {}, {
                         profiles: [
                             {
                                 network: 'Stack Overflow',

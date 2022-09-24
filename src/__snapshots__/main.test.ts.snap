@@ -2,20 +2,20 @@
 
 exports[`should render a basic html document 1`] = `
 "<!DOCTYPE html>
-    <html lang=\\"en\\">
+    <html lang="en">
         <head>
-            <meta charset=\\"utf-8\\" />
+            <meta charset="utf-8" />
             <meta
-                name=\\"viewport\\"
-                content=\\"width=device-width, initial-scale=1\\"
+                name="viewport"
+                content="width=device-width, initial-scale=1"
             />
-            <meta name=\\"generator\\" content=\\"jsonresume-theme-stackoverflowed@0.0.0-development\\" />
+            <meta name="generator" content="jsonresume-theme-stackoverflowed@0.0.0-development" />
             <title>
                 Richard Hendriks - Programmer - Resume
             </title>
         </head>
         <body>
-            <div id=\\"root\\">Richard Hendriks</div>
+            <div id="root">Richard Hendriks</div>
         </body>
     </html>"
 `;

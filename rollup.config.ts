@@ -32,7 +32,7 @@ const config: RollupOptions = {
         'axios',
         'immer',
         'immer-compose',
-        'simple-icons',
+        'simple-icons/icons',
     ],
     onwarn: (err) => {
         throw new Error(err.message)

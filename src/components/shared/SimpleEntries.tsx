@@ -1,7 +1,6 @@
 import { useMemo, ReactNode } from 'react'
-import icons from 'simple-icons'
 
-import { normaliseTag } from '~/util'
+import { normaliseTag, getIconSvg } from '~/util'
 
 import { ZeroWidthSpace } from './ZeroWidthSpace'
 import { Link } from './Link'
@@ -22,7 +21,7 @@ const useSvgIcons = (entries: Props['entries']) => {
     const svgIcons = useMemo(() => {
         return entries.reduce<Record<string, string>>((acc, { icon }) => {
             const key = icon && normaliseTag(icon)
-            const svg = key && icons.Get(key)?.svg
+            const svg = key && getIconSvg(key)
             if (svg) {
                 acc[key] = svg
             }
