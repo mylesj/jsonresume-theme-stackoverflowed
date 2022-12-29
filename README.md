@@ -232,7 +232,7 @@ disabled by setting this to `true`.
 [img-sample]: https://repository-images.githubusercontent.com/482519223/7a3c02dd-2f3f-401e-af71-7f3aebf7ff3f
 [shield-github]: https://img.shields.io/badge/%20-Source-555555?logo=github&style=for-the-badge
 [shield-changelog]: https://img.shields.io/badge/%20-Changelog-555555?logo=github&style=for-the-badge
-[shield-ci-main]: https://img.shields.io/github/workflow/status/mylesj/jsonresume-theme-stackoverflowed/CI/main?label=CI&logo=github&style=for-the-badge
+[shield-ci-main]: mylesj/jsonresume-theme-stackoverflowed/integration.yml?branch=main&label=CI&logo=github&style=for-the-badge
 [shield-npm-version]: https://img.shields.io/npm/v/jsonresume-theme-stackoverflowed?&label=%20&logo=npm&style=for-the-badge
 [shield-coverage]: https://img.shields.io/codacy/coverage/ec2d137d62154c418920da787f08b79f/main?logo=codacy&style=for-the-badge
 
