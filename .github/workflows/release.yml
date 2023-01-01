@@ -30,4 +30,4 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           NPM_TOKEN: ${{ secrets.NPM_AUTH_TOKEN }}
-        run: npx semantic-release --branches main --tag-format "<%= version %>"
+        run: npx semantic-release -e ./.releaserc.json
